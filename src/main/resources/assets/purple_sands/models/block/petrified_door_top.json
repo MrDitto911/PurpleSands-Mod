@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_top",
+  "textures": {
+    "bottom": "purple_sands:blocks/petrified_planks",
+    "top": "purple_sands:blocks/petrified_planks"
+  }
+}

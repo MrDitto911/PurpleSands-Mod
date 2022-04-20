@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "purple_sands:pride_bread"
+    },
+    "title": {
+      "translate": "advancements.pride_bread_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.pride_bread_advancement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "pride_bread_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "purple_sands:purple_foods_advancement"
+}

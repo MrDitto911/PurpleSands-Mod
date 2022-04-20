@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:petrified_log"
+    }
+  ],
+  "result": {
+    "item": "purple_sands:petrified_planks",
+    "count": 4
+  }
+}

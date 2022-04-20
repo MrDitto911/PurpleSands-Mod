@@ -1,0 +1,1308 @@
+{
+  "mod_elements": [
+    {
+      "name": "Sandflea",
+      "type": "livingentity",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sandflea",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "PurpleSandsTab",
+      "type": "tab",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_sands_tab"
+    },
+    {
+      "name": "PurpleSand",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_sand",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "PurpleDesert",
+      "type": "biome",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_desert"
+    },
+    {
+      "name": "Deathadder",
+      "type": "livingentity",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deathadder",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "PurpleSandstone",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_sandstone",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "PurpleSandsAdvancements",
+      "type": "achievement",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_sands_advancements",
+      "path": "~/PurpleSandsAdvancements"
+    },
+    {
+      "name": "PurpleSandstoneRecipe",
+      "type": "recipe",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_sandstone_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "PurpleSandRecipe",
+      "type": "recipe",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_sand_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "PurpleSandFromRedSandRecipe",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_sand_from_red_sand_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "PurpleGem",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_gem",
+      "path": "~/Items"
+    },
+    {
+      "name": "PurplePile",
+      "type": "item",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_pile",
+      "path": "~/Items"
+    },
+    {
+      "name": "PrideBreadFoodEaten",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pride_bread_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "PrideBread",
+      "type": "food",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pride_bread",
+      "path": "~/Food"
+    },
+    {
+      "name": "CreeperCookie",
+      "type": "food",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creeper_cookie",
+      "path": "~/Food"
+    },
+    {
+      "name": "CookieCreeperAdvancement",
+      "type": "achievement",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cookie_creeper_advancement",
+      "path": "~/PurpleSandsAdvancements"
+    },
+    {
+      "name": "CreeperCookieFoodEaten",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creeper_cookie_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "SandBall",
+      "type": "food",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_ball",
+      "path": "~/Food"
+    },
+    {
+      "name": "SandBallRecipe",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_ball_recipe",
+      "path": "~/Recipes/Food"
+    },
+    {
+      "name": "CCRecipe",
+      "type": "recipe",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cc_recipe",
+      "path": "~/Recipes/Food"
+    },
+    {
+      "name": "PrideBreadRecipe",
+      "type": "recipe",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pride_bread_recipe",
+      "path": "~/Recipes/Food"
+    },
+    {
+      "name": "PurpleOre",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_ore",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "PurpleFoodsAdvancement",
+      "type": "achievement",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_foods_advancement",
+      "path": "~/PurpleSandsAdvancements"
+    },
+    {
+      "name": "PrideBreadAdvancement",
+      "type": "achievement",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pride_bread_advancement",
+      "path": "~/PurpleSandsAdvancements"
+    },
+    {
+      "name": "CCAdvancement",
+      "type": "achievement",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cc_advancement",
+      "path": "~/PurpleSandsAdvancements"
+    },
+    {
+      "name": "SandBallAdvancement",
+      "type": "achievement",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_ball_advancement",
+      "path": "~/PurpleSandsAdvancements"
+    },
+    {
+      "name": "PrideBreadItemIsCrafted",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pride_bread_item_is_crafted",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "CreeperCookieItemIsCrafted",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creeper_cookie_item_is_crafted",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "SandBallItemIsCrafted",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_ball_item_is_crafted",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "RawSandflea",
+      "type": "food",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_sandflea",
+      "path": "~/Food"
+    },
+    {
+      "name": "CookedSandflea",
+      "type": "food",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_sandflea",
+      "path": "~/Food"
+    },
+    {
+      "name": "SandfleaMeatAdvancement",
+      "type": "achievement",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sandflea_meat_advancement",
+      "path": "~/PurpleSandsAdvancements"
+    },
+    {
+      "name": "CookedSandfleaItemIsSmelted",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_sandflea_item_is_smelted",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "CookedSandfleaRecipe",
+      "type": "recipe",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_sandflea_recipe",
+      "path": "~/Recipes/Food"
+    },
+    {
+      "name": "BowlofSand",
+      "type": "food",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bowlof_sand",
+      "path": "~/Food"
+    },
+    {
+      "name": "BowlofSandAdvancement",
+      "type": "achievement",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bowlof_sand_advancement",
+      "path": "~/PurpleSandsAdvancements"
+    },
+    {
+      "name": "BowlofSandItemIsCrafted",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bowlof_sand_item_is_crafted",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "PurpleApple",
+      "type": "food",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_apple",
+      "path": "~/Food"
+    },
+    {
+      "name": "PurpleAppleAdvancement",
+      "type": "achievement",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_apple_advancement",
+      "path": "~/PurpleSandsAdvancements"
+    },
+    {
+      "name": "PurpleAppleItemIsCrafted",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_apple_item_is_crafted",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "PurpleAppleFoodEaten",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_apple_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "BowlofSandRecipe",
+      "type": "recipe",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bowlof_sand_recipe",
+      "path": "~/Recipes/Food"
+    },
+    {
+      "name": "PurpleAppleRecipe",
+      "type": "recipe",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_apple_recipe",
+      "path": "~/Recipes/Food"
+    },
+    {
+      "name": "Roxa",
+      "type": "plant",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "roxa",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "CookedSandFleaSmokerRecipe",
+      "type": "recipe",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_sand_flea_smoker_recipe",
+      "path": "~/Recipes/Food"
+    },
+    {
+      "name": "CookedSandFleaCampfireRecipe",
+      "type": "recipe",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_sand_flea_campfire_recipe",
+      "path": "~/Recipes/Food"
+    },
+    {
+      "name": "GemBlock",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gem_block",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "SandRefiner",
+      "type": "block",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_refiner",
+      "path": "~/Blocks/GUIBlocks/SandRefiner"
+    },
+    {
+      "name": "GemStaff",
+      "type": "rangeditem",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gem_staff",
+      "path": "~/Weapons/Staffs"
+    },
+    {
+      "name": "GemStaffEntitySwingsItem",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gem_staff_entity_swings_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Weapons/Staffs"
+    },
+    {
+      "name": "GemGolem",
+      "type": "livingentity",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gem_golem",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "GemGolemNaturalEntitySpawningCondition",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gem_golem_natural_entity_spawning_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "SandRefinerGUI",
+      "type": "gui",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_refiner_gui",
+      "path": "~/Blocks/GUIBlocks/SandRefiner"
+    },
+    {
+      "name": "SandRefinerTick",
+      "type": "procedure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_refiner_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/GUIBlocks/SandRefiner"
+    },
+    {
+      "name": "SandRefinerDisplayTick",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_refiner_display_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/GUIBlocks/SandRefiner"
+    },
+    {
+      "name": "SandRefinerSunOnCondition",
+      "type": "procedure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_refiner_sun_on_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/GUIBlocks/SandRefiner"
+    },
+    {
+      "name": "SandRefinerSunOffCondition",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_refiner_sun_off_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/GUIBlocks/SandRefiner"
+    },
+    {
+      "name": "MysteryOrb",
+      "type": "rangeditem",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystery_orb",
+      "path": "~/Weapons/Orbs"
+    },
+    {
+      "name": "PurplePickaxe",
+      "type": "tool",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_pickaxe",
+      "path": "~/ArmorTools"
+    },
+    {
+      "name": "PurpleAxe",
+      "type": "tool",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_axe",
+      "path": "~/ArmorTools"
+    },
+    {
+      "name": "PurpleSword",
+      "type": "tool",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_sword",
+      "path": "~/ArmorTools"
+    },
+    {
+      "name": "PurpleShovel",
+      "type": "tool",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_shovel",
+      "path": "~/ArmorTools"
+    },
+    {
+      "name": "PurpleHoe",
+      "type": "tool",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_hoe",
+      "path": "~/ArmorTools"
+    },
+    {
+      "name": "PurplePickaxeRecipe",
+      "type": "recipe",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_pickaxe_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "PurpleAxeRecipe",
+      "type": "recipe",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_axe_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "PurpleSwordRecipe",
+      "type": "recipe",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_sword_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "PurpleShovelRecipe",
+      "type": "recipe",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_shovel_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "PurpleHoeRecipe",
+      "type": "recipe",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_hoe_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "PurpleArmor",
+      "type": "armor",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/ArmorTools"
+    },
+    {
+      "name": "PurpleArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_armor_helmet_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "PurpleArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_armor_body_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "PurpleArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_armor_leggings_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "PurpleArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_armor_boots_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "PetrifiedWood",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_wood",
+      "path": "~/Blocks/Wood"
+    },
+    {
+      "name": "PetrifiedLog",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_log",
+      "path": "~/Blocks/Wood"
+    },
+    {
+      "name": "PetrifiedPlanks",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_planks",
+      "path": "~/Blocks/Wood"
+    },
+    {
+      "name": "PetrifiedLeaves",
+      "type": "block",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_leaves",
+      "path": "~/Blocks/Wood"
+    },
+    {
+      "name": "PetrifiedStairs",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_stairs",
+      "path": "~/Blocks/Wood"
+    },
+    {
+      "name": "PetrifiedSlab",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_slab",
+      "path": "~/Blocks/Wood"
+    },
+    {
+      "name": "PetrifiedFence",
+      "type": "block",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_fence",
+      "path": "~/Blocks/Wood"
+    },
+    {
+      "name": "PetrifiedFenceGate",
+      "type": "block",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_fence_gate",
+      "path": "~/Blocks/Wood"
+    },
+    {
+      "name": "PetrifiedPressurePlate",
+      "type": "block",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_pressure_plate",
+      "path": "~/Blocks/Wood"
+    },
+    {
+      "name": "PetrifiedButton",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_button",
+      "path": "~/Blocks/Wood"
+    },
+    {
+      "name": "PetrifiedItemsTag",
+      "type": "tag",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_items_tag",
+      "path": "~/Blocks/Wood"
+    },
+    {
+      "name": "PetrifiedWoodRecipe",
+      "type": "recipe",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_wood_recipe",
+      "path": "~/Recipes/Wood"
+    },
+    {
+      "name": "PetrifiedPlanksRecipe",
+      "type": "recipe",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_planks_recipe",
+      "path": "~/Recipes/Wood"
+    },
+    {
+      "name": "PetrifiedStairsRecipe",
+      "type": "recipe",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_stairs_recipe",
+      "path": "~/Recipes/Wood"
+    },
+    {
+      "name": "PetrifiedSlabRecipe",
+      "type": "recipe",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_slab_recipe",
+      "path": "~/Recipes/Wood"
+    },
+    {
+      "name": "PetrifiedFenceRecipe",
+      "type": "recipe",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_fence_recipe",
+      "path": "~/Recipes/Wood"
+    },
+    {
+      "name": "PetrifiedFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_fence_gate_recipe",
+      "path": "~/Recipes/Wood"
+    },
+    {
+      "name": "PetrifiedPressurePlateRecipe",
+      "type": "recipe",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_pressure_plate_recipe",
+      "path": "~/Recipes/Wood"
+    },
+    {
+      "name": "PetrifiedButtonRecipe",
+      "type": "recipe",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_button_recipe",
+      "path": "~/Recipes/Wood"
+    },
+    {
+      "name": "PetrifiedStickRecipe",
+      "type": "recipe",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_stick_recipe",
+      "path": "~/Recipes/Wood"
+    },
+    {
+      "name": "PetrifiedDoor",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_door",
+      "path": "~/Blocks/Wood"
+    },
+    {
+      "name": "AwakenedOrb",
+      "type": "rangeditem",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "awakened_orb",
+      "path": "~/Weapons/Orbs"
+    },
+    {
+      "name": "MysteryOrbProjectileHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystery_orb_projectile_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weapons/Orbs"
+    },
+    {
+      "name": "MysteryOrbRangedItemUsed",
+      "type": "procedure",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystery_orb_ranged_item_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Weapons/Orbs"
+    },
+    {
+      "name": "OrbCrafter",
+      "type": "block",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orb_crafter",
+      "path": "~/Blocks/GUIBlocks/OrbCrafter"
+    },
+    {
+      "name": "OrbCrafterGui",
+      "type": "gui",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orb_crafter_gui",
+      "path": "~/Blocks/GUIBlocks/OrbCrafter"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "entity.purple_sands.deathadder": "Deathadder",
+      "block.purple_sands.petrified_leaves": "Petrified Leaves",
+      "block.purple_sands.petrified_slab": "Petrified Slab",
+      "item.purple_sands.sand_ball": "Sand Ball",
+      "block.purple_sands.petrified_planks": "Petrified Planks",
+      "advancements.sandflea_meat_advancement.title": "Sand grown Meat",
+      "advancements.purple_apple_advancement.title": "Purple Apples",
+      "item.purple_sands.awakened_orb": "Awakened Orb",
+      "block.purple_sands.petrified_door": "Petrified Door",
+      "block.purple_sands.roxa": "Roxa",
+      "item.purple_sands.purple_axe": "Purple Axe",
+      "block.purple_sands.petrified_fence_gate": "Petrified Fence Gate",
+      "item.purple_sands.purple_apple": "Purple Apple",
+      "block.purple_sands.sand_refiner": "Sand Refiner",
+      "block.purple_sands.purple_sandstone": "Purple Sandstone",
+      "advancements.sandflea_meat_advancement.descr": "Cook raw sandflea",
+      "block.purple_sands.petrified_log": "Petrified Log",
+      "advancements.cookie_creeper_advancement.descr": "Well... what did you expect?",
+      "advancements.pride_bread_advancement.title": "Pride In All Forms",
+      "block.purple_sands.petrified_fence": "Petrified Fence",
+      "advancements.pride_bread_advancement.descr": "Eat and have pride!",
+      "advancements.bowlof_sand_advancement.title": "Sandy Meal",
+      "entity.purple_sands.sandflea": "Sandflea",
+      "block.purple_sands.purple_ore": "Purple Ore",
+      "item.purple_sands.raw_sandflea": "Raw Sandflea",
+      "advancements.cc_advancement.title": "CC?",
+      "item.purple_sands.purple_pickaxe": "Purple Pickaxe",
+      "advancements.purple_sands_advancements.title": "Purple Sands Adventure",
+      "item.purple_sands.pride_bread": "Pride Bread",
+      "block.purple_sands.purple_sand": "Purple Sand",
+      "itemGroup.tabpurple_sands_tab": "Purple Sands Tab",
+      "advancements.cookie_creeper_advancement.title": "Cookie Creeper Advancement",
+      "item.purple_sands.purple_armor_helmet": "Purple Helmet",
+      "item.purple_sands.purple_armor_boots": "Purple Boots",
+      "item.purple_sands.gem_staff": "Gem Staff",
+      "item.purple_sands.cooked_sandflea": "Cooked Sandflea",
+      "advancements.sand_ball_advancement.descr": "It\u0027ll stay in your stomach all day",
+      "block.purple_sands.petrified_button": "Petrified Button",
+      "block.purple_sands.petrified_pressure_plate": "Petrified Pressure Plate",
+      "biome.purple_sands.purple_desert": "Purple Desert",
+      "block.purple_sands.petrified_stairs": "Petrified Stairs",
+      "item.purple_sands.purple_armor_leggings": "Purple Leggings",
+      "item.purple_sands.purple_gem": "Purple Gem",
+      "item.purple_sands.purple_sword": "Purple Sword",
+      "advancements.purple_foods_advancement.descr": "Craft any of the new and unique foods",
+      "item.purple_sands.purple_shovel": "Purple Shovel",
+      "block.purple_sands.orb_crafter": "Orb Crafter",
+      "item.purple_sands.creeper_cookie": "CC",
+      "item.purple_sands.sandflea_spawn_egg": "Sandflea Spawn Egg",
+      "advancements.bowlof_sand_advancement.descr": "Yum...",
+      "item.purple_sands.purple_hoe": "Purple Hoe",
+      "item.purple_sands.mystery_orb": "Mystery Orb",
+      "block.purple_sands.gem_block": "Gem Block",
+      "item.purple_sands.purple_pile": "Purple Pile",
+      "item.purple_sands.purple_armor_chestplate": "Purple Chestplate",
+      "item.purple_sands.deathadder_spawn_egg": "Deathadder Spawn Egg",
+      "item.purple_sands.gem_golem_spawn_egg": "Gem Golem Spawn Egg",
+      "advancements.cc_advancement.descr": "This is a bad idea",
+      "advancements.sand_ball_advancement.title": "Sand Ball",
+      "item.purple_sands.bowlof_sand": "Bowlof Sand",
+      "advancements.purple_foods_advancement.title": "Purple Foods",
+      "advancements.purple_sands_advancements.descr": "Find Purple Desert",
+      "advancements.purple_apple_advancement.descr": "Better than gold because it\u0027s purple",
+      "block.purple_sands.petrified_wood": "Petrified Wood",
+      "entity.purple_sands.gem_golem": "Gem Golem"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Blocks",
+        "children": [
+          {
+            "name": "GUIBlocks",
+            "children": [
+              {
+                "name": "SandRefiner",
+                "children": []
+              },
+              {
+                "name": "OrbCrafter",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Wood",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Mobs",
+        "children": []
+      },
+      {
+        "name": "PurpleSandsAdvancements",
+        "children": []
+      },
+      {
+        "name": "Recipes",
+        "children": [
+          {
+            "name": "Food",
+            "children": []
+          },
+          {
+            "name": "Wood",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "ArmorTools",
+        "children": []
+      },
+      {
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": "Food",
+        "children": []
+      },
+      {
+        "name": "Weapons",
+        "children": [
+          {
+            "name": "Staffs",
+            "children": []
+          },
+          {
+            "name": "Orbs",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "purple_sands",
+    "modName": "Purple Sands",
+    "version": "1.0.0",
+    "author": "Mr_Ditto911, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.17.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.purplesands",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100354000
+}

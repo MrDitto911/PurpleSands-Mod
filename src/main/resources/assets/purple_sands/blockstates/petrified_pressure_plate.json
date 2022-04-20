@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "purple_sands:block/petrified_pressure_plate"
+    },
+    "powered=true": {
+      "model": "purple_sands:block/petrified_pressure_plate_down"
+    }
+  }
+}

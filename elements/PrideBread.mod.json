@@ -1,0 +1,32 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "pridebread",
+    "customModelName": "Normal",
+    "name": "Pride Bread",
+    "rarity": "UNCOMMON",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:PurpleSandsTab"
+    },
+    "stackSize": 16,
+    "nutritionalValue": 12,
+    "saturation": 16.0,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": false,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "PrideBreadFoodEaten"
+    },
+    "onCrafted": {
+      "name": "PrideBreadItemIsCrafted"
+    }
+  }
+}

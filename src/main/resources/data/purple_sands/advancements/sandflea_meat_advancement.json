@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "purple_sands:cooked_sandflea"
+    },
+    "title": {
+      "translate": "advancements.sandflea_meat_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.sandflea_meat_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "sandflea_meat_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "purple_sands:purple_foods_advancement"
+}

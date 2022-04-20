@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "purple_sands:purple_pile"
+    },
+    {
+      "item": "purple_sands:purple_sand"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "purple_sands:bowlof_sand",
+    "count": 1
+  }
+}

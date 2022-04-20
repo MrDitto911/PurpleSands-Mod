@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "gemblock",
+        "1": "purpleore"
+      },
+      "name": "default"
+    }
+  }
+}

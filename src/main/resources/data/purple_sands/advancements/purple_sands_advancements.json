@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "purple_sands:purple_sand"
+    },
+    "title": {
+      "translate": "advancements.purple_sands_advancements.title"
+    },
+    "description": {
+      "translate": "advancements.purple_sands_advancements.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "purple_sands_advancements": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "biome": "purple_sands:purple_desert"
+      }
+    }
+  }
+}

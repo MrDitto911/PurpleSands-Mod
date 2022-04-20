@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "purple_sands:purple_gem"
+    },
+    "1": {
+      "item": "purple_sands:purple_gem"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "purple_sands:purple_sword",
+    "count": 1
+  }
+}

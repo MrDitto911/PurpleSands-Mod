@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "purple_sands:purple_gem"
+    },
+    "2": {
+      "item": "purple_sands:purple_gem"
+    },
+    "3": {
+      "item": "purple_sands:purple_gem"
+    },
+    "4": {
+      "item": "purple_sands:purple_gem"
+    },
+    "5": {
+      "item": "purple_sands:purple_gem"
+    },
+    "6": {
+      "item": "purple_sands:purple_gem"
+    },
+    "7": {
+      "item": "purple_sands:purple_gem"
+    },
+    "8": {
+      "item": "purple_sands:purple_gem"
+    }
+  },
+  "result": {
+    "item": "purple_sands:purple_armor_chestplate",
+    "count": 1
+  }
+}

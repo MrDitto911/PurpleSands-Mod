@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "experience": 3,
+  "cookingtime": 110,
+  "ingredient": {
+    "item": "purple_sands:raw_sandflea"
+  },
+  "result": {
+    "item": "purple_sands:cooked_sandflea"
+  }
+}

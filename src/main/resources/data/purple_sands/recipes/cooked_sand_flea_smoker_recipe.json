@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smoking",
+  "experience": 3,
+  "cookingtime": 50,
+  "ingredient": {
+    "item": "purple_sands:raw_sandflea"
+  },
+  "result": {
+    "item": "purple_sands:cooked_sandflea"
+  }
+}

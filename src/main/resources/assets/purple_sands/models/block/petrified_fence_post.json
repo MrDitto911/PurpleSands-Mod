@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "purple_sands:blocks/petrified_planks",
+    "particle": "purple_sands:blocks/petrified_planks"
+  }
+}

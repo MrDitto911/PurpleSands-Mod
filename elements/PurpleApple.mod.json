@@ -1,0 +1,32 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "purpleapple",
+    "customModelName": "Normal",
+    "name": "Purple Apple",
+    "rarity": "UNCOMMON",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:PurpleSandsTab"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 10,
+    "saturation": 10.0,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "PurpleAppleFoodEaten"
+    },
+    "onCrafted": {
+      "name": "PurpleAppleItemIsCrafted"
+    }
+  }
+}

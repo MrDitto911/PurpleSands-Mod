@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "purple_sands:bowlof_sand"
+    },
+    "title": {
+      "translate": "advancements.bowlof_sand_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.bowlof_sand_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bowlof_sand_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "purple_sands:purple_foods_advancement"
+}

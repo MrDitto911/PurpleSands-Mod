@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "purple_sands:petrified_planks"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "purple_sands:petrified_planks"
+    },
+    "3": {
+      "item": "purple_sands:petrified_planks"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "purple_sands:petrified_planks"
+    }
+  },
+  "result": {
+    "item": "purple_sands:petrified_fence",
+    "count": 3
+  }
+}

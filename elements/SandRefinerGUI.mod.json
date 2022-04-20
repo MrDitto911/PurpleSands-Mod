@@ -1,0 +1,86 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #0",
+          "x": 204,
+          "y": 89
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #1",
+          "x": 240,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<BNBT:integer:timeRemaining>%",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<BNBT:integer:timeRemaining>%",
+          "x": 224,
+          "y": 94
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "sun-off.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SandRefinerSunOffCondition"
+          },
+          "name": "sun-off.png",
+          "x": 206,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "sun-on.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SandRefinerSunOnCondition"
+          },
+          "name": "sun-on.png",
+          "x": 206,
+          "y": 44
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 15,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

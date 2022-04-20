@@ -1,0 +1,9 @@
+{
+  "parent": "purple_sands:custom/mysteryorbopen",
+  "textures": {
+    "0": "purple_sands:blocks/gemblock",
+    "2": "purple_sands:blocks/outerframetexture",
+    "3": "purple_sands:blocks/innerframetexture",
+    "particle": "purple_sands:items/purplegem"
+  }
+}

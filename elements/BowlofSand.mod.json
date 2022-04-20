@@ -1,0 +1,29 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "bowlofsand",
+    "customModelName": "Normal",
+    "name": "Bowlof Sand",
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:PurpleSandsTab"
+    },
+    "stackSize": 16,
+    "nutritionalValue": 8,
+    "saturation": 4.0,
+    "eatingSpeed": 48,
+    "resultItem": {
+      "value": "Items.BOWL"
+    },
+    "forDogs": false,
+    "isAlwaysEdible": false,
+    "animation": "eat",
+    "hasGlow": false,
+    "onCrafted": {
+      "name": "BowlofSandItemIsCrafted"
+    }
+  }
+}

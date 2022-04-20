@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "purple_sands:blocks/purpleore",
+    "particle": "purple_sands:blocks/purpleore"
+  }
+}

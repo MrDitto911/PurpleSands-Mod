@@ -1,0 +1,20 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:PetrifiedWood"
+      },
+      {
+        "value": "CUSTOM:PetrifiedLog"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "petrified_log",
+    "namespace": "forge"
+  }
+}

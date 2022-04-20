@@ -1,0 +1,37 @@
+{
+  "_fv": 24,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 1,
+    "texture": "purplegem",
+    "customModelName": "gemstaff:default",
+    "name": "Gem Staff",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:PurpleSandsTab"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 100,
+    "actionSound": {
+      "value": "entity.enderdragon.shoot"
+    },
+    "hasGlow": false,
+    "animation": "block",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 4.0,
+    "bulletPower": 3.0,
+    "bulletDamage": 2.0,
+    "bulletKnockback": 1,
+    "bulletParticles": true,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:PurplePile"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

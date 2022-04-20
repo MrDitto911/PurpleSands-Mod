@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "purple_sands:purple_sandstone",
+    "purple_sands:purple_ore",
+    "purple_sands:gem_block",
+    "purple_sands:sand_refiner"
+  ]
+}

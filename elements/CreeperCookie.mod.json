@@ -1,0 +1,32 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "creepercookie",
+    "customModelName": "Normal",
+    "name": "CC",
+    "rarity": "UNCOMMON",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:PurpleSandsTab"
+    },
+    "stackSize": 1,
+    "nutritionalValue": 1,
+    "saturation": 1.0,
+    "eatingSpeed": 16,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "CreeperCookieFoodEaten"
+    },
+    "onCrafted": {
+      "name": "CreeperCookieItemIsCrafted"
+    }
+  }
+}

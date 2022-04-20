@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "purple_sands:purple_pile"
+    },
+    "3": {
+      "item": "purple_sands:purple_pile"
+    },
+    "4": {
+      "item": "purple_sands:purple_pile"
+    },
+    "5": {
+      "item": "purple_sands:purple_pile"
+    },
+    "7": {
+      "item": "minecraft:dried_kelp"
+    }
+  },
+  "result": {
+    "item": "purple_sands:sand_ball",
+    "count": 1
+  }
+}

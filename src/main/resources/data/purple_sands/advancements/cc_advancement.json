@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "purple_sands:creeper_cookie"
+    },
+    "title": {
+      "translate": "advancements.cc_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.cc_advancement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "cc_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "purple_sands:purple_foods_advancement"
+}

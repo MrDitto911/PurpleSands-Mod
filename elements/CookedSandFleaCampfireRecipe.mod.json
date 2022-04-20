@@ -1,0 +1,20 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Campfire cooking",
+    "xpReward": 3.0,
+    "cookingTime": 110,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "campfireCookingInputStack": {
+      "value": "CUSTOM:RawSandflea"
+    },
+    "campfireCookingReturnStack": {
+      "value": "CUSTOM:CookedSandflea"
+    },
+    "name": "cooked_sand_flea_campfire_recipe",
+    "namespace": "mod"
+  }
+}

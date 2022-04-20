@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "purple_sands:blocks/purplesandstonetop",
+    "up": "purple_sands:blocks/purplesandstonetop",
+    "north": "purple_sands:blocks/purplesandstoneside",
+    "east": "purple_sands:blocks/purplesandstoneside",
+    "south": "purple_sands:blocks/purplesandstoneside",
+    "west": "purple_sands:blocks/purplesandstoneside",
+    "particle": "purple_sands:blocks/purplesandstonetop"
+  }
+}

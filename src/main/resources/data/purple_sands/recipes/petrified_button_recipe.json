@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "purple_sands:petrified_planks"
+    }
+  ],
+  "result": {
+    "item": "purple_sands:petrified_button",
+    "count": 1
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "block/button_inventory",
+  "textures": {
+    "texture": "purple_sands:blocks/petrified_planks"
+  }
+}

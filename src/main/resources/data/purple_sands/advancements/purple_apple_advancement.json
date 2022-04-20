@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "purple_sands:purple_apple"
+    },
+    "title": {
+      "translate": "advancements.purple_apple_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.purple_apple_advancement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "purple_apple_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "purple_sands:purple_foods_advancement"
+}

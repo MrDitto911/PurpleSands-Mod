@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "purple_sands:blocks/petrified_log_top",
+    "up": "purple_sands:blocks/petrified_log_top",
+    "north": "purple_sands:blocks/petrified_log_side",
+    "east": "purple_sands:blocks/petrified_log_side",
+    "south": "purple_sands:blocks/petrified_log_side",
+    "west": "purple_sands:blocks/petrified_log_side",
+    "particle": "purple_sands:blocks/petrified_log_top"
+  }
+}

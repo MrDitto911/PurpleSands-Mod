@@ -1,0 +1,15 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "goldframeblock",
+        "1": "purplesandstoneside",
+        "2": "purplesandstonetop",
+        "3": "petrified_log_side",
+        "4": "petrified_log_top",
+        "5": "petrified_planks"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "purple_sands:custom/sandrefiner",
+  "textures": {
+    "all": "purple_sands:blocks/gemblock",
+    "particle": "purple_sands:blocks/gemblock",
+    "0": "purple_sands:blocks/purplesandstonetop",
+    "1": "purple_sands:blocks/purplesandstoneside",
+    "2": "purple_sands:blocks/gemblock"
+  }
+}

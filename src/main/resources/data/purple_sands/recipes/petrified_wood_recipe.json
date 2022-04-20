@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "purple_sands:petrified_log"
+    },
+    "1": {
+      "item": "purple_sands:petrified_log"
+    },
+    "2": {
+      "item": "purple_sands:petrified_log"
+    },
+    "3": {
+      "item": "purple_sands:petrified_log"
+    }
+  },
+  "result": {
+    "item": "purple_sands:petrified_wood",
+    "count": 3
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "purple_sands:petrified_planks"
+    },
+    "3": {
+      "item": "purple_sands:petrified_planks"
+    },
+    "4": {
+      "item": "purple_sands:petrified_planks"
+    },
+    "6": {
+      "item": "purple_sands:petrified_planks"
+    },
+    "7": {
+      "item": "purple_sands:petrified_planks"
+    },
+    "8": {
+      "item": "purple_sands:petrified_planks"
+    }
+  },
+  "result": {
+    "item": "purple_sands:petrified_stairs",
+    "count": 4
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "gemblock",
+        "2": "outerframetexture",
+        "3": "innerframetexture"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "purple_sands:blocks/petrified_planks",
+    "top": "purple_sands:blocks/petrified_planks",
+    "side": "purple_sands:blocks/petrified_planks"
+  }
+}
