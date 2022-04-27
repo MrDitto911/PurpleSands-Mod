@@ -420,10 +420,13 @@
         "type": "button",
         "data": {
           "text": "Construct",
+          "onClick": {
+            "name": "OrbCrafterCraftBtnClick"
+          },
           "width": 72,
           "height": 20,
           "name": "Construct",
-          "x": 303,
+          "x": 312,
           "y": 72
         }
       }

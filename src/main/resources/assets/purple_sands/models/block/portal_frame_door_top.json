@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_top",
+  "textures": {
+    "bottom": "purple_sands:blocks/portalframe",
+    "top": "purple_sands:blocks/portalframedoortop"
+  }
+}

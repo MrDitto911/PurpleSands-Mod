@@ -12,6 +12,8 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.purplesands.world.inventory.OrbCrafterGuiMenu;
+import net.mcreator.purplesands.network.OrbCrafterGuiButtonMessage;
+import net.mcreator.purplesands.PurpleSandsMod;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -79,7 +81,11 @@ public class OrbCrafterGuiScreen extends AbstractContainerScreen<OrbCrafterGuiMe
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 178, this.topPos + 69, 72, 20, new TextComponent("Construct"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 187, this.topPos + 69, 72, 20, new TextComponent("Construct"), e -> {
+			if (true) {
+				PurpleSandsMod.PACKET_HANDLER.sendToServer(new OrbCrafterGuiButtonMessage(0, x, y, z));
+				OrbCrafterGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		}));
 	}
 }

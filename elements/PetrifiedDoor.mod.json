@@ -3,7 +3,7 @@
   "_type": "block",
   "definition": {
     "texture": "petrified_planks",
-    "textureTop": "petrified_planks",
+    "textureTop": "petrifieddoortop",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",

@@ -3,7 +3,7 @@
     "default": {
       "map": {
         "0": "purplesandstonetop",
-        "1": "purplesandstoneside",
+        "1": "purplesandstone",
         "2": "gemblock"
       },
       "name": "default"

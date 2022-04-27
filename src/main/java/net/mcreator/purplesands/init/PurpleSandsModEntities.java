@@ -14,10 +14,12 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.purplesands.entity.SandmanEntity;
 import net.mcreator.purplesands.entity.SandfleaEntity;
 import net.mcreator.purplesands.entity.MysteryOrbEntity;
 import net.mcreator.purplesands.entity.GemStaffEntity;
 import net.mcreator.purplesands.entity.GemGolemEntity;
+import net.mcreator.purplesands.entity.FlyingSkullEntity;
 import net.mcreator.purplesands.entity.DeathadderEntity;
 import net.mcreator.purplesands.entity.AwakenedOrbEntity;
 
@@ -45,6 +47,12 @@ public class PurpleSandsModEntities {
 	public static final EntityType<AwakenedOrbEntity> AWAKENED_ORB = register("entitybulletawakened_orb",
 			EntityType.Builder.<AwakenedOrbEntity>of(AwakenedOrbEntity::new, MobCategory.MISC).setCustomClientFactory(AwakenedOrbEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final EntityType<SandmanEntity> SANDMAN = register("sandman",
+			EntityType.Builder.<SandmanEntity>of(SandmanEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(SandmanEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final EntityType<FlyingSkullEntity> FLYING_SKULL = register("flying_skull",
+			EntityType.Builder.<FlyingSkullEntity>of(FlyingSkullEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FlyingSkullEntity::new).fireImmune().sized(0.6f, 1.8f));
 
 	private static <T extends Entity> EntityType<T> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		EntityType<T> entityType = (EntityType<T>) entityTypeBuilder.build(registryname).setRegistryName(registryname);
@@ -63,6 +71,8 @@ public class PurpleSandsModEntities {
 			SandfleaEntity.init();
 			DeathadderEntity.init();
 			GemGolemEntity.init();
+			SandmanEntity.init();
+			FlyingSkullEntity.init();
 		});
 	}
 
@@ -71,5 +81,7 @@ public class PurpleSandsModEntities {
 		event.put(SANDFLEA, SandfleaEntity.createAttributes().build());
 		event.put(DEATHADDER, DeathadderEntity.createAttributes().build());
 		event.put(GEM_GOLEM, GemGolemEntity.createAttributes().build());
+		event.put(SANDMAN, SandmanEntity.createAttributes().build());
+		event.put(FLYING_SKULL, FlyingSkullEntity.createAttributes().build());
 	}
 }

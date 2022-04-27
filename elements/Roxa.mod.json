@@ -82,9 +82,10 @@
         "value": "CUSTOM:PurpleSand"
       }
     ],
-    "frequencyOnChunks": 5,
+    "frequencyOnChunks": 7,
     "spawnWorldTypes": [
-      "Surface"
+      "Surface",
+      "CUSTOM:InfiniteDesert"
     ],
     "restrictionBiomes": [
       {

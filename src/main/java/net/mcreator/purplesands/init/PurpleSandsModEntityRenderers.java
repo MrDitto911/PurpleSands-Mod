@@ -11,8 +11,10 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
+import net.mcreator.purplesands.client.renderer.SandmanRenderer;
 import net.mcreator.purplesands.client.renderer.SandfleaRenderer;
 import net.mcreator.purplesands.client.renderer.GemGolemRenderer;
+import net.mcreator.purplesands.client.renderer.FlyingSkullRenderer;
 import net.mcreator.purplesands.client.renderer.DeathadderRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -25,5 +27,7 @@ public class PurpleSandsModEntityRenderers {
 		event.registerEntityRenderer(PurpleSandsModEntities.GEM_STAFF, ThrownItemRenderer::new);
 		event.registerEntityRenderer(PurpleSandsModEntities.MYSTERY_ORB, ThrownItemRenderer::new);
 		event.registerEntityRenderer(PurpleSandsModEntities.AWAKENED_ORB, ThrownItemRenderer::new);
+		event.registerEntityRenderer(PurpleSandsModEntities.SANDMAN, SandmanRenderer::new);
+		event.registerEntityRenderer(PurpleSandsModEntities.FLYING_SKULL, FlyingSkullRenderer::new);
 	}
 }

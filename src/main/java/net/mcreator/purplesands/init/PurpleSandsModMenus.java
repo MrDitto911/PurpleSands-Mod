@@ -12,6 +12,7 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 
+import net.mcreator.purplesands.world.inventory.SandmanGUIMenu;
 import net.mcreator.purplesands.world.inventory.SandRefinerGUIMenu;
 import net.mcreator.purplesands.world.inventory.OrbCrafterGuiMenu;
 
@@ -25,6 +26,8 @@ public class PurpleSandsModMenus {
 			(id, inv, extraData) -> new SandRefinerGUIMenu(id, inv, extraData));
 	public static final MenuType<OrbCrafterGuiMenu> ORB_CRAFTER_GUI = register("orb_crafter_gui",
 			(id, inv, extraData) -> new OrbCrafterGuiMenu(id, inv, extraData));
+	public static final MenuType<SandmanGUIMenu> SANDMAN_GUI = register("sandman_gui",
+			(id, inv, extraData) -> new SandmanGUIMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "purple_sands:petrified_planks"
+    },
+    "1": {
+      "item": "purple_sands:petrified_log"
+    },
+    "2": {
+      "item": "purple_sands:petrified_planks"
+    },
+    "3": {
+      "item": "minecraft:gold_ingot"
+    },
+    "4": {
+      "item": "purple_sands:petrified_log"
+    },
+    "5": {
+      "item": "minecraft:gold_ingot"
+    },
+    "6": {
+      "item": "purple_sands:purple_sandstone"
+    },
+    "7": {
+      "item": "purple_sands:purple_sandstone"
+    },
+    "8": {
+      "item": "purple_sands:purple_sandstone"
+    }
+  },
+  "result": {
+    "item": "purple_sands:orb_crafter",
+    "count": 1
+  }
+}

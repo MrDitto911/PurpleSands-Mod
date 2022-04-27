@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.gui.screens.MenuScreens;
 
+import net.mcreator.purplesands.client.gui.SandmanGUIScreen;
 import net.mcreator.purplesands.client.gui.SandRefinerGUIScreen;
 import net.mcreator.purplesands.client.gui.OrbCrafterGuiScreen;
 
@@ -21,6 +22,7 @@ public class PurpleSandsModScreens {
 		event.enqueueWork(() -> {
 			MenuScreens.register(PurpleSandsModMenus.SAND_REFINER_GUI, SandRefinerGUIScreen::new);
 			MenuScreens.register(PurpleSandsModMenus.ORB_CRAFTER_GUI, OrbCrafterGuiScreen::new);
+			MenuScreens.register(PurpleSandsModMenus.SANDMAN_GUI, SandmanGUIScreen::new);
 		});
 	}
 }

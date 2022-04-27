@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "purple_sands:block/infinite_desert_portal_ew"
+    },
+    "axis=x": {
+      "model": "purple_sands:block/infinite_desert_portal_ns"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "purple_sands:portal_frame"
+    },
+    "title": {
+      "translate": "advancements.portal_opened.title"
+    },
+    "description": {
+      "translate": "advancements.portal_opened.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "portal_opened": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "purple_sands:purple_sands_advancements"
+}

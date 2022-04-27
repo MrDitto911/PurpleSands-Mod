@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "purple_sands:blocks/purplesandstone",
+    "particle": "purple_sands:blocks/purplesandstone"
+  }
+}

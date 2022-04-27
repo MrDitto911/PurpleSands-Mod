@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "purple_sands:blocks/purplesandstonetop",
+    "up": "purple_sands:blocks/purplesandstonetop",
+    "north": "purple_sands:blocks/portalframe",
+    "east": "purple_sands:blocks/portalframe",
+    "south": "purple_sands:blocks/portalframe",
+    "west": "purple_sands:blocks/portalframe",
+    "particle": "purple_sands:blocks/purplesandstonetop"
+  }
+}

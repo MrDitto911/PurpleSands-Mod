@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "purple_sands:blocks/purplesandstonetop",
+    "top": "purple_sands:blocks/purplesandstonetop",
+    "side": "purple_sands:blocks/purplesandstone"
+  }
+}

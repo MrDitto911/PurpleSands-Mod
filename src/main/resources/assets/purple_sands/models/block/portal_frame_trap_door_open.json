@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_orientable_trapdoor_open",
+  "textures": {
+    "texture": "purple_sands:blocks/portalframedoortop",
+    "particle": "purple_sands:blocks/portalframedoortop"
+  }
+}

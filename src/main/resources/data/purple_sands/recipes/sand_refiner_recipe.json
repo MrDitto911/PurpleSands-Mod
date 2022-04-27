@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "purple_sands:purple_sandstone"
+    },
+    "1": {
+      "item": "purple_sands:purple_pile"
+    },
+    "2": {
+      "item": "purple_sands:purple_sandstone"
+    },
+    "4": {
+      "item": "minecraft:bowl"
+    },
+    "6": {
+      "item": "purple_sands:purple_sandstone"
+    },
+    "7": {
+      "item": "purple_sands:purple_sandstone"
+    },
+    "8": {
+      "item": "purple_sands:purple_sandstone"
+    }
+  },
+  "result": {
+    "item": "purple_sands:sand_refiner",
+    "count": 1
+  }
+}

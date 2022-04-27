@@ -14,6 +14,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ThrownPotion;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
@@ -68,7 +69,7 @@ public class DeathadderEntity extends Monster {
 		this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
 		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 0.8));
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
-		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, DeathadderEntity.class, false, false));
+		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Player.class, false, false));
 	}
 
 	@Override

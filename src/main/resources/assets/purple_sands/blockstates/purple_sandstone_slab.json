@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "purple_sands:block/purple_sandstone_slab"
+    },
+    "type=top": {
+      "model": "purple_sands:block/purple_sandstone_slab_top"
+    },
+    "type=double": {
+      "model": "purple_sands:block/purple_sandstone_slab_full"
+    }
+  }
+}

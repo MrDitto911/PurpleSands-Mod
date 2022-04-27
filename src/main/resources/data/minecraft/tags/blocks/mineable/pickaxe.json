@@ -4,6 +4,11 @@
     "purple_sands:purple_sandstone",
     "purple_sands:purple_ore",
     "purple_sands:gem_block",
-    "purple_sands:sand_refiner"
+    "purple_sands:sand_refiner",
+    "purple_sands:purple_sandstone_slab",
+    "purple_sands:purple_sandstone_wall",
+    "purple_sands:purple_sandstone_stairs",
+    "purple_sands:purple_sandstone_pressure_plate",
+    "purple_sands:portal_frame_door"
   ]
 }

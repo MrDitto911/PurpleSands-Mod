@@ -14,6 +14,7 @@ import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.Level;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.Registry;
 
 import net.mcreator.purplesands.init.PurpleSandsModBlocks;
 
@@ -27,7 +28,7 @@ public class RoxaFeature extends DefaultFlowerFeature {
 
 							.build())
 			.decorated(FeatureDecorator.HEIGHTMAP.configured(new HeightmapConfiguration(Heightmap.Types.MOTION_BLOCKING))).squared().rarity(32)
-			.count(5);
+			.count(7);
 	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("purple_sands:purple_desert"));
 
 	public RoxaFeature() {
@@ -39,6 +40,8 @@ public class RoxaFeature extends DefaultFlowerFeature {
 		ResourceKey<Level> dimensionType = world.getLevel().dimension();
 		boolean dimensionCriteria = false;
 		if (dimensionType == Level.OVERWORLD)
+			dimensionCriteria = true;
+		if (dimensionType == ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("purple_sands:infinite_desert")))
 			dimensionCriteria = true;
 		if (!dimensionCriteria)
 			return false;

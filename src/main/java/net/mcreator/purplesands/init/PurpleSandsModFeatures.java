@@ -19,6 +19,8 @@ import net.minecraft.core.Registry;
 import net.mcreator.purplesands.world.features.plants.RoxaFeature;
 import net.mcreator.purplesands.world.features.ores.PurpleOreFeature;
 import net.mcreator.purplesands.world.features.ores.PetrifiedLogFeature;
+import net.mcreator.purplesands.world.features.SandstoneWellTreasureFeature;
+import net.mcreator.purplesands.world.features.SandstoneWellTrappedFeature;
 
 import java.util.Set;
 import java.util.Map;
@@ -34,6 +36,10 @@ public class PurpleSandsModFeatures {
 				PurpleOreFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(RoxaFeature.FEATURE,
 				new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, RoxaFeature.GENERATE_BIOMES, RoxaFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(SandstoneWellTreasureFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				SandstoneWellTreasureFeature.GENERATE_BIOMES, SandstoneWellTreasureFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(SandstoneWellTrappedFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				SandstoneWellTrappedFeature.GENERATE_BIOMES, SandstoneWellTrappedFeature.CONFIGURED_FEATURE));
 	}
 
 	@SubscribeEvent

@@ -27,6 +27,7 @@ import net.mcreator.purplesands.item.PurpleArmorItem;
 import net.mcreator.purplesands.item.PurpleAppleItem;
 import net.mcreator.purplesands.item.PrideBreadItem;
 import net.mcreator.purplesands.item.MysteryOrbItem;
+import net.mcreator.purplesands.item.InfiniteDesertItem;
 import net.mcreator.purplesands.item.GemStaffItem;
 import net.mcreator.purplesands.item.CreeperCookieItem;
 import net.mcreator.purplesands.item.CookedSandfleaItem;
@@ -82,11 +83,32 @@ public class PurpleSandsModItems {
 	public static final Item PURPLE_ARMOR_LEGGINGS = register(new PurpleArmorItem.Leggings());
 	public static final Item PURPLE_ARMOR_BOOTS = register(new PurpleArmorItem.Boots());
 	public static final Item PETRIFIED_LEAVES = register(PurpleSandsModBlocks.PETRIFIED_LEAVES, CreativeModeTab.TAB_DECORATIONS);
-	public static final Item PETRIFIED_FENCE = register(PurpleSandsModBlocks.PETRIFIED_FENCE, CreativeModeTab.TAB_DECORATIONS);
-	public static final Item PETRIFIED_FENCE_GATE = register(PurpleSandsModBlocks.PETRIFIED_FENCE_GATE, CreativeModeTab.TAB_REDSTONE);
-	public static final Item PETRIFIED_PRESSURE_PLATE = register(PurpleSandsModBlocks.PETRIFIED_PRESSURE_PLATE, CreativeModeTab.TAB_REDSTONE);
+	public static final Item PETRIFIED_FENCE = register(PurpleSandsModBlocks.PETRIFIED_FENCE, PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
+	public static final Item PETRIFIED_FENCE_GATE = register(PurpleSandsModBlocks.PETRIFIED_FENCE_GATE, PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
+	public static final Item PETRIFIED_PRESSURE_PLATE = register(PurpleSandsModBlocks.PETRIFIED_PRESSURE_PLATE,
+			PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
 	public static final Item AWAKENED_ORB = register(new AwakenedOrbItem());
 	public static final Item ORB_CRAFTER = register(PurpleSandsModBlocks.ORB_CRAFTER, PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
+	public static final Item PORTAL_FRAME = register(PurpleSandsModBlocks.PORTAL_FRAME, PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
+	public static final Item INFINITE_DESERT = register(new InfiniteDesertItem());
+	public static final Item PURPLE_SANDSTONE_SLAB = register(PurpleSandsModBlocks.PURPLE_SANDSTONE_SLAB, PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
+	public static final Item PURPLE_SANDSTONE_WALL = register(PurpleSandsModBlocks.PURPLE_SANDSTONE_WALL, PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
+	public static final Item PURPLE_SANDSTONE_STAIRS = register(PurpleSandsModBlocks.PURPLE_SANDSTONE_STAIRS,
+			PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
+	public static final Item PURPLE_SANDSTONE_BUTTON = register(PurpleSandsModBlocks.PURPLE_SANDSTONE_BUTTON,
+			PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
+	public static final Item PURPLE_SANDSTONE_PRESSURE_PLATE = register(PurpleSandsModBlocks.PURPLE_SANDSTONE_PRESSURE_PLATE,
+			PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
+	public static final Item SANDMAN = register(
+			new SpawnEggItem(PurpleSandsModEntities.SANDMAN, -13034432, -9347978, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+					.setRegistryName("sandman_spawn_egg"));
+	public static final Item FLYING_SKULL = register(
+			new SpawnEggItem(PurpleSandsModEntities.FLYING_SKULL, -16777216, -6726942, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+					.setRegistryName("flying_skull_spawn_egg"));
+	public static final Item GLOW_GLASS = register(PurpleSandsModBlocks.GLOW_GLASS, PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
+	public static final Item PORTAL_FRAME_DOOR = register(PurpleSandsModBlocks.PORTAL_FRAME_DOOR, PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
+	public static final Item PORTAL_FRAME_TRAP_DOOR = register(PurpleSandsModBlocks.PORTAL_FRAME_TRAP_DOOR, PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
+	public static final Item PETRIFIED_TRAP_DOOR = register(PurpleSandsModBlocks.PETRIFIED_TRAP_DOOR, PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
