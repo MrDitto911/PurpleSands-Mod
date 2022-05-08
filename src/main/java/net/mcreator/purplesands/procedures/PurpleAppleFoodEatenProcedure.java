@@ -31,7 +31,7 @@ public class PurpleAppleFoodEatenProcedure {
 			_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 1200, 1));
 		if (Math.random() <= 0.1) {
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = new SandfleaEntity(PurpleSandsModEntities.SANDFLEA, _level);
+				Entity entityToSpawn = new SandfleaEntity(PurpleSandsModEntities.SANDFLEA.get(), _level);
 				entityToSpawn.moveTo(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 				if (entityToSpawn instanceof Mob _mobToSpawn)
 					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null,

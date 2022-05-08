@@ -27,7 +27,6 @@ public class PurpleSandstoneWallBlock extends WallBlock {
 	public PurpleSandstoneWallBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f).requiresCorrectToolForDrops().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("purple_sandstone_wall");
 	}
 
 	@Override
@@ -37,7 +36,7 @@ public class PurpleSandstoneWallBlock extends WallBlock {
 
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem()instanceof TieredItem tieredItem)
+		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 0;
 		return false;
 	}
@@ -52,7 +51,7 @@ public class PurpleSandstoneWallBlock extends WallBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PurpleSandsModBlocks.PURPLE_SANDSTONE_WALL, renderType -> renderType == RenderType.cutoutMipped());
+		ItemBlockRenderTypes.setRenderLayer(PurpleSandsModBlocks.PURPLE_SANDSTONE_WALL.get(), renderType -> renderType == RenderType.cutoutMipped());
 	}
 
 }

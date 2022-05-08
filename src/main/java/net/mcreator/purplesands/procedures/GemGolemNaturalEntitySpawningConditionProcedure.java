@@ -23,7 +23,6 @@ import javax.annotation.Nullable;
 public class GemGolemNaturalEntitySpawningConditionProcedure {
 	@SubscribeEvent
 	public static void onBlockPlace(BlockEvent.EntityPlaceEvent event) {
-		Entity entity = event.getEntity();
 		execute(event, event.getWorld(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ());
 	}
 
@@ -32,36 +31,36 @@ public class GemGolemNaturalEntitySpawningConditionProcedure {
 	}
 
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z) {
-		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.CARVED_PUMPKIN
-				&& (world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == PurpleSandsModBlocks.GEM_BLOCK
-				&& (world.getBlockState(new BlockPos((int) x, (int) (y - 2), (int) z))).getBlock() == PurpleSandsModBlocks.PURPLE_SANDSTONE
-				&& (world.getBlockState(new BlockPos((int) (x - 1), (int) (y - 1), (int) z))).getBlock() == PurpleSandsModBlocks.PURPLE_SANDSTONE
-				&& (world.getBlockState(new BlockPos((int) (x + 1), (int) (y - 1), (int) z))).getBlock() == PurpleSandsModBlocks.PURPLE_SANDSTONE) {
-			world.setBlock(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.defaultBlockState(), 3);
-			world.setBlock(new BlockPos((int) x, (int) (y - 1), (int) z), Blocks.AIR.defaultBlockState(), 3);
-			world.setBlock(new BlockPos((int) x, (int) (y - 2), (int) z), Blocks.AIR.defaultBlockState(), 3);
-			world.setBlock(new BlockPos((int) (x - 1), (int) (y - 1), (int) z), Blocks.AIR.defaultBlockState(), 3);
-			world.setBlock(new BlockPos((int) (x + 1), (int) (y - 1), (int) z), Blocks.AIR.defaultBlockState(), 3);
+		if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == Blocks.CARVED_PUMPKIN
+				&& (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == PurpleSandsModBlocks.GEM_BLOCK.get()
+				&& (world.getBlockState(new BlockPos(x, y - 2, z))).getBlock() == PurpleSandsModBlocks.PURPLE_SANDSTONE.get()
+				&& (world.getBlockState(new BlockPos(x - 1, y - 1, z))).getBlock() == PurpleSandsModBlocks.PURPLE_SANDSTONE.get()
+				&& (world.getBlockState(new BlockPos(x + 1, y - 1, z))).getBlock() == PurpleSandsModBlocks.PURPLE_SANDSTONE.get()) {
+			world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
+			world.setBlock(new BlockPos(x, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
+			world.setBlock(new BlockPos(x, y - 2, z), Blocks.AIR.defaultBlockState(), 3);
+			world.setBlock(new BlockPos(x - 1, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
+			world.setBlock(new BlockPos(x + 1, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = new GemGolemEntity(PurpleSandsModEntities.GEM_GOLEM, _level);
+				Entity entityToSpawn = new GemGolemEntity(PurpleSandsModEntities.GEM_GOLEM.get(), _level);
 				entityToSpawn.moveTo(x, (y - 2), z, world.getRandom().nextFloat() * 360F, 0);
 				if (entityToSpawn instanceof Mob _mobToSpawn)
 					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null,
 							null);
 				world.addFreshEntity(entityToSpawn);
 			}
-		} else if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.CARVED_PUMPKIN
-				&& (world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == PurpleSandsModBlocks.GEM_BLOCK
-				&& (world.getBlockState(new BlockPos((int) x, (int) (y - 2), (int) z))).getBlock() == PurpleSandsModBlocks.PURPLE_SANDSTONE
-				&& (world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) (z - 1)))).getBlock() == PurpleSandsModBlocks.PURPLE_SANDSTONE
-				&& (world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) (z + 1)))).getBlock() == PurpleSandsModBlocks.PURPLE_SANDSTONE) {
-			world.setBlock(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.defaultBlockState(), 3);
-			world.setBlock(new BlockPos((int) x, (int) (y - 1), (int) z), Blocks.AIR.defaultBlockState(), 3);
-			world.setBlock(new BlockPos((int) x, (int) (y - 2), (int) z), Blocks.AIR.defaultBlockState(), 3);
-			world.setBlock(new BlockPos((int) x, (int) (y - 1), (int) (z - 1)), Blocks.AIR.defaultBlockState(), 3);
-			world.setBlock(new BlockPos((int) x, (int) (y - 1), (int) (z + 1)), Blocks.AIR.defaultBlockState(), 3);
+		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == Blocks.CARVED_PUMPKIN
+				&& (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == PurpleSandsModBlocks.GEM_BLOCK.get()
+				&& (world.getBlockState(new BlockPos(x, y - 2, z))).getBlock() == PurpleSandsModBlocks.PURPLE_SANDSTONE.get()
+				&& (world.getBlockState(new BlockPos(x, y - 1, z - 1))).getBlock() == PurpleSandsModBlocks.PURPLE_SANDSTONE.get()
+				&& (world.getBlockState(new BlockPos(x, y - 1, z + 1))).getBlock() == PurpleSandsModBlocks.PURPLE_SANDSTONE.get()) {
+			world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
+			world.setBlock(new BlockPos(x, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
+			world.setBlock(new BlockPos(x, y - 2, z), Blocks.AIR.defaultBlockState(), 3);
+			world.setBlock(new BlockPos(x, y - 1, z - 1), Blocks.AIR.defaultBlockState(), 3);
+			world.setBlock(new BlockPos(x, y - 1, z + 1), Blocks.AIR.defaultBlockState(), 3);
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = new GemGolemEntity(PurpleSandsModEntities.GEM_GOLEM, _level);
+				Entity entityToSpawn = new GemGolemEntity(PurpleSandsModEntities.GEM_GOLEM.get(), _level);
 				entityToSpawn.moveTo(x, (y - 2), z, world.getRandom().nextFloat() * 360F, 0);
 				if (entityToSpawn instanceof Mob _mobToSpawn)
 					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null,

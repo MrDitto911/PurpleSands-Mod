@@ -25,7 +25,6 @@ public class PortalFrameTrapDoorBlock extends TrapDoorBlock {
 	public PortalFrameTrapDoorBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f).noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("portal_frame_trap_door");
 	}
 
 	@Override
@@ -43,7 +42,7 @@ public class PortalFrameTrapDoorBlock extends TrapDoorBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PurpleSandsModBlocks.PORTAL_FRAME_TRAP_DOOR, renderType -> renderType == RenderType.cutoutMipped());
+		ItemBlockRenderTypes.setRenderLayer(PurpleSandsModBlocks.PORTAL_FRAME_TRAP_DOOR.get(), renderType -> renderType == RenderType.cutoutMipped());
 	}
 
 }

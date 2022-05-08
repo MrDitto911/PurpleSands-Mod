@@ -17,7 +17,6 @@ import java.util.Collections;
 public class PurpleSandBlock extends FallingBlock {
 	public PurpleSandBlock() {
 		super(BlockBehaviour.Properties.of(Material.SAND).sound(SoundType.SAND).strength(1f));
-		setRegistryName("purple_sand");
 	}
 
 	@Override

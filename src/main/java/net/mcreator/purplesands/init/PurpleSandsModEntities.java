@@ -4,11 +4,13 @@
  */
 package net.mcreator.purplesands.init;
 
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
-import net.minecraftforge.event.RegistryEvent;
 
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
@@ -17,52 +19,59 @@ import net.minecraft.world.entity.Entity;
 import net.mcreator.purplesands.entity.SandmanEntity;
 import net.mcreator.purplesands.entity.SandfleaEntity;
 import net.mcreator.purplesands.entity.MysteryOrbEntity;
+import net.mcreator.purplesands.entity.LittleBeetleEntity;
 import net.mcreator.purplesands.entity.GemStaffEntity;
 import net.mcreator.purplesands.entity.GemGolemEntity;
 import net.mcreator.purplesands.entity.FlyingSkullEntity;
+import net.mcreator.purplesands.entity.DesertBeetleEntity;
 import net.mcreator.purplesands.entity.DeathadderEntity;
 import net.mcreator.purplesands.entity.AwakenedOrbEntity;
-
-import java.util.List;
-import java.util.ArrayList;
+import net.mcreator.purplesands.PurpleSandsMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class PurpleSandsModEntities {
-	private static final List<EntityType<?>> REGISTRY = new ArrayList<>();
-	public static final EntityType<SandfleaEntity> SANDFLEA = register("sandflea",
+	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITIES, PurpleSandsMod.MODID);
+	public static final RegistryObject<EntityType<SandfleaEntity>> SANDFLEA = register("sandflea",
 			EntityType.Builder.<SandfleaEntity>of(SandfleaEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(3).setCustomClientFactory(SandfleaEntity::new).sized(0.6f, 1.8f));
-	public static final EntityType<DeathadderEntity> DEATHADDER = register("deathadder",
+					.setUpdateInterval(3).setCustomClientFactory(SandfleaEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<DeathadderEntity>> DEATHADDER = register("deathadder",
 			EntityType.Builder.<DeathadderEntity>of(DeathadderEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DeathadderEntity::new).sized(0.6f, 1.8f));
-	public static final EntityType<GemGolemEntity> GEM_GOLEM = register("gem_golem",
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DeathadderEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<GemGolemEntity>> GEM_GOLEM = register("gem_golem",
 			EntityType.Builder.<GemGolemEntity>of(GemGolemEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(GemGolemEntity::new).fireImmune().sized(0.6f, 1.8f));
-	public static final EntityType<GemStaffEntity> GEM_STAFF = register("entitybulletgem_staff",
+	public static final RegistryObject<EntityType<GemStaffEntity>> GEM_STAFF = register("projectile_gem_staff",
 			EntityType.Builder.<GemStaffEntity>of(GemStaffEntity::new, MobCategory.MISC).setCustomClientFactory(GemStaffEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final EntityType<MysteryOrbEntity> MYSTERY_ORB = register("entitybulletmystery_orb",
+	public static final RegistryObject<EntityType<MysteryOrbEntity>> MYSTERY_ORB = register("projectile_mystery_orb",
 			EntityType.Builder.<MysteryOrbEntity>of(MysteryOrbEntity::new, MobCategory.MISC).setCustomClientFactory(MysteryOrbEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final EntityType<AwakenedOrbEntity> AWAKENED_ORB = register("entitybulletawakened_orb",
+	public static final RegistryObject<EntityType<AwakenedOrbEntity>> AWAKENED_ORB = register("projectile_awakened_orb",
 			EntityType.Builder.<AwakenedOrbEntity>of(AwakenedOrbEntity::new, MobCategory.MISC).setCustomClientFactory(AwakenedOrbEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final EntityType<SandmanEntity> SANDMAN = register("sandman",
+	public static final RegistryObject<EntityType<SandmanEntity>> SANDMAN = register("sandman",
 			EntityType.Builder.<SandmanEntity>of(SandmanEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(SandmanEntity::new).fireImmune().sized(0.6f, 1.8f));
-	public static final EntityType<FlyingSkullEntity> FLYING_SKULL = register("flying_skull",
+	public static final RegistryObject<EntityType<FlyingSkullEntity>> FLYING_SKULL = register("flying_skull",
 			EntityType.Builder.<FlyingSkullEntity>of(FlyingSkullEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FlyingSkullEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<DesertBeetleEntity>> DESERT_BEETLE = register("desert_beetle",
+			EntityType.Builder.<DesertBeetleEntity>of(DesertBeetleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DesertBeetleEntity::new)
 
-	private static <T extends Entity> EntityType<T> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
-		EntityType<T> entityType = (EntityType<T>) entityTypeBuilder.build(registryname).setRegistryName(registryname);
-		REGISTRY.add(entityType);
-		return entityType;
-	}
+					.sized(1f, 1.8f));
+	public static final RegistryObject<EntityType<LittleBeetleEntity>> LITTLE_BEETLE = register("little_beetle",
+			EntityType.Builder.<LittleBeetleEntity>of(LittleBeetleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LittleBeetleEntity::new)
 
-	@SubscribeEvent
-	public static void registerEntities(RegistryEvent.Register<EntityType<?>> event) {
-		event.getRegistry().registerAll(REGISTRY.toArray(new EntityType[0]));
+					.sized(0.4f, 0.3f));
+
+	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
+		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
 	}
 
 	@SubscribeEvent
@@ -73,15 +82,19 @@ public class PurpleSandsModEntities {
 			GemGolemEntity.init();
 			SandmanEntity.init();
 			FlyingSkullEntity.init();
+			DesertBeetleEntity.init();
+			LittleBeetleEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
-		event.put(SANDFLEA, SandfleaEntity.createAttributes().build());
-		event.put(DEATHADDER, DeathadderEntity.createAttributes().build());
-		event.put(GEM_GOLEM, GemGolemEntity.createAttributes().build());
-		event.put(SANDMAN, SandmanEntity.createAttributes().build());
-		event.put(FLYING_SKULL, FlyingSkullEntity.createAttributes().build());
+		event.put(SANDFLEA.get(), SandfleaEntity.createAttributes().build());
+		event.put(DEATHADDER.get(), DeathadderEntity.createAttributes().build());
+		event.put(GEM_GOLEM.get(), GemGolemEntity.createAttributes().build());
+		event.put(SANDMAN.get(), SandmanEntity.createAttributes().build());
+		event.put(FLYING_SKULL.get(), FlyingSkullEntity.createAttributes().build());
+		event.put(DESERT_BEETLE.get(), DesertBeetleEntity.createAttributes().build());
+		event.put(LITTLE_BEETLE.get(), LittleBeetleEntity.createAttributes().build());
 	}
 }

@@ -11,10 +11,13 @@ import net.minecraft.client.Minecraft;
 
 import net.mcreator.purplesands.world.inventory.SandmanGUIMenu;
 
+import java.util.HashMap;
+
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
 public class SandmanGUIScreen extends AbstractContainerScreen<SandmanGUIMenu> {
+	private final static HashMap<String, Object> guistate = SandmanGUIMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;

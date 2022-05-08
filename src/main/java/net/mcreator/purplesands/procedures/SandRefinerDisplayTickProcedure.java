@@ -19,11 +19,11 @@ public class SandRefinerDisplayTickProcedure {
 					return blockEntity.getTileData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "fuel") > 0) {
+		}.getValue(world, new BlockPos(x, y, z), "fuel") > 0) {
 			world.addParticle(ParticleTypes.FLAME, (x + 0.5), y, (z + 0.5), 0, 0.01, 0);
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+					_level.playSound(null, new BlockPos(x, y, z),
 							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.furnace.fire_crackle")), SoundSource.NEUTRAL, 1, 1);
 				} else {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.furnace.fire_crackle")),

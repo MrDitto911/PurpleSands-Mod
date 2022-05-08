@@ -26,13 +26,13 @@ public class MysteriousLiquidRecipeBrewingRecipe implements IBrewingRecipe {
 
 	@Override
 	public boolean isIngredient(ItemStack ingredient) {
-		return ingredient.getItem() == PurpleSandsModItems.BOWLOF_SAND;
+		return ingredient.getItem() == PurpleSandsModItems.BOWLOF_SAND.get();
 	}
 
 	@Override
 	public ItemStack getOutput(ItemStack input, ItemStack ingredient) {
 		if (isInput(input) && isIngredient(ingredient)) {
-			return new ItemStack(PurpleSandsModItems.INFINITE_DESERT);
+			return new ItemStack(PurpleSandsModItems.INFINITE_DESERT.get());
 		}
 		return ItemStack.EMPTY;
 	}

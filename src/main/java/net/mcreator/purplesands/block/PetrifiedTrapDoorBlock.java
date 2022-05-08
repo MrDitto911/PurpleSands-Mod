@@ -25,7 +25,6 @@ public class PetrifiedTrapDoorBlock extends TrapDoorBlock {
 	public PetrifiedTrapDoorBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f).noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("petrified_trap_door");
 	}
 
 	@Override
@@ -43,7 +42,7 @@ public class PetrifiedTrapDoorBlock extends TrapDoorBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PurpleSandsModBlocks.PETRIFIED_TRAP_DOOR, renderType -> renderType == RenderType.cutoutMipped());
+		ItemBlockRenderTypes.setRenderLayer(PurpleSandsModBlocks.PETRIFIED_TRAP_DOOR.get(), renderType -> renderType == RenderType.cutoutMipped());
 	}
 
 }

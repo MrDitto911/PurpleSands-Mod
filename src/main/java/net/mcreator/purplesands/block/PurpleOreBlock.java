@@ -1,6 +1,8 @@
 
 package net.mcreator.purplesands.block;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
@@ -22,7 +24,6 @@ public class PurpleOreBlock extends Block {
 	public PurpleOreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3f, 5f).lightLevel(s -> 1).requiresCorrectToolForDrops()
 				.hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
-		setRegistryName("purple_ore");
 	}
 
 	@Override
@@ -32,7 +33,7 @@ public class PurpleOreBlock extends Block {
 
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem()instanceof TieredItem tieredItem)
+		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 2;
 		return false;
 	}
@@ -42,6 +43,6 @@ public class PurpleOreBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(PurpleSandsModItems.PURPLE_PILE));
+		return Collections.singletonList(new ItemStack(PurpleSandsModItems.PURPLE_PILE.get()));
 	}
 }

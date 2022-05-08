@@ -19,7 +19,6 @@ import java.util.Collections;
 public class PurpleSandstoneBlock extends Block {
 	public PurpleSandstoneBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(2f).requiresCorrectToolForDrops());
-		setRegistryName("purple_sandstone");
 	}
 
 	@Override
@@ -29,7 +28,7 @@ public class PurpleSandstoneBlock extends Block {
 
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem()instanceof TieredItem tieredItem)
+		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 0;
 		return false;
 	}

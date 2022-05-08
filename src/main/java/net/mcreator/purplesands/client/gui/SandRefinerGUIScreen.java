@@ -15,10 +15,13 @@ import net.mcreator.purplesands.world.inventory.SandRefinerGUIMenu;
 import net.mcreator.purplesands.procedures.SandRefinerSunOnConditionProcedure;
 import net.mcreator.purplesands.procedures.SandRefinerSunOffConditionProcedure;
 
+import java.util.HashMap;
+
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
 public class SandRefinerGUIScreen extends AbstractContainerScreen<SandRefinerGUIMenu> {
+	private final static HashMap<String, Object> guistate = SandRefinerGUIMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;

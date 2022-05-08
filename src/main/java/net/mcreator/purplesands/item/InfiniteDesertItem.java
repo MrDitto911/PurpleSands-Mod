@@ -15,7 +15,6 @@ import net.mcreator.purplesands.block.InfiniteDesertPortalBlock;
 public class InfiniteDesertItem extends Item {
 	public InfiniteDesertItem() {
 		super(new Item.Properties().tab(PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB).durability(64));
-		setRegistryName("infinite_desert");
 	}
 
 	@Override

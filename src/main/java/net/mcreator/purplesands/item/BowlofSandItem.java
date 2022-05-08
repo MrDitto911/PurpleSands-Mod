@@ -1,6 +1,7 @@
 
 package net.mcreator.purplesands.item;
 
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Items;
@@ -19,12 +20,16 @@ public class BowlofSandItem extends Item {
 				.food((new FoodProperties.Builder()).nutrition(8).saturationMod(4f)
 
 						.build()));
-		setRegistryName("bowlof_sand");
 	}
 
 	@Override
-	public int getUseDuration(ItemStack stack) {
+	public int getUseDuration(ItemStack itemstack) {
 		return 48;
+	}
+
+	@Override
+	public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
+		return 0F;
 	}
 
 	@Override

@@ -41,7 +41,7 @@ public abstract class PurpleArmorItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(PurpleSandsModItems.PURPLE_GEM));
+				return Ingredient.of(new ItemStack(PurpleSandsModItems.PURPLE_GEM.get()));
 			}
 
 			@Override
@@ -64,7 +64,6 @@ public abstract class PurpleArmorItem extends ArmorItem {
 	public static class Helmet extends PurpleArmorItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB));
-			setRegistryName("purple_armor_helmet");
 		}
 
 		@Override
@@ -76,7 +75,6 @@ public abstract class PurpleArmorItem extends ArmorItem {
 	public static class Chestplate extends PurpleArmorItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB));
-			setRegistryName("purple_armor_chestplate");
 		}
 
 		@Override
@@ -88,7 +86,6 @@ public abstract class PurpleArmorItem extends ArmorItem {
 	public static class Leggings extends PurpleArmorItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB));
-			setRegistryName("purple_armor_leggings");
 		}
 
 		@Override
@@ -100,7 +97,6 @@ public abstract class PurpleArmorItem extends ArmorItem {
 	public static class Boots extends PurpleArmorItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB));
-			setRegistryName("purple_armor_boots");
 		}
 
 		@Override

@@ -17,7 +17,7 @@ public class PurpleSandsModTabs {
 		TAB_PURPLE_SANDS_TAB = new CreativeModeTab("tabpurple_sands_tab") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(PurpleSandsModBlocks.PURPLE_SAND);
+				return new ItemStack(PurpleSandsModBlocks.PURPLE_SAND.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)

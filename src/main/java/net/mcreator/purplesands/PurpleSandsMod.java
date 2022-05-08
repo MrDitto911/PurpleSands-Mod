@@ -16,15 +16,23 @@ package net.mcreator.purplesands;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
-import net.minecraftforge.fmllegacy.network.simple.SimpleChannel;
-import net.minecraftforge.fmllegacy.network.NetworkRegistry;
-import net.minecraftforge.fmllegacy.network.NetworkEvent;
+import net.minecraftforge.network.simple.SimpleChannel;
+import net.minecraftforge.network.NetworkRegistry;
+import net.minecraftforge.network.NetworkEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.IEventBus;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.purplesands.init.PurpleSandsModTabs;
+import net.mcreator.purplesands.init.PurpleSandsModItems;
+import net.mcreator.purplesands.init.PurpleSandsModFeatures;
+import net.mcreator.purplesands.init.PurpleSandsModEntities;
+import net.mcreator.purplesands.init.PurpleSandsModBlocks;
+import net.mcreator.purplesands.init.PurpleSandsModBlockEntities;
+import net.mcreator.purplesands.init.PurpleSandsModBiomes;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -41,6 +49,15 @@ public class PurpleSandsMod {
 
 	public PurpleSandsMod() {
 		PurpleSandsModTabs.load();
+		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		PurpleSandsModBlocks.REGISTRY.register(bus);
+		PurpleSandsModItems.REGISTRY.register(bus);
+		PurpleSandsModEntities.REGISTRY.register(bus);
+		PurpleSandsModBlockEntities.REGISTRY.register(bus);
+		PurpleSandsModFeatures.REGISTRY.register(bus);
+
+		PurpleSandsModBiomes.REGISTRY.register(bus);
+
 	}
 
 	public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder,

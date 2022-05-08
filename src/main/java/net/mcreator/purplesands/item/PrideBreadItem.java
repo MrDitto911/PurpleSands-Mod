@@ -1,6 +1,7 @@
 
 package net.mcreator.purplesands.item;
 
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
@@ -19,7 +20,16 @@ public class PrideBreadItem extends Item {
 				.food((new FoodProperties.Builder()).nutrition(12).saturationMod(16f)
 
 						.build()));
-		setRegistryName("pride_bread");
+	}
+
+	@Override
+	public int getUseDuration(ItemStack itemstack) {
+		return 32;
+	}
+
+	@Override
+	public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
+		return 0F;
 	}
 
 	@Override

@@ -15,10 +15,13 @@ import net.mcreator.purplesands.world.inventory.OrbCrafterGuiMenu;
 import net.mcreator.purplesands.network.OrbCrafterGuiButtonMessage;
 import net.mcreator.purplesands.PurpleSandsMod;
 
+import java.util.HashMap;
+
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
 public class OrbCrafterGuiScreen extends AbstractContainerScreen<OrbCrafterGuiMenu> {
+	private final static HashMap<String, Object> guistate = OrbCrafterGuiMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;

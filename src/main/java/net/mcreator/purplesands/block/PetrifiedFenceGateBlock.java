@@ -18,7 +18,6 @@ import java.util.Collections;
 public class PetrifiedFenceGateBlock extends FenceGateBlock {
 	public PetrifiedFenceGateBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(4f, 6f));
-		setRegistryName("petrified_fence_gate");
 	}
 
 	@Override

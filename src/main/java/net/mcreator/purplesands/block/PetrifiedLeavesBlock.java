@@ -18,7 +18,6 @@ import java.util.Collections;
 public class PetrifiedLeavesBlock extends LeavesBlock {
 	public PetrifiedLeavesBlock() {
 		super(BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.GRASS).strength(0.4f).noOcclusion());
-		setRegistryName("petrified_leaves");
 	}
 
 	@Override

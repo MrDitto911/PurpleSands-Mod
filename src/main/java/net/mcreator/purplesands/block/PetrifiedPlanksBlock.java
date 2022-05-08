@@ -20,7 +20,6 @@ import java.util.Collections;
 public class PetrifiedPlanksBlock extends Block {
 	public PetrifiedPlanksBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(4f, 5.223303379776745f).requiresCorrectToolForDrops());
-		setRegistryName("petrified_planks");
 	}
 
 	@Override
@@ -35,7 +34,7 @@ public class PetrifiedPlanksBlock extends Block {
 
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem()instanceof TieredItem tieredItem)
+		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 0;
 		return false;
 	}

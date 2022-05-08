@@ -20,7 +20,6 @@ import net.mcreator.purplesands.entity.MysteryOrbEntity;
 public class MysteryOrbItem extends Item {
 	public MysteryOrbItem() {
 		super(new Item.Properties().tab(PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB).durability(400));
-		setRegistryName("mystery_orb");
 	}
 
 	@Override

@@ -10,7 +10,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.TieredItem;
 import net.minecraft.world.item.ItemStack;
@@ -26,11 +26,18 @@ import java.util.Collections;
 
 public class PurpleSandstoneStairsBlock extends StairBlock {
 	public PurpleSandstoneStairsBlock() {
-		super(() -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f).requiresCorrectToolForDrops()
-				.noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape()).defaultBlockState(),
-				BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f).requiresCorrectToolForDrops().noOcclusion()
-						.isRedstoneConductor((bs, br, bp) -> false).dynamicShape());
-		setRegistryName("purple_sandstone_stairs");
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f)
+				.requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape());
+	}
+
+	@Override
+	public float getExplosionResistance() {
+		return 10f;
+	}
+
+	@Override
+	public boolean isRandomlyTicking(BlockState p_56947_) {
+		return false;
 	}
 
 	@Override
@@ -40,7 +47,7 @@ public class PurpleSandstoneStairsBlock extends StairBlock {
 
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem()instanceof TieredItem tieredItem)
+		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 0;
 		return false;
 	}
@@ -55,7 +62,8 @@ public class PurpleSandstoneStairsBlock extends StairBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PurpleSandsModBlocks.PURPLE_SANDSTONE_STAIRS, renderType -> renderType == RenderType.cutoutMipped());
+		ItemBlockRenderTypes.setRenderLayer(PurpleSandsModBlocks.PURPLE_SANDSTONE_STAIRS.get(),
+				renderType -> renderType == RenderType.cutoutMipped());
 	}
 
 }

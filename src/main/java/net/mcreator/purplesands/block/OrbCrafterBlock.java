@@ -1,7 +1,7 @@
 
 package net.mcreator.purplesands.block;
 
-import net.minecraftforge.fmllegacy.network.NetworkHooks;
+import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -49,7 +49,6 @@ public class OrbCrafterBlock extends Block
 	public OrbCrafterBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.METAL).strength(1f, 10f).noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("orb_crafter");
 	}
 
 	@Override
@@ -135,7 +134,7 @@ public class OrbCrafterBlock extends Block
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PurpleSandsModBlocks.ORB_CRAFTER, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PurpleSandsModBlocks.ORB_CRAFTER.get(), renderType -> renderType == RenderType.cutout());
 	}
 
 }

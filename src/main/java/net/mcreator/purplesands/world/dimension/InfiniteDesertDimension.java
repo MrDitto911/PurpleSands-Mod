@@ -1,7 +1,6 @@
 
 package net.mcreator.purplesands.world.dimension;
 
-import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -35,11 +34,9 @@ public class InfiniteDesertDimension {
 		@SubscribeEvent
 		public static void registerFillerBlocks(FMLCommonSetupEvent event) {
 			Set<Block> replaceableBlocks = new HashSet<>();
-			replaceableBlocks.add(PurpleSandsModBlocks.PURPLE_SANDSTONE);
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("purple_sands:purple_desert")).getGenerationSettings()
-					.getSurfaceBuilder().get().config().getTopMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("purple_sands:purple_desert")).getGenerationSettings()
-					.getSurfaceBuilder().get().config().getUnderMaterial().getBlock());
+			replaceableBlocks.add(PurpleSandsModBlocks.PURPLE_SANDSTONE.get());
+			replaceableBlocks.add(PurpleSandsModBlocks.PURPLE_SAND.get());
+			replaceableBlocks.add(PurpleSandsModBlocks.PURPLE_SANDSTONE.get());
 			event.enqueueWork(() -> {
 				WorldCarver.CAVE.replaceableBlocks = new ImmutableSet.Builder<Block>().addAll(WorldCarver.CAVE.replaceableBlocks)
 						.addAll(replaceableBlocks).build();
@@ -67,7 +64,7 @@ public class InfiniteDesertDimension {
 	}
 
 	@SubscribeEvent
-	public void onPlayerChangedDimensionEvent(PlayerEvent.PlayerChangedDimensionEvent event) {
+	public static void onPlayerChangedDimensionEvent(PlayerEvent.PlayerChangedDimensionEvent event) {
 		Entity entity = event.getPlayer();
 		Level world = entity.level;
 		double x = entity.getX();

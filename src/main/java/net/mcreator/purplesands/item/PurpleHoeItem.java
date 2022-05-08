@@ -34,9 +34,8 @@ public class PurpleHoeItem extends HoeItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(PurpleSandsModItems.PURPLE_GEM));
+				return Ingredient.of(new ItemStack(PurpleSandsModItems.PURPLE_GEM.get()));
 			}
 		}, 0, -2f, new Item.Properties().tab(PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB));
-		setRegistryName("purple_hoe");
 	}
 }

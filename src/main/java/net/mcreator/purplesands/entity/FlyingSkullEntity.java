@@ -2,8 +2,8 @@
 package net.mcreator.purplesands.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fmllegacy.network.NetworkHooks;
-import net.minecraftforge.fmllegacy.network.FMLPlayMessages;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
@@ -30,6 +30,7 @@ import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
@@ -51,11 +52,12 @@ public class FlyingSkullEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		if (SPAWN_BIOMES.contains(event.getName()))
-			event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(PurpleSandsModEntities.FLYING_SKULL, 17, 2, 4));
+			event.getSpawns().getSpawner(MobCategory.MONSTER)
+					.add(new MobSpawnSettings.SpawnerData(PurpleSandsModEntities.FLYING_SKULL.get(), 17, 2, 4));
 	}
 
-	public FlyingSkullEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
-		this(PurpleSandsModEntities.FLYING_SKULL, world);
+	public FlyingSkullEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(PurpleSandsModEntities.FLYING_SKULL.get(), world);
 	}
 
 	public FlyingSkullEntity(EntityType<FlyingSkullEntity> type, Level world) {
@@ -78,7 +80,12 @@ public class FlyingSkullEntity extends Monster {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
+		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
+			@Override
+			protected double getAttackReachSqr(LivingEntity entity) {
+				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
+			}
+		});
 		this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
 		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 0.8));
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
@@ -159,7 +166,7 @@ public class FlyingSkullEntity extends Monster {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(PurpleSandsModEntities.FLYING_SKULL, SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+		SpawnPlacements.register(PurpleSandsModEntities.FLYING_SKULL.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos, random) -> {
 					int x = pos.getX();
 					int y = pos.getY();

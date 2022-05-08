@@ -19,7 +19,6 @@ import net.mcreator.purplesands.entity.GemStaffEntity;
 public class GemStaffItem extends Item {
 	public GemStaffItem() {
 		super(new Item.Properties().tab(PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB).durability(100));
-		setRegistryName("gem_staff");
 	}
 
 	@Override

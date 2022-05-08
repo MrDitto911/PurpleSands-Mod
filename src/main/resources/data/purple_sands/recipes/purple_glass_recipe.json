@@ -5,7 +5,5 @@
   "ingredient": {
     "item": "purple_sands:purple_sand"
   },
-  "result": {
-    "item": "minecraft:purple_stained_glass"
-  }
+  "result": "minecraft:purple_stained_glass"
 }

@@ -4,10 +4,12 @@
  */
 package net.mcreator.purplesands.init;
 
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
@@ -41,52 +43,47 @@ import net.mcreator.purplesands.block.OrbCrafterBlock;
 import net.mcreator.purplesands.block.InfiniteDesertPortalBlock;
 import net.mcreator.purplesands.block.GlowGlassBlock;
 import net.mcreator.purplesands.block.GemBlockBlock;
+import net.mcreator.purplesands.PurpleSandsMod;
 
-import java.util.List;
-import java.util.ArrayList;
-
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class PurpleSandsModBlocks {
-	private static final List<Block> REGISTRY = new ArrayList<>();
-	public static final Block PURPLE_SAND = register(new PurpleSandBlock());
-	public static final Block PURPLE_SANDSTONE = register(new PurpleSandstoneBlock());
-	public static final Block PETRIFIED_WOOD = register(new PetrifiedWoodBlock());
-	public static final Block PETRIFIED_LOG = register(new PetrifiedLogBlock());
-	public static final Block PETRIFIED_PLANKS = register(new PetrifiedPlanksBlock());
-	public static final Block PETRIFIED_STAIRS = register(new PetrifiedStairsBlock());
-	public static final Block PETRIFIED_SLAB = register(new PetrifiedSlabBlock());
-	public static final Block PETRIFIED_BUTTON = register(new PetrifiedButtonBlock());
-	public static final Block PETRIFIED_DOOR = register(new PetrifiedDoorBlock());
-	public static final Block PURPLE_ORE = register(new PurpleOreBlock());
-	public static final Block ROXA = register(new RoxaBlock());
-	public static final Block GEM_BLOCK = register(new GemBlockBlock());
-	public static final Block SAND_REFINER = register(new SandRefinerBlock());
-	public static final Block PETRIFIED_LEAVES = register(new PetrifiedLeavesBlock());
-	public static final Block PETRIFIED_FENCE = register(new PetrifiedFenceBlock());
-	public static final Block PETRIFIED_FENCE_GATE = register(new PetrifiedFenceGateBlock());
-	public static final Block PETRIFIED_PRESSURE_PLATE = register(new PetrifiedPressurePlateBlock());
-	public static final Block ORB_CRAFTER = register(new OrbCrafterBlock());
-	public static final Block PORTAL_FRAME = register(new PortalFrameBlock());
-	public static final Block INFINITE_DESERT_PORTAL = register(new InfiniteDesertPortalBlock());
-	public static final Block PURPLE_SANDSTONE_SLAB = register(new PurpleSandstoneSlabBlock());
-	public static final Block PURPLE_SANDSTONE_WALL = register(new PurpleSandstoneWallBlock());
-	public static final Block PURPLE_SANDSTONE_STAIRS = register(new PurpleSandstoneStairsBlock());
-	public static final Block PURPLE_SANDSTONE_BUTTON = register(new PurpleSandstoneButtonBlock());
-	public static final Block PURPLE_SANDSTONE_PRESSURE_PLATE = register(new PurpleSandstonePressurePlateBlock());
-	public static final Block GLOW_GLASS = register(new GlowGlassBlock());
-	public static final Block PORTAL_FRAME_DOOR = register(new PortalFrameDoorBlock());
-	public static final Block PORTAL_FRAME_TRAP_DOOR = register(new PortalFrameTrapDoorBlock());
-	public static final Block PETRIFIED_TRAP_DOOR = register(new PetrifiedTrapDoorBlock());
-
-	private static Block register(Block block) {
-		REGISTRY.add(block);
-		return block;
-	}
-
-	@SubscribeEvent
-	public static void registerBlocks(RegistryEvent.Register<Block> event) {
-		event.getRegistry().registerAll(REGISTRY.toArray(new Block[0]));
-	}
+	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, PurpleSandsMod.MODID);
+	public static final RegistryObject<Block> PURPLE_SAND = REGISTRY.register("purple_sand", () -> new PurpleSandBlock());
+	public static final RegistryObject<Block> PURPLE_SANDSTONE = REGISTRY.register("purple_sandstone", () -> new PurpleSandstoneBlock());
+	public static final RegistryObject<Block> PETRIFIED_WOOD = REGISTRY.register("petrified_wood", () -> new PetrifiedWoodBlock());
+	public static final RegistryObject<Block> PETRIFIED_LOG = REGISTRY.register("petrified_log", () -> new PetrifiedLogBlock());
+	public static final RegistryObject<Block> PETRIFIED_PLANKS = REGISTRY.register("petrified_planks", () -> new PetrifiedPlanksBlock());
+	public static final RegistryObject<Block> PETRIFIED_STAIRS = REGISTRY.register("petrified_stairs", () -> new PetrifiedStairsBlock());
+	public static final RegistryObject<Block> PETRIFIED_SLAB = REGISTRY.register("petrified_slab", () -> new PetrifiedSlabBlock());
+	public static final RegistryObject<Block> PETRIFIED_BUTTON = REGISTRY.register("petrified_button", () -> new PetrifiedButtonBlock());
+	public static final RegistryObject<Block> PETRIFIED_DOOR = REGISTRY.register("petrified_door", () -> new PetrifiedDoorBlock());
+	public static final RegistryObject<Block> PURPLE_ORE = REGISTRY.register("purple_ore", () -> new PurpleOreBlock());
+	public static final RegistryObject<Block> ROXA = REGISTRY.register("roxa", () -> new RoxaBlock());
+	public static final RegistryObject<Block> GEM_BLOCK = REGISTRY.register("gem_block", () -> new GemBlockBlock());
+	public static final RegistryObject<Block> SAND_REFINER = REGISTRY.register("sand_refiner", () -> new SandRefinerBlock());
+	public static final RegistryObject<Block> PETRIFIED_LEAVES = REGISTRY.register("petrified_leaves", () -> new PetrifiedLeavesBlock());
+	public static final RegistryObject<Block> PETRIFIED_FENCE = REGISTRY.register("petrified_fence", () -> new PetrifiedFenceBlock());
+	public static final RegistryObject<Block> PETRIFIED_FENCE_GATE = REGISTRY.register("petrified_fence_gate", () -> new PetrifiedFenceGateBlock());
+	public static final RegistryObject<Block> PETRIFIED_PRESSURE_PLATE = REGISTRY.register("petrified_pressure_plate",
+			() -> new PetrifiedPressurePlateBlock());
+	public static final RegistryObject<Block> ORB_CRAFTER = REGISTRY.register("orb_crafter", () -> new OrbCrafterBlock());
+	public static final RegistryObject<Block> PORTAL_FRAME = REGISTRY.register("portal_frame", () -> new PortalFrameBlock());
+	public static final RegistryObject<Block> INFINITE_DESERT_PORTAL = REGISTRY.register("infinite_desert_portal",
+			() -> new InfiniteDesertPortalBlock());
+	public static final RegistryObject<Block> PURPLE_SANDSTONE_SLAB = REGISTRY.register("purple_sandstone_slab",
+			() -> new PurpleSandstoneSlabBlock());
+	public static final RegistryObject<Block> PURPLE_SANDSTONE_WALL = REGISTRY.register("purple_sandstone_wall",
+			() -> new PurpleSandstoneWallBlock());
+	public static final RegistryObject<Block> PURPLE_SANDSTONE_STAIRS = REGISTRY.register("purple_sandstone_stairs",
+			() -> new PurpleSandstoneStairsBlock());
+	public static final RegistryObject<Block> PURPLE_SANDSTONE_BUTTON = REGISTRY.register("purple_sandstone_button",
+			() -> new PurpleSandstoneButtonBlock());
+	public static final RegistryObject<Block> PURPLE_SANDSTONE_PRESSURE_PLATE = REGISTRY.register("purple_sandstone_pressure_plate",
+			() -> new PurpleSandstonePressurePlateBlock());
+	public static final RegistryObject<Block> GLOW_GLASS = REGISTRY.register("glow_glass", () -> new GlowGlassBlock());
+	public static final RegistryObject<Block> PORTAL_FRAME_DOOR = REGISTRY.register("portal_frame_door", () -> new PortalFrameDoorBlock());
+	public static final RegistryObject<Block> PORTAL_FRAME_TRAP_DOOR = REGISTRY.register("portal_frame_trap_door",
+			() -> new PortalFrameTrapDoorBlock());
+	public static final RegistryObject<Block> PETRIFIED_TRAP_DOOR = REGISTRY.register("petrified_trap_door", () -> new PetrifiedTrapDoorBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

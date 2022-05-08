@@ -26,13 +26,13 @@ public class PurpleAppleRecipeBrewingRecipe implements IBrewingRecipe {
 
 	@Override
 	public boolean isIngredient(ItemStack ingredient) {
-		return ingredient.getItem() == PurpleSandsModItems.PURPLE_GEM;
+		return ingredient.getItem() == PurpleSandsModItems.PURPLE_GEM.get();
 	}
 
 	@Override
 	public ItemStack getOutput(ItemStack input, ItemStack ingredient) {
 		if (isInput(input) && isIngredient(ingredient)) {
-			return new ItemStack(PurpleSandsModItems.PURPLE_APPLE);
+			return new ItemStack(PurpleSandsModItems.PURPLE_APPLE.get());
 		}
 		return ItemStack.EMPTY;
 	}

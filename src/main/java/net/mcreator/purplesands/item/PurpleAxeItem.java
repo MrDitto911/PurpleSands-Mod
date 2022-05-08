@@ -34,9 +34,8 @@ public class PurpleAxeItem extends AxeItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(PurpleSandsModItems.PURPLE_GEM));
+				return Ingredient.of(new ItemStack(PurpleSandsModItems.PURPLE_GEM.get()));
 			}
 		}, 1, -3f, new Item.Properties().tab(PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB));
-		setRegistryName("purple_axe");
 	}
 }

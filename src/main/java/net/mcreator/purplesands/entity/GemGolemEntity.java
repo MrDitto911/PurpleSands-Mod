@@ -2,8 +2,8 @@
 package net.mcreator.purplesands.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fmllegacy.network.NetworkHooks;
-import net.minecraftforge.fmllegacy.network.FMLPlayMessages;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
@@ -22,8 +22,8 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.purplesands.init.PurpleSandsModEntities;
 
 public class GemGolemEntity extends IronGolem {
-	public GemGolemEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
-		this(PurpleSandsModEntities.GEM_GOLEM, world);
+	public GemGolemEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(PurpleSandsModEntities.GEM_GOLEM.get(), world);
 	}
 
 	public GemGolemEntity(EntityType<GemGolemEntity> type, Level world) {

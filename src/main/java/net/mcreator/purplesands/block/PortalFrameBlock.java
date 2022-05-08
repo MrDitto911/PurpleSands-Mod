@@ -18,7 +18,6 @@ import java.util.Collections;
 public class PortalFrameBlock extends Block {
 	public PortalFrameBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.METAL).strength(1f, 10f));
-		setRegistryName("portal_frame");
 	}
 
 	@Override

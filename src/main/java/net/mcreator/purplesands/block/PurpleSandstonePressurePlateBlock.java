@@ -27,7 +27,6 @@ public class PurpleSandstonePressurePlateBlock extends PressurePlateBlock {
 	public PurpleSandstonePressurePlateBlock() {
 		super(Sensitivity.MOBS, BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f).requiresCorrectToolForDrops()
 				.noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("purple_sandstone_pressure_plate");
 	}
 
 	@Override
@@ -37,7 +36,7 @@ public class PurpleSandstonePressurePlateBlock extends PressurePlateBlock {
 
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem()instanceof TieredItem tieredItem)
+		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 0;
 		return false;
 	}
@@ -52,7 +51,8 @@ public class PurpleSandstonePressurePlateBlock extends PressurePlateBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PurpleSandsModBlocks.PURPLE_SANDSTONE_PRESSURE_PLATE, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PurpleSandsModBlocks.PURPLE_SANDSTONE_PRESSURE_PLATE.get(),
+				renderType -> renderType == RenderType.cutout());
 	}
 
 }

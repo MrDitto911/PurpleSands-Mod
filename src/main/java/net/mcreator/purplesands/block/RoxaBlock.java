@@ -28,7 +28,6 @@ import java.util.Collections;
 public class RoxaBlock extends FlowerBlock {
 	public RoxaBlock() {
 		super(MobEffects.FIRE_RESISTANCE, 60, BlockBehaviour.Properties.of(Material.PLANT).noCollission().sound(SoundType.GRASS).instabreak());
-		setRegistryName("roxa");
 	}
 
 	@Override
@@ -56,7 +55,7 @@ public class RoxaBlock extends FlowerBlock {
 
 	@Override
 	public boolean mayPlaceOn(BlockState groundState, BlockGetter worldIn, BlockPos pos) {
-		return groundState.is(PurpleSandsModBlocks.PURPLE_SAND)
+		return groundState.is(PurpleSandsModBlocks.PURPLE_SAND.get())
 
 		;
 	}
@@ -75,6 +74,6 @@ public class RoxaBlock extends FlowerBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PurpleSandsModBlocks.ROXA, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PurpleSandsModBlocks.ROXA.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

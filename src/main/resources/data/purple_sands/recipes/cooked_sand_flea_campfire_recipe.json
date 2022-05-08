@@ -5,7 +5,5 @@
   "ingredient": {
     "item": "purple_sands:raw_sandflea"
   },
-  "result": {
-    "item": "purple_sands:cooked_sandflea"
-  }
+  "result": "purple_sands:cooked_sandflea"
 }

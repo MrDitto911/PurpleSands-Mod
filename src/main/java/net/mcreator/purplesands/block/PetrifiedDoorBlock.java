@@ -29,7 +29,6 @@ public class PetrifiedDoorBlock extends DoorBlock {
 	public PetrifiedDoorBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(1f, 10f).requiresCorrectToolForDrops().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("petrified_door");
 	}
 
 	@Override
@@ -39,7 +38,7 @@ public class PetrifiedDoorBlock extends DoorBlock {
 
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem()instanceof TieredItem tieredItem)
+		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 2;
 		return false;
 	}
@@ -56,7 +55,7 @@ public class PetrifiedDoorBlock extends DoorBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PurpleSandsModBlocks.PETRIFIED_DOOR, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PurpleSandsModBlocks.PETRIFIED_DOOR.get(), renderType -> renderType == RenderType.cutout());
 	}
 
 }

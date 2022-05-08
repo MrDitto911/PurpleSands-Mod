@@ -25,7 +25,6 @@ public class PurpleSandstoneButtonBlock extends StoneButtonBlock {
 	public PurpleSandstoneButtonBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f).noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("purple_sandstone_button");
 	}
 
 	@Override
@@ -43,7 +42,7 @@ public class PurpleSandstoneButtonBlock extends StoneButtonBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PurpleSandsModBlocks.PURPLE_SANDSTONE_BUTTON, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PurpleSandsModBlocks.PURPLE_SANDSTONE_BUTTON.get(), renderType -> renderType == RenderType.cutout());
 	}
 
 }

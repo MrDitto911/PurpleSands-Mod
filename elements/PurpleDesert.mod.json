@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "biome",
   "definition": {
     "name": "Purple Desert",
@@ -44,15 +44,13 @@
     },
     "particlesProbability": 0.5,
     "biomeCategory": "DESERT",
-    "parent": {
-      "value": "No parent"
-    },
     "rainingPossibility": 0.0,
     "temperature": 1.5,
     "baseHeight": 0.1,
     "heightVariation": 0.2,
-    "biomeType": "DESERT",
     "spawnBiome": true,
+    "spawnBiomeNether": false,
+    "spawnInCaves": false,
     "biomeWeight": 10,
     "biomeDictionaryTypes": [
       "OVERWORLD",

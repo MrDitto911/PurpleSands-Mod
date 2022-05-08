@@ -1,6 +1,8 @@
 
 package net.mcreator.purplesands.block;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -27,7 +29,6 @@ public class GlowGlassBlock extends Block {
 	public GlowGlassBlock() {
 		super(BlockBehaviour.Properties.of(Material.GLASS).sound(SoundType.GLASS).strength(1.3f, 10f).lightLevel(s -> 15).noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("glow_glass");
 	}
 
 	@Override
@@ -50,12 +51,12 @@ public class GlowGlassBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(Items.GLOWSTONE_DUST, (int) (3)));
+		return Collections.singletonList(new ItemStack(Items.GLOWSTONE_DUST, 3));
 	}
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PurpleSandsModBlocks.GLOW_GLASS, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PurpleSandsModBlocks.GLOW_GLASS.get(), renderType -> renderType == RenderType.cutout());
 	}
 
 }

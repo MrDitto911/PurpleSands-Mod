@@ -18,7 +18,6 @@ import java.util.Collections;
 public class PetrifiedPressurePlateBlock extends PressurePlateBlock {
 	public PetrifiedPressurePlateBlock() {
 		super(Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(4f, 6f));
-		setRegistryName("petrified_pressure_plate");
 	}
 
 	@Override

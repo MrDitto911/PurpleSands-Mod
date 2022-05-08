@@ -87,7 +87,7 @@ public class SandmanGUIMenu extends AbstractContainerMenu implements Supplier<Ma
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (PurpleSandsModItems.MYSTERY_ORB == stack.getItem());
+				return (PurpleSandsModItems.MYSTERY_ORB.get() == stack.getItem());
 			}
 		}));
 		for (int si = 0; si < 3; ++si)

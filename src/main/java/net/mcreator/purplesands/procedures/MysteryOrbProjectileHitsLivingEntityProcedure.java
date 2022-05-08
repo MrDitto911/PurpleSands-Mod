@@ -12,12 +12,12 @@ public class MysteryOrbProjectileHitsLivingEntityProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((world instanceof Level _lvl ? _lvl.isDay() : false) && world.canSeeSkyFromBelowWater(new BlockPos((int) x, (int) y, (int) z))) {
+		if (world instanceof Level _lvl && _lvl.isDay() && world.canSeeSkyFromBelowWater(new BlockPos(x, y, z))) {
 			entity.setSecondsOnFire(15);
-		} else if (!(world instanceof Level _lvl ? _lvl.isDay() : false) && world.canSeeSkyFromBelowWater(new BlockPos((int) x, (int) y, (int) z))) {
+		} else if (!(world instanceof Level _lvl && _lvl.isDay()) && world.canSeeSkyFromBelowWater(new BlockPos(x, y, z))) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 480, 1));
-		} else if (!world.canSeeSkyFromBelowWater(new BlockPos((int) x, (int) y, (int) z))) {
+		} else if (!world.canSeeSkyFromBelowWater(new BlockPos(x, y, z))) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 480, 1));
 		}
