@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    " 45",
+    "67 "
+  ],
+  "key": {
+    "1": {
+      "item": "purple_sands:beetle_shell"
+    },
+    "2": {
+      "item": "minecraft:spider_eye"
+    },
+    "4": {
+      "item": "minecraft:honeycomb"
+    },
+    "5": {
+      "item": "minecraft:honey_bottle"
+    },
+    "6": {
+      "item": "minecraft:honeycomb"
+    },
+    "7": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "purple_sands:the_baneof_arthropods",
+    "count": 1
+  }
+}

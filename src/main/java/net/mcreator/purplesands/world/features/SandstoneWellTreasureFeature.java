@@ -5,7 +5,6 @@ import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemp
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockIgnoreProcessor;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
-import net.minecraft.world.level.levelgen.placement.BiomeFilter;
 import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
@@ -34,7 +33,7 @@ public class SandstoneWellTreasureFeature extends Feature<NoneFeatureConfigurati
 	public static Feature<?> feature() {
 		FEATURE = new SandstoneWellTreasureFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("purple_sands:sandstone_well_treasure", FEATURE, FeatureConfiguration.NONE);
-		PLACED_FEATURE = PlacementUtils.register("purple_sands:sandstone_well_treasure", CONFIGURED_FEATURE, List.of(BiomeFilter.biome()));
+		PLACED_FEATURE = PlacementUtils.register("purple_sands:sandstone_well_treasure", CONFIGURED_FEATURE, List.of());
 		return FEATURE;
 	}
 

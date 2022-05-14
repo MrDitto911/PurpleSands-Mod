@@ -1,0 +1,40 @@
+{
+  "_fv": 28,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "thebaneofarthropods",
+    "customModelName": "Normal",
+    "name": "The Baneof Arthropods",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:PurpleSandsTab"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 2.0,
+    "enchantability": 2,
+    "damageVsEntity": 1.0,
+    "usageCount": 2032,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:BeetleShell"
+      },
+      {
+        "value": "Items.HONEYCOMB"
+      },
+      {
+        "value": "Items.HONEY_BOTTLE"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "TheBaneofArthropodsLivingEntityIsHitWithTool"
+    }
+  }
+}

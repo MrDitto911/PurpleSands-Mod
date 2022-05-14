@@ -1,12 +1,12 @@
-// Made with Blockbench 4.2.3
+// Made with Blockbench 4.2.4
 // Exported for Minecraft version 1.17 - 1.18 with Mojang mappings
 // Paste this class into your mod and generate all required imports
 
-public class Modelcustom_model<T extends Entity> extends EntityModel<T> {
+public class Modelbeetle<T extends Entity> extends EntityModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in
 	// the entity renderer and passed into this model's constructor
 	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(
-			new ResourceLocation("modid", "custom_model"), "main");
+			new ResourceLocation("modid", "beetle"), "main");
 	private final ModelPart head;
 	private final ModelPart body2;
 	private final ModelPart Leg1;
@@ -20,7 +20,7 @@ public class Modelcustom_model<T extends Entity> extends EntityModel<T> {
 	private final ModelPart jawl;
 	private final ModelPart jawr;
 
-	public Modelcustom_model(ModelPart root) {
+	public Modelbeetle(ModelPart root) {
 		this.head = root.getChild("head");
 		this.body2 = root.getChild("body2");
 		this.Leg1 = root.getChild("Leg1");
@@ -112,13 +112,13 @@ public class Modelcustom_model<T extends Entity> extends EntityModel<T> {
 	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
 			float headPitch) {
 		this.Leg2.xRot = Mth.cos(limbSwing * 1.0F) * 1.0F * limbSwingAmount;
-		this.Leg3.xRot = Mth.cos(limbSwing * 1.0F) * -1.0F * limbSwingAmount;
-		this.Leg4.xRot = Mth.cos(limbSwing * 1.0F) * 1.0F * limbSwingAmount;
+		this.Leg3.xRot = Mth.cos(limbSwing * 1.0F) * 1.0F * limbSwingAmount;
+		this.Leg4.xRot = Mth.cos(limbSwing * 1.0F) * -1.0F * limbSwingAmount;
 		this.Leg5.xRot = Mth.cos(limbSwing * 1.0F) * -1.0F * limbSwingAmount;
 		this.jawr.yRot = Mth.cos(limbSwing * 0.6662F + (float) Math.PI) * limbSwingAmount;
 		this.Leg1.xRot = Mth.cos(limbSwing * 1.0F) * -1.0F * limbSwingAmount;
-		this.Leg6.xRot = Mth.cos(limbSwing * 1.0F) * -1.0F * limbSwingAmount;
-		this.Leg7.xRot = Mth.cos(limbSwing * 1.0F) * 1.0F * limbSwingAmount;
+		this.Leg6.xRot = Mth.cos(limbSwing * 1.0F) * 1.0F * limbSwingAmount;
+		this.Leg7.xRot = Mth.cos(limbSwing * 1.0F) * -1.0F * limbSwingAmount;
 		this.jawl.yRot = Mth.cos(limbSwing * 0.6662F) * limbSwingAmount;
 		this.Leg8.xRot = Mth.cos(limbSwing * 1.0F) * 1.0F * limbSwingAmount;
 	}

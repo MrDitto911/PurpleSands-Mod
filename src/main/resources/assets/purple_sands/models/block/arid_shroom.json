@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "purple_sands:blocks/aridshroom",
+    "particle": "purple_sands:blocks/aridshroom"
+  }
+}

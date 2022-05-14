@@ -18,6 +18,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Holder;
 
 import net.mcreator.purplesands.world.features.plants.RoxaFeature;
+import net.mcreator.purplesands.world.features.plants.AridShroomFeature;
 import net.mcreator.purplesands.world.features.ores.PurpleOreFeature;
 import net.mcreator.purplesands.world.features.ores.PetrifiedLogFeature;
 import net.mcreator.purplesands.world.features.SandstoneWellTreasureFeature;
@@ -45,6 +46,8 @@ public class PurpleSandsModFeatures {
 	public static final RegistryObject<Feature<?>> SANDSTONE_WELL_TRAPPED = register("sandstone_well_trapped", SandstoneWellTrappedFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, SandstoneWellTrappedFeature.GENERATE_BIOMES,
 					SandstoneWellTrappedFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> ARID_SHROOM = register("arid_shroom", AridShroomFeature::feature, new FeatureRegistration(
+			GenerationStep.Decoration.VEGETAL_DECORATION, AridShroomFeature.GENERATE_BIOMES, AridShroomFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

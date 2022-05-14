@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "purple_sands:beetle_shell"
+    },
+    "1": {
+      "item": "purple_sands:beetle_shell"
+    },
+    "2": {
+      "item": "purple_sands:beetle_shell"
+    },
+    "3": {
+      "item": "purple_sands:beetle_shell"
+    },
+    "5": {
+      "item": "purple_sands:beetle_shell"
+    }
+  },
+  "result": {
+    "item": "purple_sands:beetle_armor_helmet",
+    "count": 1
+  }
+}

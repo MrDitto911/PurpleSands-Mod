@@ -6,11 +6,11 @@ import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 import net.mcreator.purplesands.entity.DesertBeetleEntity;
-import net.mcreator.purplesands.client.model.Modelcustom_model;
+import net.mcreator.purplesands.client.model.Modelbeetle;
 
-public class DesertBeetleRenderer extends MobRenderer<DesertBeetleEntity, Modelcustom_model<DesertBeetleEntity>> {
+public class DesertBeetleRenderer extends MobRenderer<DesertBeetleEntity, Modelbeetle<DesertBeetleEntity>> {
 	public DesertBeetleRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelcustom_model(context.bakeLayer(Modelcustom_model.LAYER_LOCATION)), 1.6f);
+		super(context, new Modelbeetle(context.bakeLayer(Modelbeetle.LAYER_LOCATION)), 1.6f);
 	}
 
 	@Override

@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Desert Beetle",
     "mobLabel": "",
-    "mobModelName": "Modelcustom_model",
+    "mobModelName": "Modelbeetle",
     "mobModelTexture": "beetletexture.png",
     "mobModelGlowTexture": "",
     "modelWidth": 1.0,

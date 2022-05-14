@@ -1,0 +1,62 @@
+{
+  "_fv": 28,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "beetlehelmet",
+    "enableBody": true,
+    "textureBody": "beetlebody",
+    "enableLeggings": true,
+    "textureLeggings": "beetleleggings",
+    "enableBoots": true,
+    "textureBoots": "beetleboots",
+    "creativeTab": {
+      "value": "CUSTOM:PurpleSandsTab"
+    },
+    "armorTextureFile": "purple",
+    "helmetName": "Beetle Helmet",
+    "bodyName": "Beetle Body",
+    "leggingsName": "Beetle Leggings",
+    "bootsName": "Beetle Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Modelbeetlearmor",
+    "helmetModelPart": "head",
+    "helmetModelTexture": "beetlearmor.png",
+    "bodyModelName": "Modelbeetlearmor",
+    "bodyModelPart": "body",
+    "armsModelPartL": "left_arm",
+    "armsModelPartR": "right_arm",
+    "bodyModelTexture": "beetlearmor.png",
+    "leggingsModelName": "Modelbeetlearmor",
+    "leggingsModelPartL": "left_leg",
+    "leggingsModelPartR": "right_leg",
+    "leggingsModelTexture": "beetlearmor.png",
+    "bootsModelName": "Modelbeetlearmor",
+    "bootsModelPartL": "left_shoe",
+    "bootsModelPartR": "right_shoe",
+    "bootsModelTexture": "beetlearmor.png",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 38,
+    "damageValueHelmet": 5,
+    "damageValueBody": 8,
+    "damageValueLeggings": 7,
+    "damageValueBoots": 4,
+    "enchantability": 15,
+    "toughness": 3.0,
+    "knockbackResistance": 0.5,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:BeetleShell"
+      }
+    ]
+  }
+}

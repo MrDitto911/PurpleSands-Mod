@@ -15,6 +15,7 @@ import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.purplesands.item.TheBaneofArthropodsItem;
 import net.mcreator.purplesands.item.SandBallItem;
 import net.mcreator.purplesands.item.RawSandfleaItem;
 import net.mcreator.purplesands.item.PurpleSwordItem;
@@ -34,6 +35,7 @@ import net.mcreator.purplesands.item.CreeperCookieItem;
 import net.mcreator.purplesands.item.CookedSandfleaItem;
 import net.mcreator.purplesands.item.BowlofSandItem;
 import net.mcreator.purplesands.item.BeetleShellItem;
+import net.mcreator.purplesands.item.BeetleArmorItem;
 import net.mcreator.purplesands.item.AwakenedOrbItem;
 import net.mcreator.purplesands.PurpleSandsMod;
 
@@ -119,6 +121,17 @@ public class PurpleSandsModItems {
 	public static final RegistryObject<Item> COOKED_SANDFLEA = REGISTRY.register("cooked_sandflea", () -> new CookedSandfleaItem());
 	public static final RegistryObject<Item> BOWLOF_SAND = REGISTRY.register("bowlof_sand", () -> new BowlofSandItem());
 	public static final RegistryObject<Item> PURPLE_APPLE = REGISTRY.register("purple_apple", () -> new PurpleAppleItem());
+	public static final RegistryObject<Item> THE_BANEOF_ARTHROPODS = REGISTRY.register("the_baneof_arthropods", () -> new TheBaneofArthropodsItem());
+	public static final RegistryObject<Item> ARID_SHROOM = block(PurpleSandsModBlocks.ARID_SHROOM, PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
+	public static final RegistryObject<Item> SMOOTH_PURPLE_SANDSTONE = block(PurpleSandsModBlocks.SMOOTH_PURPLE_SANDSTONE,
+			PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
+	public static final RegistryObject<Item> CARVED_PURPLE_SANDSTONE = block(PurpleSandsModBlocks.CARVED_PURPLE_SANDSTONE,
+			PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
+	public static final RegistryObject<Item> BEETLE_ARMOR_HELMET = REGISTRY.register("beetle_armor_helmet", () -> new BeetleArmorItem.Helmet());
+	public static final RegistryObject<Item> BEETLE_ARMOR_CHESTPLATE = REGISTRY.register("beetle_armor_chestplate",
+			() -> new BeetleArmorItem.Chestplate());
+	public static final RegistryObject<Item> BEETLE_ARMOR_LEGGINGS = REGISTRY.register("beetle_armor_leggings", () -> new BeetleArmorItem.Leggings());
+	public static final RegistryObject<Item> BEETLE_ARMOR_BOOTS = REGISTRY.register("beetle_armor_boots", () -> new BeetleArmorItem.Boots());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
