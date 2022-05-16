@@ -23,6 +23,7 @@ import net.mcreator.purplesands.block.PurpleSandstoneSlabBlock;
 import net.mcreator.purplesands.block.PurpleSandstonePressurePlateBlock;
 import net.mcreator.purplesands.block.PurpleSandstoneButtonBlock;
 import net.mcreator.purplesands.block.PurpleSandstoneBlock;
+import net.mcreator.purplesands.block.PurpleSandPitBlock;
 import net.mcreator.purplesands.block.PurpleSandBlock;
 import net.mcreator.purplesands.block.PurpleOreBlock;
 import net.mcreator.purplesands.block.PortalFrameTrapDoorBlock;
@@ -63,7 +64,6 @@ public class PurpleSandsModBlocks {
 	public static final RegistryObject<Block> ROXA = REGISTRY.register("roxa", () -> new RoxaBlock());
 	public static final RegistryObject<Block> GEM_BLOCK = REGISTRY.register("gem_block", () -> new GemBlockBlock());
 	public static final RegistryObject<Block> SAND_REFINER = REGISTRY.register("sand_refiner", () -> new SandRefinerBlock());
-	public static final RegistryObject<Block> PETRIFIED_LEAVES = REGISTRY.register("petrified_leaves", () -> new PetrifiedLeavesBlock());
 	public static final RegistryObject<Block> PETRIFIED_FENCE = REGISTRY.register("petrified_fence", () -> new PetrifiedFenceBlock());
 	public static final RegistryObject<Block> PETRIFIED_FENCE_GATE = REGISTRY.register("petrified_fence_gate", () -> new PetrifiedFenceGateBlock());
 	public static final RegistryObject<Block> PETRIFIED_PRESSURE_PLATE = REGISTRY.register("petrified_pressure_plate",
@@ -92,6 +92,8 @@ public class PurpleSandsModBlocks {
 			() -> new SmoothPurpleSandstoneBlock());
 	public static final RegistryObject<Block> CARVED_PURPLE_SANDSTONE = REGISTRY.register("carved_purple_sandstone",
 			() -> new CarvedPurpleSandstoneBlock());
+	public static final RegistryObject<Block> PURPLE_SAND_PIT = REGISTRY.register("purple_sand_pit", () -> new PurpleSandPitBlock());
+	public static final RegistryObject<Block> PETRIFIED_LEAVES = REGISTRY.register("petrified_leaves", () -> new PetrifiedLeavesBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

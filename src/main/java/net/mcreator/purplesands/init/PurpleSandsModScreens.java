@@ -13,6 +13,7 @@ import net.minecraft.client.gui.screens.MenuScreens;
 
 import net.mcreator.purplesands.client.gui.SandmanGUIScreen;
 import net.mcreator.purplesands.client.gui.SandRefinerGUIScreen;
+import net.mcreator.purplesands.client.gui.SandPitSacrificeScreen;
 import net.mcreator.purplesands.client.gui.OrbCrafterGuiScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -23,6 +24,7 @@ public class PurpleSandsModScreens {
 			MenuScreens.register(PurpleSandsModMenus.SAND_REFINER_GUI, SandRefinerGUIScreen::new);
 			MenuScreens.register(PurpleSandsModMenus.ORB_CRAFTER_GUI, OrbCrafterGuiScreen::new);
 			MenuScreens.register(PurpleSandsModMenus.SANDMAN_GUI, SandmanGUIScreen::new);
+			MenuScreens.register(PurpleSandsModMenus.SAND_PIT_SACRIFICE, SandPitSacrificeScreen::new);
 		});
 	}
 }

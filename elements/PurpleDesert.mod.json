@@ -9,6 +9,9 @@
     "undergroundBlock": {
       "value": "CUSTOM:PurpleSandstone"
     },
+    "underwaterBlock": {
+      "value": ""
+    },
     "airColor": {
       "value": -3355393,
       "falpha": 0.0

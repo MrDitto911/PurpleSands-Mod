@@ -14,6 +14,7 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 
 import net.mcreator.purplesands.world.inventory.SandmanGUIMenu;
 import net.mcreator.purplesands.world.inventory.SandRefinerGUIMenu;
+import net.mcreator.purplesands.world.inventory.SandPitSacrificeMenu;
 import net.mcreator.purplesands.world.inventory.OrbCrafterGuiMenu;
 
 import java.util.List;
@@ -28,6 +29,8 @@ public class PurpleSandsModMenus {
 			(id, inv, extraData) -> new OrbCrafterGuiMenu(id, inv, extraData));
 	public static final MenuType<SandmanGUIMenu> SANDMAN_GUI = register("sandman_gui",
 			(id, inv, extraData) -> new SandmanGUIMenu(id, inv, extraData));
+	public static final MenuType<SandPitSacrificeMenu> SAND_PIT_SACRIFICE = register("sand_pit_sacrifice",
+			(id, inv, extraData) -> new SandPitSacrificeMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

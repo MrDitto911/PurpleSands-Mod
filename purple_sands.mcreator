@@ -3,7 +3,7 @@
     {
       "name": "Sandflea",
       "type": "livingentity",
-      "sortid": 1,
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sandflea",
@@ -12,7 +12,7 @@
     {
       "name": "PurpleSandsTab",
       "type": "tab",
-      "sortid": 38,
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_sands_tab"
@@ -20,7 +20,7 @@
     {
       "name": "PurpleSand",
       "type": "block",
-      "sortid": 4,
+      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_sand",
@@ -29,7 +29,7 @@
     {
       "name": "PurpleDesert",
       "type": "biome",
-      "sortid": 39,
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_desert"
@@ -37,7 +37,7 @@
     {
       "name": "Deathadder",
       "type": "livingentity",
-      "sortid": 2,
+      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "registry_name": "deathadder",
@@ -46,7 +46,7 @@
     {
       "name": "PurpleSandstone",
       "type": "block",
-      "sortid": 5,
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_sandstone",
@@ -55,7 +55,7 @@
     {
       "name": "PurpleSandsAdvancements",
       "type": "achievement",
-      "sortid": 40,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_sands_advancements",
@@ -64,7 +64,7 @@
     {
       "name": "PurpleSandstoneRecipe",
       "type": "recipe",
-      "sortid": 41,
+      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_sandstone_recipe",
@@ -73,7 +73,7 @@
     {
       "name": "PurpleSandRecipe",
       "type": "recipe",
-      "sortid": 42,
+      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_sand_recipe",
@@ -82,7 +82,7 @@
     {
       "name": "PurpleSandFromRedSandRecipe",
       "type": "recipe",
-      "sortid": 43,
+      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_sand_from_red_sand_recipe",
@@ -91,7 +91,7 @@
     {
       "name": "PurpleGem",
       "type": "item",
-      "sortid": 13,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_gem",
@@ -100,7 +100,7 @@
     {
       "name": "PurplePile",
       "type": "item",
-      "sortid": 14,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_pile",
@@ -109,7 +109,7 @@
     {
       "name": "PrideBreadFoodEaten",
       "type": "procedure",
-      "sortid": 44,
+      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pride_bread_food_eaten",
@@ -126,7 +126,7 @@
     {
       "name": "CookieCreeperAdvancement",
       "type": "achievement",
-      "sortid": 45,
+      "sortid": 71,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cookie_creeper_advancement",
@@ -135,7 +135,7 @@
     {
       "name": "CreeperCookieFoodEaten",
       "type": "procedure",
-      "sortid": 46,
+      "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "registry_name": "creeper_cookie_food_eaten",
@@ -168,7 +168,7 @@
     {
       "name": "SandBallRecipe",
       "type": "recipe",
-      "sortid": 47,
+      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sand_ball_recipe",
@@ -177,7 +177,7 @@
     {
       "name": "CCRecipe",
       "type": "recipe",
-      "sortid": 48,
+      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cc_recipe",
@@ -186,7 +186,7 @@
     {
       "name": "PrideBreadRecipe",
       "type": "recipe",
-      "sortid": 49,
+      "sortid": 75,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pride_bread_recipe",
@@ -195,7 +195,7 @@
     {
       "name": "PurpleOre",
       "type": "block",
-      "sortid": 18,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_ore",
@@ -204,7 +204,7 @@
     {
       "name": "PurpleFoodsAdvancement",
       "type": "achievement",
-      "sortid": 50,
+      "sortid": 76,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_foods_advancement",
@@ -213,7 +213,7 @@
     {
       "name": "PrideBreadAdvancement",
       "type": "achievement",
-      "sortid": 51,
+      "sortid": 77,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pride_bread_advancement",
@@ -222,7 +222,7 @@
     {
       "name": "CCAdvancement",
       "type": "achievement",
-      "sortid": 52,
+      "sortid": 78,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cc_advancement",
@@ -231,7 +231,7 @@
     {
       "name": "SandBallAdvancement",
       "type": "achievement",
-      "sortid": 53,
+      "sortid": 79,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sand_ball_advancement",
@@ -240,7 +240,7 @@
     {
       "name": "PrideBreadItemIsCrafted",
       "type": "procedure",
-      "sortid": 54,
+      "sortid": 80,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pride_bread_item_is_crafted",
@@ -257,7 +257,7 @@
     {
       "name": "CreeperCookieItemIsCrafted",
       "type": "procedure",
-      "sortid": 55,
+      "sortid": 81,
       "compiles": true,
       "locked_code": false,
       "registry_name": "creeper_cookie_item_is_crafted",
@@ -274,7 +274,7 @@
     {
       "name": "SandBallItemIsCrafted",
       "type": "procedure",
-      "sortid": 56,
+      "sortid": 82,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sand_ball_item_is_crafted",
@@ -291,7 +291,7 @@
     {
       "name": "SandfleaMeatAdvancement",
       "type": "achievement",
-      "sortid": 57,
+      "sortid": 83,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sandflea_meat_advancement",
@@ -300,7 +300,7 @@
     {
       "name": "CookedSandfleaItemIsSmelted",
       "type": "procedure",
-      "sortid": 58,
+      "sortid": 84,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cooked_sandflea_item_is_smelted",
@@ -317,7 +317,7 @@
     {
       "name": "CookedSandfleaRecipe",
       "type": "recipe",
-      "sortid": 59,
+      "sortid": 85,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cooked_sandflea_recipe",
@@ -326,7 +326,7 @@
     {
       "name": "BowlofSandAdvancement",
       "type": "achievement",
-      "sortid": 60,
+      "sortid": 86,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bowlof_sand_advancement",
@@ -335,7 +335,7 @@
     {
       "name": "BowlofSandItemIsCrafted",
       "type": "procedure",
-      "sortid": 61,
+      "sortid": 87,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bowlof_sand_item_is_crafted",
@@ -352,7 +352,7 @@
     {
       "name": "PurpleAppleAdvancement",
       "type": "achievement",
-      "sortid": 62,
+      "sortid": 88,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_apple_advancement",
@@ -361,7 +361,7 @@
     {
       "name": "PurpleAppleItemIsCrafted",
       "type": "procedure",
-      "sortid": 63,
+      "sortid": 89,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_apple_item_is_crafted",
@@ -378,7 +378,7 @@
     {
       "name": "PurpleAppleFoodEaten",
       "type": "procedure",
-      "sortid": 64,
+      "sortid": 90,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_apple_food_eaten",
@@ -411,7 +411,7 @@
     {
       "name": "BowlofSandRecipe",
       "type": "recipe",
-      "sortid": 65,
+      "sortid": 91,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bowlof_sand_recipe",
@@ -420,7 +420,7 @@
     {
       "name": "PurpleAppleRecipe",
       "type": "recipe",
-      "sortid": 66,
+      "sortid": 92,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_apple_recipe",
@@ -429,7 +429,7 @@
     {
       "name": "Roxa",
       "type": "plant",
-      "sortid": 23,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "roxa",
@@ -438,7 +438,7 @@
     {
       "name": "CookedSandFleaSmokerRecipe",
       "type": "recipe",
-      "sortid": 67,
+      "sortid": 93,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cooked_sand_flea_smoker_recipe",
@@ -447,7 +447,7 @@
     {
       "name": "CookedSandFleaCampfireRecipe",
       "type": "recipe",
-      "sortid": 68,
+      "sortid": 94,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cooked_sand_flea_campfire_recipe",
@@ -456,7 +456,7 @@
     {
       "name": "GemBlock",
       "type": "block",
-      "sortid": 24,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gem_block",
@@ -465,7 +465,7 @@
     {
       "name": "SandRefiner",
       "type": "block",
-      "sortid": 25,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sand_refiner",
@@ -474,7 +474,7 @@
     {
       "name": "GemStaff",
       "type": "rangeditem",
-      "sortid": 26,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gem_staff",
@@ -483,7 +483,7 @@
     {
       "name": "GemStaffEntitySwingsItem",
       "type": "procedure",
-      "sortid": 69,
+      "sortid": 95,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gem_staff_entity_swings_item",
@@ -500,7 +500,7 @@
     {
       "name": "GemGolem",
       "type": "livingentity",
-      "sortid": 3,
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gem_golem",
@@ -509,7 +509,7 @@
     {
       "name": "GemGolemNaturalEntitySpawningCondition",
       "type": "procedure",
-      "sortid": 70,
+      "sortid": 96,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gem_golem_natural_entity_spawning_condition",
@@ -538,7 +538,7 @@
     {
       "name": "SandRefinerGUI",
       "type": "gui",
-      "sortid": 71,
+      "sortid": 97,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sand_refiner_gui",
@@ -547,7 +547,7 @@
     {
       "name": "SandRefinerTick",
       "type": "procedure",
-      "sortid": 72,
+      "sortid": 98,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sand_refiner_tick",
@@ -576,7 +576,7 @@
     {
       "name": "SandRefinerDisplayTick",
       "type": "procedure",
-      "sortid": 73,
+      "sortid": 99,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sand_refiner_display_tick",
@@ -605,7 +605,7 @@
     {
       "name": "SandRefinerSunOnCondition",
       "type": "procedure",
-      "sortid": 74,
+      "sortid": 100,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sand_refiner_sun_on_condition",
@@ -635,7 +635,7 @@
     {
       "name": "SandRefinerSunOffCondition",
       "type": "procedure",
-      "sortid": 75,
+      "sortid": 101,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sand_refiner_sun_off_condition",
@@ -665,7 +665,7 @@
     {
       "name": "MysteryOrb",
       "type": "rangeditem",
-      "sortid": 27,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mystery_orb",
@@ -674,7 +674,7 @@
     {
       "name": "PurplePickaxe",
       "type": "tool",
-      "sortid": 28,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_pickaxe",
@@ -683,7 +683,7 @@
     {
       "name": "PurpleAxe",
       "type": "tool",
-      "sortid": 29,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_axe",
@@ -692,7 +692,7 @@
     {
       "name": "PurpleSword",
       "type": "tool",
-      "sortid": 30,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_sword",
@@ -701,7 +701,7 @@
     {
       "name": "PurpleShovel",
       "type": "tool",
-      "sortid": 31,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_shovel",
@@ -710,7 +710,7 @@
     {
       "name": "PurpleHoe",
       "type": "tool",
-      "sortid": 32,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_hoe",
@@ -719,7 +719,7 @@
     {
       "name": "PurplePickaxeRecipe",
       "type": "recipe",
-      "sortid": 76,
+      "sortid": 102,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_pickaxe_recipe",
@@ -728,7 +728,7 @@
     {
       "name": "PurpleAxeRecipe",
       "type": "recipe",
-      "sortid": 77,
+      "sortid": 103,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_axe_recipe",
@@ -737,7 +737,7 @@
     {
       "name": "PurpleSwordRecipe",
       "type": "recipe",
-      "sortid": 78,
+      "sortid": 104,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_sword_recipe",
@@ -746,7 +746,7 @@
     {
       "name": "PurpleShovelRecipe",
       "type": "recipe",
-      "sortid": 79,
+      "sortid": 105,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_shovel_recipe",
@@ -755,7 +755,7 @@
     {
       "name": "PurpleHoeRecipe",
       "type": "recipe",
-      "sortid": 80,
+      "sortid": 106,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_hoe_recipe",
@@ -764,7 +764,7 @@
     {
       "name": "PurpleArmor",
       "type": "armor",
-      "sortid": 33,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_armor",
@@ -779,7 +779,7 @@
     {
       "name": "PurpleArmorHelmetRecipe",
       "type": "recipe",
-      "sortid": 81,
+      "sortid": 107,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_armor_helmet_recipe",
@@ -788,7 +788,7 @@
     {
       "name": "PurpleArmorBodyRecipe",
       "type": "recipe",
-      "sortid": 82,
+      "sortid": 108,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_armor_body_recipe",
@@ -797,7 +797,7 @@
     {
       "name": "PurpleArmorLeggingsRecipe",
       "type": "recipe",
-      "sortid": 83,
+      "sortid": 109,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_armor_leggings_recipe",
@@ -806,7 +806,7 @@
     {
       "name": "PurpleArmorBootsRecipe",
       "type": "recipe",
-      "sortid": 84,
+      "sortid": 110,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_armor_boots_recipe",
@@ -815,7 +815,7 @@
     {
       "name": "PetrifiedWood",
       "type": "block",
-      "sortid": 6,
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "registry_name": "petrified_wood",
@@ -824,7 +824,7 @@
     {
       "name": "PetrifiedLog",
       "type": "block",
-      "sortid": 7,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "petrified_log",
@@ -833,7 +833,7 @@
     {
       "name": "PetrifiedPlanks",
       "type": "block",
-      "sortid": 8,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "petrified_planks",
@@ -842,7 +842,7 @@
     {
       "name": "PetrifiedLeaves",
       "type": "block",
-      "sortid": 34,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "registry_name": "petrified_leaves",
@@ -851,7 +851,7 @@
     {
       "name": "PetrifiedStairs",
       "type": "block",
-      "sortid": 9,
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "petrified_stairs",
@@ -860,7 +860,7 @@
     {
       "name": "PetrifiedSlab",
       "type": "block",
-      "sortid": 10,
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "petrified_slab",
@@ -869,7 +869,7 @@
     {
       "name": "PetrifiedFence",
       "type": "block",
-      "sortid": 35,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "registry_name": "petrified_fence",
@@ -878,7 +878,7 @@
     {
       "name": "PetrifiedFenceGate",
       "type": "block",
-      "sortid": 36,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "registry_name": "petrified_fence_gate",
@@ -887,7 +887,7 @@
     {
       "name": "PetrifiedPressurePlate",
       "type": "block",
-      "sortid": 37,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "registry_name": "petrified_pressure_plate",
@@ -896,7 +896,7 @@
     {
       "name": "PetrifiedButton",
       "type": "block",
-      "sortid": 11,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "petrified_button",
@@ -905,7 +905,7 @@
     {
       "name": "PetrifiedItemsTag",
       "type": "tag",
-      "sortid": 85,
+      "sortid": 111,
       "compiles": true,
       "locked_code": false,
       "registry_name": "petrified_items_tag",
@@ -914,7 +914,7 @@
     {
       "name": "PetrifiedWoodRecipe",
       "type": "recipe",
-      "sortid": 86,
+      "sortid": 112,
       "compiles": true,
       "locked_code": false,
       "registry_name": "petrified_wood_recipe",
@@ -923,7 +923,7 @@
     {
       "name": "PetrifiedPlanksRecipe",
       "type": "recipe",
-      "sortid": 87,
+      "sortid": 113,
       "compiles": true,
       "locked_code": false,
       "registry_name": "petrified_planks_recipe",
@@ -932,7 +932,7 @@
     {
       "name": "PetrifiedStairsRecipe",
       "type": "recipe",
-      "sortid": 88,
+      "sortid": 114,
       "compiles": true,
       "locked_code": false,
       "registry_name": "petrified_stairs_recipe",
@@ -941,7 +941,7 @@
     {
       "name": "PetrifiedSlabRecipe",
       "type": "recipe",
-      "sortid": 89,
+      "sortid": 115,
       "compiles": true,
       "locked_code": false,
       "registry_name": "petrified_slab_recipe",
@@ -950,7 +950,7 @@
     {
       "name": "PetrifiedFenceRecipe",
       "type": "recipe",
-      "sortid": 90,
+      "sortid": 116,
       "compiles": true,
       "locked_code": false,
       "registry_name": "petrified_fence_recipe",
@@ -959,7 +959,7 @@
     {
       "name": "PetrifiedFenceGateRecipe",
       "type": "recipe",
-      "sortid": 91,
+      "sortid": 117,
       "compiles": true,
       "locked_code": false,
       "registry_name": "petrified_fence_gate_recipe",
@@ -968,7 +968,7 @@
     {
       "name": "PetrifiedPressurePlateRecipe",
       "type": "recipe",
-      "sortid": 92,
+      "sortid": 118,
       "compiles": true,
       "locked_code": false,
       "registry_name": "petrified_pressure_plate_recipe",
@@ -977,7 +977,7 @@
     {
       "name": "PetrifiedButtonRecipe",
       "type": "recipe",
-      "sortid": 93,
+      "sortid": 119,
       "compiles": true,
       "locked_code": false,
       "registry_name": "petrified_button_recipe",
@@ -986,7 +986,7 @@
     {
       "name": "PetrifiedStickRecipe",
       "type": "recipe",
-      "sortid": 94,
+      "sortid": 120,
       "compiles": true,
       "locked_code": false,
       "registry_name": "petrified_stick_recipe",
@@ -995,7 +995,7 @@
     {
       "name": "PetrifiedDoor",
       "type": "block",
-      "sortid": 12,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "registry_name": "petrified_door",
@@ -1004,7 +1004,7 @@
     {
       "name": "AwakenedOrb",
       "type": "rangeditem",
-      "sortid": 98,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "registry_name": "awakened_orb",
@@ -1013,7 +1013,7 @@
     {
       "name": "MysteryOrbProjectileHitsLivingEntity",
       "type": "procedure",
-      "sortid": 99,
+      "sortid": 121,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mystery_orb_projectile_hits_living_entity",
@@ -1046,7 +1046,7 @@
     {
       "name": "MysteryOrbRangedItemUsed",
       "type": "procedure",
-      "sortid": 100,
+      "sortid": 122,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mystery_orb_ranged_item_used",
@@ -1063,7 +1063,7 @@
     {
       "name": "OrbCrafter",
       "type": "block",
-      "sortid": 101,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orb_crafter",
@@ -1072,7 +1072,7 @@
     {
       "name": "OrbCrafterGui",
       "type": "gui",
-      "sortid": 102,
+      "sortid": 123,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orb_crafter_gui",
@@ -1081,7 +1081,7 @@
     {
       "name": "OrbCrafterCraftBtnClick",
       "type": "procedure",
-      "sortid": 103,
+      "sortid": 124,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orb_crafter_craft_btn_click",
@@ -1098,7 +1098,7 @@
     {
       "name": "OrbCrafterRecipe",
       "type": "recipe",
-      "sortid": 104,
+      "sortid": 125,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orb_crafter_recipe",
@@ -1107,7 +1107,7 @@
     {
       "name": "SandRefinerRecipe",
       "type": "recipe",
-      "sortid": 105,
+      "sortid": 126,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sand_refiner_recipe",
@@ -1116,7 +1116,7 @@
     {
       "name": "PortalFrame",
       "type": "block",
-      "sortid": 106,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "registry_name": "portal_frame",
@@ -1125,7 +1125,7 @@
     {
       "name": "InfiniteDesert",
       "type": "dimension",
-      "sortid": 107,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "registry_name": "infinite_desert",
@@ -1136,7 +1136,7 @@
     {
       "name": "MysteriousLiquidRecipe",
       "type": "recipe",
-      "sortid": 108,
+      "sortid": 127,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mysterious_liquid_recipe",
@@ -1145,7 +1145,7 @@
     {
       "name": "PurpleSandstoneSlab",
       "type": "block",
-      "sortid": 109,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_sandstone_slab",
@@ -1154,7 +1154,7 @@
     {
       "name": "PurpleSandstoneWall",
       "type": "block",
-      "sortid": 110,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_sandstone_wall",
@@ -1163,7 +1163,7 @@
     {
       "name": "PurpleSandstoneStairs",
       "type": "block",
-      "sortid": 111,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_sandstone_stairs",
@@ -1172,7 +1172,7 @@
     {
       "name": "PurpleSandstoneButton",
       "type": "block",
-      "sortid": 112,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_sandstone_button",
@@ -1181,7 +1181,7 @@
     {
       "name": "PurpleSandstonePressurePlate",
       "type": "block",
-      "sortid": 113,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_sandstone_pressure_plate",
@@ -1190,7 +1190,7 @@
     {
       "name": "SandstoneWellTreasure",
       "type": "structure",
-      "sortid": 114,
+      "sortid": 128,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sandstone_well_treasure",
@@ -1199,7 +1199,7 @@
     {
       "name": "SandstoneWellTrapped",
       "type": "structure",
-      "sortid": 115,
+      "sortid": 129,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sandstone_well_trapped",
@@ -1208,7 +1208,7 @@
     {
       "name": "DirtBlocks",
       "type": "tag",
-      "sortid": 116,
+      "sortid": 130,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dirt_blocks",
@@ -1217,7 +1217,7 @@
     {
       "name": "LogBlocks",
       "type": "tag",
-      "sortid": 117,
+      "sortid": 131,
       "compiles": true,
       "locked_code": false,
       "registry_name": "log_blocks",
@@ -1226,7 +1226,7 @@
     {
       "name": "WallBlocks",
       "type": "tag",
-      "sortid": 118,
+      "sortid": 132,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wall_blocks",
@@ -1235,7 +1235,7 @@
     {
       "name": "FenceBlocks",
       "type": "tag",
-      "sortid": 119,
+      "sortid": 133,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fence_blocks",
@@ -1244,7 +1244,7 @@
     {
       "name": "Sandman",
       "type": "livingentity",
-      "sortid": 120,
+      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sandman",
@@ -1253,7 +1253,7 @@
     {
       "name": "SandmanGUI",
       "type": "gui",
-      "sortid": 121,
+      "sortid": 134,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sandman_gui",
@@ -1262,7 +1262,7 @@
     {
       "name": "SandmanGUITrade",
       "type": "procedure",
-      "sortid": 122,
+      "sortid": 135,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sandman_gui_trade",
@@ -1279,7 +1279,7 @@
     {
       "name": "InDesertDem",
       "type": "procedure",
-      "sortid": 123,
+      "sortid": 136,
       "compiles": true,
       "locked_code": false,
       "registry_name": "in_desert_dem",
@@ -1297,7 +1297,7 @@
     {
       "name": "FlyingSkull",
       "type": "livingentity",
-      "sortid": 123,
+      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flying_skull",
@@ -1306,7 +1306,7 @@
     {
       "name": "PortalOpened",
       "type": "achievement",
-      "sortid": 124,
+      "sortid": 137,
       "compiles": true,
       "locked_code": false,
       "registry_name": "portal_opened",
@@ -1315,7 +1315,7 @@
     {
       "name": "InfiniteDesertPlayerEntersDimension",
       "type": "procedure",
-      "sortid": 125,
+      "sortid": 138,
       "compiles": true,
       "locked_code": false,
       "registry_name": "infinite_desert_player_enters_dimension",
@@ -1331,7 +1331,7 @@
     {
       "name": "PurpleGlassRecipe",
       "type": "recipe",
-      "sortid": 126,
+      "sortid": 139,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_glass_recipe",
@@ -1340,7 +1340,7 @@
     {
       "name": "GlowGlass",
       "type": "block",
-      "sortid": 127,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glow_glass",
@@ -1349,7 +1349,7 @@
     {
       "name": "PortalFrameDoor",
       "type": "block",
-      "sortid": 128,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "registry_name": "portal_frame_door",
@@ -1358,7 +1358,7 @@
     {
       "name": "PortalFrameTrapDoor",
       "type": "block",
-      "sortid": 129,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "registry_name": "portal_frame_trap_door",
@@ -1367,7 +1367,7 @@
     {
       "name": "PetrifiedTrapDoor",
       "type": "block",
-      "sortid": 130,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "registry_name": "petrified_trap_door",
@@ -1376,7 +1376,7 @@
     {
       "name": "DesertBeetle",
       "type": "livingentity",
-      "sortid": 131,
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "registry_name": "desert_beetle",
@@ -1385,7 +1385,7 @@
     {
       "name": "LittleBeetle",
       "type": "livingentity",
-      "sortid": 132,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "registry_name": "little_beetle",
@@ -1394,7 +1394,7 @@
     {
       "name": "BeetleShell",
       "type": "item",
-      "sortid": 133,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "registry_name": "beetle_shell",
@@ -1403,7 +1403,7 @@
     {
       "name": "DesertBeetleEntityDies",
       "type": "procedure",
-      "sortid": 134,
+      "sortid": 140,
       "compiles": true,
       "locked_code": false,
       "registry_name": "desert_beetle_entity_dies",
@@ -1432,7 +1432,7 @@
     {
       "name": "PrideBread",
       "type": "item",
-      "sortid": 135,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pride_bread",
@@ -1441,7 +1441,7 @@
     {
       "name": "CreeperCookie",
       "type": "item",
-      "sortid": 136,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "registry_name": "creeper_cookie",
@@ -1450,7 +1450,7 @@
     {
       "name": "SandBall",
       "type": "item",
-      "sortid": 137,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sand_ball",
@@ -1459,7 +1459,7 @@
     {
       "name": "RawSandflea",
       "type": "item",
-      "sortid": 138,
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "registry_name": "raw_sandflea",
@@ -1468,7 +1468,7 @@
     {
       "name": "CookedSandflea",
       "type": "item",
-      "sortid": 139,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cooked_sandflea",
@@ -1477,7 +1477,7 @@
     {
       "name": "BowlofSand",
       "type": "item",
-      "sortid": 140,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bowlof_sand",
@@ -1486,7 +1486,7 @@
     {
       "name": "PurpleApple",
       "type": "item",
-      "sortid": 141,
+      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_apple",
@@ -1495,7 +1495,7 @@
     {
       "name": "TheBaneofArthropods",
       "type": "tool",
-      "sortid": 142,
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "registry_name": "the_baneof_arthropods",
@@ -1504,7 +1504,7 @@
     {
       "name": "TheBaneofArthropodsLivingEntityIsHitWithTool",
       "type": "procedure",
-      "sortid": 143,
+      "sortid": 141,
       "compiles": true,
       "locked_code": false,
       "registry_name": "the_baneof_arthropods_living_entity_is_hit_with_tool",
@@ -1521,7 +1521,7 @@
     {
       "name": "TheBaneofArthrpodsRecipe",
       "type": "recipe",
-      "sortid": 144,
+      "sortid": 142,
       "compiles": true,
       "locked_code": false,
       "registry_name": "the_baneof_arthrpods_recipe",
@@ -1530,7 +1530,7 @@
     {
       "name": "AridShroom",
       "type": "plant",
-      "sortid": 145,
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "registry_name": "arid_shroom",
@@ -1539,7 +1539,7 @@
     {
       "name": "SmoothPurpleSandstone",
       "type": "block",
-      "sortid": 146,
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "registry_name": "smooth_purple_sandstone",
@@ -1548,7 +1548,7 @@
     {
       "name": "CarvedPurpleSandstone",
       "type": "block",
-      "sortid": 147,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "registry_name": "carved_purple_sandstone",
@@ -1557,7 +1557,7 @@
     {
       "name": "BeetleArmor",
       "type": "armor",
-      "sortid": 148,
+      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "registry_name": "beetle_armor",
@@ -1572,7 +1572,7 @@
     {
       "name": "Beetlehelmetrecipe",
       "type": "recipe",
-      "sortid": 149,
+      "sortid": 143,
       "compiles": true,
       "locked_code": false,
       "registry_name": "beetlehelmetrecipe",
@@ -1581,7 +1581,7 @@
     {
       "name": "Beetlebodyrecipe",
       "type": "recipe",
-      "sortid": 150,
+      "sortid": 144,
       "compiles": true,
       "locked_code": false,
       "registry_name": "beetlebodyrecipe",
@@ -1590,7 +1590,7 @@
     {
       "name": "Beetleleggingsrecipe",
       "type": "recipe",
-      "sortid": 151,
+      "sortid": 145,
       "compiles": true,
       "locked_code": false,
       "registry_name": "beetleleggingsrecipe",
@@ -1599,112 +1599,215 @@
     {
       "name": "Beetlebootsrecipe",
       "type": "recipe",
-      "sortid": 152,
+      "sortid": 146,
       "compiles": true,
       "locked_code": false,
       "registry_name": "beetlebootsrecipe",
       "path": "~/Recipes"
+    },
+    {
+      "name": "BasicOrb",
+      "type": "rangeditem",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_orb",
+      "path": "~/Weapons/Orbs"
+    },
+    {
+      "name": "PurpleSandPitAdditionalGenerationCondition",
+      "type": "procedure",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_sand_pit_additional_generation_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/GUIBlocks/BossSummon"
+    },
+    {
+      "name": "PurpleSandPit",
+      "type": "block",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_sand_pit",
+      "path": "~/Blocks/GUIBlocks/BossSummon"
+    },
+    {
+      "name": "SandPitSacrifice",
+      "type": "gui",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_pit_sacrifice",
+      "path": "~/Blocks/GUIBlocks/BossSummon"
+    },
+    {
+      "name": "ScorpionHusk",
+      "type": "livingentity",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scorpion_husk",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "Scorpionhusksummon",
+      "type": "procedure",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scorpionhusksummon",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/GUIBlocks/BossSummon"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "entity.purple_sands.deathadder": "Deathadder",
-      "block.purple_sands.petrified_leaves": "Petrified Leaves",
       "block.purple_sands.petrified_slab": "Petrified Slab",
-      "item.purple_sands.sand_ball": "Sand Ball",
       "block.purple_sands.petrified_planks": "Petrified Planks",
       "advancements.sandflea_meat_advancement.title": "Sand grown Meat",
-      "block.purple_sands.portal_frame_trap_door": "Portal Frame Trap Door",
       "advancements.purple_apple_advancement.title": "Purple Apples",
       "item.purple_sands.awakened_orb": "Awakened Orb",
-      "item.purple_sands.the_baneof_arthropods": "The Baneof Arthropods",
       "item.purple_sands.beetle_armor_helmet": "Beetle Helmet",
-      "block.purple_sands.petrified_door": "Petrified Door",
       "block.purple_sands.roxa": "Roxa",
-      "item.purple_sands.purple_axe": "Purple Axe",
       "block.purple_sands.petrified_fence_gate": "Petrified Fence Gate",
+      "entity.purple_sands.desert_beetle": "Desert Beetle",
+      "advancements.pride_bread_advancement.title": "Pride In All Forms",
+      "block.purple_sands.petrified_fence": "Petrified Fence",
+      "advancements.bowlof_sand_advancement.title": "Sandy Meal",
+      "entity.purple_sands.sandflea": "Sandflea",
+      "item.purple_sands.little_beetle_spawn_egg": "Little Beetle Spawn Egg",
+      "block.purple_sands.purple_sandstone_wall": "Purple Sandstone Wall",
+      "block.purple_sands.purple_sand": "Purple Sand",
+      "item.purple_sands.desert_beetle_spawn_egg": "Desert Beetle Spawn Egg",
+      "itemGroup.tabpurple_sands_tab": "Purple Sands Tab",
+      "advancements.cookie_creeper_advancement.title": "Cookie Creeper Advancement",
+      "block.purple_sands.purple_sandstone_button": "Purple Sandstone Button",
+      "item.purple_sands.purple_armor_boots": "Purple Boots",
+      "block.purple_sands.purple_sand_pit": "Purple Sand Pit",
+      "block.purple_sands.petrified_button": "Petrified Button",
+      "block.purple_sands.petrified_pressure_plate": "Petrified Pressure Plate",
+      "item.purple_sands.beetle_armor_leggings": "Beetle Leggings",
+      "block.purple_sands.purple_sandstone_pressure_plate": "Purple Sandstone Pressure Plate",
+      "item.purple_sands.basic_orb": "Basic Orb",
+      "entity.purple_sands.little_beetle": "Little Beetle",
+      "block.purple_sands.portal_frame_door": "Portal Frame Door",
+      "entity.purple_sands.sandman": "Sandman",
+      "block.purple_sands.glow_glass": "Glow Glass",
+      "block.purple_sands.purple_sandstone_slab": "Purple Sandstone Slab",
+      "advancements.purple_foods_advancement.descr": "Craft any of the new and unique foods",
+      "block.purple_sands.orb_crafter": "Orb Crafter",
+      "item.purple_sands.sandflea_spawn_egg": "Sandflea Spawn Egg",
+      "item.purple_sands.infinite_desert": "Mysterious Liquid",
+      "advancements.bowlof_sand_advancement.descr": "Yum...",
+      "entity.purple_sands.flying_skull": "Flying Skull",
+      "block.purple_sands.gem_block": "Gem Block",
+      "item.purple_sands.purple_pile": "Purple Pile",
+      "item.purple_sands.purple_armor_chestplate": "Purple Chestplate",
+      "item.purple_sands.gem_golem_spawn_egg": "Gem Golem Spawn Egg",
+      "advancements.cc_advancement.descr": "This is a bad idea",
+      "item.purple_sands.scorpion_husk_spawn_egg": "Scorpion Husk Spawn Egg",
+      "advancements.sand_ball_advancement.title": "Sand Ball",
+      "item.purple_sands.bowlof_sand": "Bowlof Sand",
+      "advancements.purple_foods_advancement.title": "Purple Foods",
+      "advancements.portal_opened.descr": "You discovered how to make the portal, Congrats.",
+      "advancements.purple_apple_advancement.descr": "Better than gold because it\u0027s purple",
+      "block.purple_sands.petrified_wood": "Petrified Wood",
+      "entity.purple_sands.gem_golem": "Gem Golem",
+      "entity.purple_sands.deathadder": "Deathadder",
+      "block.purple_sands.petrified_leaves": "Petrified Leaves",
+      "item.purple_sands.sand_ball": "Sand Ball",
+      "block.purple_sands.portal_frame_trap_door": "Portal Frame Trap Door",
+      "item.purple_sands.the_baneof_arthropods": "The Baneof Arthropods",
+      "block.purple_sands.petrified_door": "Petrified Door",
+      "item.purple_sands.purple_axe": "Purple Axe",
       "item.purple_sands.purple_apple": "Purple Apple",
       "block.purple_sands.sand_refiner": "Sand Refiner",
-      "entity.purple_sands.desert_beetle": "Desert Beetle",
       "block.purple_sands.purple_sandstone": "Purple Sandstone",
       "block.purple_sands.petrified_log": "Petrified Log",
       "advancements.sandflea_meat_advancement.descr": "Cook raw sandflea",
       "advancements.cookie_creeper_advancement.descr": "Well... what did you expect?",
-      "advancements.pride_bread_advancement.title": "Pride In All Forms",
       "item.purple_sands.beetle_armor_boots": "Beetle Boots",
-      "block.purple_sands.petrified_fence": "Petrified Fence",
       "block.purple_sands.carved_purple_sandstone": "Carved Purple Sandstone",
       "advancements.pride_bread_advancement.descr": "Eat and have pride!",
-      "advancements.bowlof_sand_advancement.title": "Sandy Meal",
-      "entity.purple_sands.sandflea": "Sandflea",
       "block.purple_sands.purple_ore": "Purple Ore",
       "item.purple_sands.raw_sandflea": "Raw Sandflea",
       "advancements.cc_advancement.title": "CC?",
       "item.purple_sands.purple_pickaxe": "Purple Pickaxe",
       "advancements.portal_opened.title": "Biome+",
       "block.purple_sands.smooth_purple_sandstone": "Smooth Purple Sandstone",
-      "item.purple_sands.little_beetle_spawn_egg": "Little Beetle Spawn Egg",
-      "block.purple_sands.purple_sandstone_wall": "Purple Sandstone Wall",
       "advancements.purple_sands_advancements.title": "Purple Sands Adventure",
       "item.purple_sands.pride_bread": "Pride Bread",
-      "block.purple_sands.purple_sand": "Purple Sand",
       "item.purple_sands.beetle_armor_chestplate": "Beetle Body",
-      "itemGroup.tabpurple_sands_tab": "Purple Sands Tab",
-      "item.purple_sands.desert_beetle_spawn_egg": "Desert Beetle Spawn Egg",
-      "advancements.cookie_creeper_advancement.title": "Cookie Creeper Advancement",
-      "block.purple_sands.purple_sandstone_button": "Purple Sandstone Button",
       "item.purple_sands.purple_armor_helmet": "Purple Helmet",
-      "item.purple_sands.purple_armor_boots": "Purple Boots",
       "item.purple_sands.gem_staff": "Gem Staff",
+      "entity.purple_sands.scorpion_husk": "Scorpion Husk",
       "item.purple_sands.cooked_sandflea": "Cooked Sandflea",
       "advancements.sand_ball_advancement.descr": "It\u0027ll stay in your stomach all day",
-      "block.purple_sands.petrified_button": "Petrified Button",
-      "block.purple_sands.petrified_pressure_plate": "Petrified Pressure Plate",
       "item.purple_sands.beetle_shell": "Beetle Shell",
       "biome.purple_sands.purple_desert": "Purple Desert",
       "block.purple_sands.petrified_stairs": "Petrified Stairs",
       "block.purple_sands.purple_sandstone_stairs": "Purple Sandstone Stairs",
       "block.purple_sands.arid_shroom": "Arid Mushshroom",
-      "item.purple_sands.beetle_armor_leggings": "Beetle Leggings",
       "item.purple_sands.flying_skull_spawn_egg": "Flying Skull Spawn Egg",
       "item.purple_sands.purple_armor_leggings": "Purple Leggings",
-      "block.purple_sands.purple_sandstone_pressure_plate": "Purple Sandstone Pressure Plate",
-      "item.purple_sands.purple_gem": "Purple Gem",
       "item.purple_sands.purple_sword": "Purple Sword",
-      "block.purple_sands.portal_frame_door": "Portal Frame Door",
-      "entity.purple_sands.little_beetle": "Little Beetle",
-      "entity.purple_sands.sandman": "Sandman",
-      "block.purple_sands.glow_glass": "Glow Glass",
-      "block.purple_sands.purple_sandstone_slab": "Purple Sandstone Slab",
+      "item.purple_sands.purple_gem": "Purple Gem",
       "item.purple_sands.sandman_spawn_egg": "Sandman Spawn Egg",
-      "advancements.purple_foods_advancement.descr": "Craft any of the new and unique foods",
       "item.purple_sands.purple_shovel": "Purple Shovel",
-      "block.purple_sands.orb_crafter": "Orb Crafter",
       "item.purple_sands.creeper_cookie": "CC",
-      "item.purple_sands.sandflea_spawn_egg": "Sandflea Spawn Egg",
-      "item.purple_sands.infinite_desert": "Mysterious Liquid",
-      "advancements.bowlof_sand_advancement.descr": "Yum...",
-      "entity.purple_sands.flying_skull": "Flying Skull",
       "item.purple_sands.purple_hoe": "Purple Hoe",
       "item.purple_sands.mystery_orb": "Mystery Orb",
       "block.purple_sands.petrified_trap_door": "Petrified Trap Door",
-      "block.purple_sands.gem_block": "Gem Block",
       "block.purple_sands.portal_frame": "Portal Frame",
-      "item.purple_sands.purple_pile": "Purple Pile",
-      "item.purple_sands.purple_armor_chestplate": "Purple Chestplate",
       "item.purple_sands.deathadder_spawn_egg": "Deathadder Spawn Egg",
-      "item.purple_sands.gem_golem_spawn_egg": "Gem Golem Spawn Egg",
-      "advancements.cc_advancement.descr": "This is a bad idea",
-      "advancements.sand_ball_advancement.title": "Sand Ball",
-      "item.purple_sands.bowlof_sand": "Bowlof Sand",
-      "advancements.purple_foods_advancement.title": "Purple Foods",
-      "advancements.purple_sands_advancements.descr": "Find Purple Desert",
-      "advancements.purple_apple_advancement.descr": "Better than gold because it\u0027s purple",
-      "advancements.portal_opened.descr": "You discovered how to make the portal, Congrats.",
-      "block.purple_sands.petrified_wood": "Petrified Wood",
-      "entity.purple_sands.gem_golem": "Gem Golem"
+      "advancements.purple_sands_advancements.descr": "Find Purple Desert"
     }
   },
   "foldersRoot": {
@@ -1722,6 +1825,10 @@
               },
               {
                 "name": "OrbCrafter",
+                "children": []
+              },
+              {
+                "name": "BossSummon",
                 "children": []
               }
             ]

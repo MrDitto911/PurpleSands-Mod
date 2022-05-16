@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.purplesands.block.entity.SandRefinerBlockEntity;
+import net.mcreator.purplesands.block.entity.PurpleSandPitBlockEntity;
 import net.mcreator.purplesands.block.entity.OrbCrafterBlockEntity;
 import net.mcreator.purplesands.PurpleSandsMod;
 
@@ -21,6 +22,8 @@ public class PurpleSandsModBlockEntities {
 			SandRefinerBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> ORB_CRAFTER = register("orb_crafter", PurpleSandsModBlocks.ORB_CRAFTER,
 			OrbCrafterBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> PURPLE_SAND_PIT = register("purple_sand_pit", PurpleSandsModBlocks.PURPLE_SAND_PIT,
+			PurpleSandPitBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block,
 			BlockEntityType.BlockEntitySupplier<?> supplier) {

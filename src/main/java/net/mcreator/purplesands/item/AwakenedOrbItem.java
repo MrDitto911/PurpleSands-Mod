@@ -18,7 +18,7 @@ import net.mcreator.purplesands.entity.AwakenedOrbEntity;
 
 public class AwakenedOrbItem extends Item {
 	public AwakenedOrbItem() {
-		super(new Item.Properties().tab(PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB).durability(100));
+		super(new Item.Properties().tab(PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB).durability(2100));
 	}
 
 	@Override

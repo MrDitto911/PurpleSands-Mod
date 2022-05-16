@@ -36,17 +36,12 @@ import net.mcreator.purplesands.item.CookedSandfleaItem;
 import net.mcreator.purplesands.item.BowlofSandItem;
 import net.mcreator.purplesands.item.BeetleShellItem;
 import net.mcreator.purplesands.item.BeetleArmorItem;
+import net.mcreator.purplesands.item.BasicOrbItem;
 import net.mcreator.purplesands.item.AwakenedOrbItem;
 import net.mcreator.purplesands.PurpleSandsMod;
 
 public class PurpleSandsModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, PurpleSandsMod.MODID);
-	public static final RegistryObject<Item> SANDFLEA = REGISTRY.register("sandflea_spawn_egg",
-			() -> new ForgeSpawnEggItem(PurpleSandsModEntities.SANDFLEA, -4616725, -6726942, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> DEATHADDER = REGISTRY.register("deathadder_spawn_egg",
-			() -> new ForgeSpawnEggItem(PurpleSandsModEntities.DEATHADDER, -1, -10066432, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> GEM_GOLEM = REGISTRY.register("gem_golem_spawn_egg",
-			() -> new ForgeSpawnEggItem(PurpleSandsModEntities.GEM_GOLEM, -5874179, -11925875, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> PURPLE_SAND = block(PurpleSandsModBlocks.PURPLE_SAND, PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
 	public static final RegistryObject<Item> PURPLE_SANDSTONE = block(PurpleSandsModBlocks.PURPLE_SANDSTONE, PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
 	public static final RegistryObject<Item> PETRIFIED_WOOD = block(PurpleSandsModBlocks.PETRIFIED_WOOD, PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
@@ -75,7 +70,6 @@ public class PurpleSandsModItems {
 			() -> new PurpleArmorItem.Chestplate());
 	public static final RegistryObject<Item> PURPLE_ARMOR_LEGGINGS = REGISTRY.register("purple_armor_leggings", () -> new PurpleArmorItem.Leggings());
 	public static final RegistryObject<Item> PURPLE_ARMOR_BOOTS = REGISTRY.register("purple_armor_boots", () -> new PurpleArmorItem.Boots());
-	public static final RegistryObject<Item> PETRIFIED_LEAVES = block(PurpleSandsModBlocks.PETRIFIED_LEAVES, CreativeModeTab.TAB_DECORATIONS);
 	public static final RegistryObject<Item> PETRIFIED_FENCE = block(PurpleSandsModBlocks.PETRIFIED_FENCE, PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
 	public static final RegistryObject<Item> PETRIFIED_FENCE_GATE = block(PurpleSandsModBlocks.PETRIFIED_FENCE_GATE,
 			PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
@@ -95,11 +89,6 @@ public class PurpleSandsModItems {
 			PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
 	public static final RegistryObject<Item> PURPLE_SANDSTONE_PRESSURE_PLATE = block(PurpleSandsModBlocks.PURPLE_SANDSTONE_PRESSURE_PLATE,
 			PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
-	public static final RegistryObject<Item> SANDMAN = REGISTRY.register("sandman_spawn_egg",
-			() -> new ForgeSpawnEggItem(PurpleSandsModEntities.SANDMAN, -13034432, -9347978, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> FLYING_SKULL = REGISTRY.register("flying_skull_spawn_egg",
-			() -> new ForgeSpawnEggItem(PurpleSandsModEntities.FLYING_SKULL, -16777216, -6726942,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> GLOW_GLASS = block(PurpleSandsModBlocks.GLOW_GLASS, PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
 	public static final RegistryObject<Item> PORTAL_FRAME_DOOR = doubleBlock(PurpleSandsModBlocks.PORTAL_FRAME_DOOR,
 			PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
@@ -107,12 +96,6 @@ public class PurpleSandsModItems {
 			PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
 	public static final RegistryObject<Item> PETRIFIED_TRAP_DOOR = block(PurpleSandsModBlocks.PETRIFIED_TRAP_DOOR,
 			PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
-	public static final RegistryObject<Item> DESERT_BEETLE = REGISTRY.register("desert_beetle_spawn_egg",
-			() -> new ForgeSpawnEggItem(PurpleSandsModEntities.DESERT_BEETLE, -11722619, -13695389,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> LITTLE_BEETLE = REGISTRY.register("little_beetle_spawn_egg",
-			() -> new ForgeSpawnEggItem(PurpleSandsModEntities.LITTLE_BEETLE, -16777216, -9303809,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> BEETLE_SHELL = REGISTRY.register("beetle_shell", () -> new BeetleShellItem());
 	public static final RegistryObject<Item> PRIDE_BREAD = REGISTRY.register("pride_bread", () -> new PrideBreadItem());
 	public static final RegistryObject<Item> CREEPER_COOKIE = REGISTRY.register("creeper_cookie", () -> new CreeperCookieItem());
@@ -132,6 +115,33 @@ public class PurpleSandsModItems {
 			() -> new BeetleArmorItem.Chestplate());
 	public static final RegistryObject<Item> BEETLE_ARMOR_LEGGINGS = REGISTRY.register("beetle_armor_leggings", () -> new BeetleArmorItem.Leggings());
 	public static final RegistryObject<Item> BEETLE_ARMOR_BOOTS = REGISTRY.register("beetle_armor_boots", () -> new BeetleArmorItem.Boots());
+	public static final RegistryObject<Item> BASIC_ORB = REGISTRY.register("basic_orb", () -> new BasicOrbItem());
+	public static final RegistryObject<Item> PURPLE_SAND_PIT = block(PurpleSandsModBlocks.PURPLE_SAND_PIT, PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
+	public static final RegistryObject<Item> SCORPION_HUSK = REGISTRY.register("scorpion_husk_spawn_egg",
+			() -> new ForgeSpawnEggItem(PurpleSandsModEntities.SCORPION_HUSK, -6710785, -3355393,
+					new Item.Properties().tab(PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB)));
+	public static final RegistryObject<Item> SANDFLEA = REGISTRY.register("sandflea_spawn_egg",
+			() -> new ForgeSpawnEggItem(PurpleSandsModEntities.SANDFLEA, -4616725, -6726942,
+					new Item.Properties().tab(PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB)));
+	public static final RegistryObject<Item> DEATHADDER = REGISTRY.register("deathadder_spawn_egg",
+			() -> new ForgeSpawnEggItem(PurpleSandsModEntities.DEATHADDER, -1, -10066432,
+					new Item.Properties().tab(PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB)));
+	public static final RegistryObject<Item> GEM_GOLEM = REGISTRY.register("gem_golem_spawn_egg",
+			() -> new ForgeSpawnEggItem(PurpleSandsModEntities.GEM_GOLEM, -5874179, -11925875,
+					new Item.Properties().tab(PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB)));
+	public static final RegistryObject<Item> SANDMAN = REGISTRY.register("sandman_spawn_egg",
+			() -> new ForgeSpawnEggItem(PurpleSandsModEntities.SANDMAN, -13034432, -9347978,
+					new Item.Properties().tab(PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB)));
+	public static final RegistryObject<Item> FLYING_SKULL = REGISTRY.register("flying_skull_spawn_egg",
+			() -> new ForgeSpawnEggItem(PurpleSandsModEntities.FLYING_SKULL, -16777216, -6726942,
+					new Item.Properties().tab(PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB)));
+	public static final RegistryObject<Item> DESERT_BEETLE = REGISTRY.register("desert_beetle_spawn_egg",
+			() -> new ForgeSpawnEggItem(PurpleSandsModEntities.DESERT_BEETLE, -11722619, -13695389,
+					new Item.Properties().tab(PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB)));
+	public static final RegistryObject<Item> LITTLE_BEETLE = REGISTRY.register("little_beetle_spawn_egg",
+			() -> new ForgeSpawnEggItem(PurpleSandsModEntities.LITTLE_BEETLE, -16777216, -9303809,
+					new Item.Properties().tab(PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB)));
+	public static final RegistryObject<Item> PETRIFIED_LEAVES = block(PurpleSandsModBlocks.PETRIFIED_LEAVES, CreativeModeTab.TAB_DECORATIONS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

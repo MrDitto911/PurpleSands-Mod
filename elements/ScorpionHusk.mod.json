@@ -2,29 +2,29 @@
   "_fv": 28,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Deathadder",
+    "mobName": "Scorpion Husk",
     "mobLabel": "",
-    "mobModelName": "ModelDeathadder",
-    "mobModelTexture": "deathadder.png",
+    "mobModelName": "Modelscorpionhusk",
+    "mobModelTexture": "scorpionhusk.png",
     "mobModelGlowTexture": "",
-    "modelWidth": 0.6,
-    "modelHeight": 1.8,
-    "modelShadowSize": 0.5,
+    "modelWidth": 2.0,
+    "modelHeight": 2.0,
+    "modelShadowSize": 1.0,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -1,
+      "value": -6710785,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -10066432,
+      "value": -3355393,
       "falpha": 0.0
     },
     "creativeTab": {
       "value": "CUSTOM:PurpleSandsTab"
     },
-    "isBoss": false,
-    "bossBarColor": "PINK",
+    "isBoss": true,
+    "bossBarColor": "PURPLE",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
       "value": ""
@@ -45,15 +45,15 @@
       "value": ""
     },
     "mobBehaviourType": "Mob",
-    "mobCreatureType": "UNDEFINED",
-    "attackStrength": 6,
-    "attackKnockback": 0.0,
-    "knockbackResistance": 0.0,
-    "movementSpeed": 0.30000000000000004,
-    "armorBaseValue": 0.0,
-    "trackingRange": 64,
-    "health": 8,
-    "xpAmount": 5,
+    "mobCreatureType": "ARTHROPOD",
+    "attackStrength": 3,
+    "attackKnockback": 0.2,
+    "knockbackResistance": 1.0,
+    "movementSpeed": 0.3,
+    "armorBaseValue": 8.0,
+    "trackingRange": 128,
+    "health": 1000,
+    "xpAmount": 100,
     "waterMob": false,
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
@@ -63,13 +63,13 @@
     "ridable": false,
     "canControlForward": false,
     "canControlStrafe": false,
-    "immuneToFire": false,
+    "immuneToFire": true,
     "immuneToArrows": false,
     "immuneToFallDamage": false,
     "immuneToCactus": true,
     "immuneToDrowning": false,
     "immuneToLightning": false,
-    "immuneToPotions": true,
+    "immuneToPotions": false,
     "immuneToPlayer": false,
     "immuneToExplosion": false,
     "immuneToTrident": false,
@@ -77,13 +77,13 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": "Items.DYE#5"
-    },
-    "livingSound": {
       "value": ""
     },
+    "livingSound": {
+      "value": "entity.endermite.ambient"
+    },
     "hurtSound": {
-      "value": "entity.generic.hurt"
+      "value": "entity.endermite.hurt"
     },
     "deathSound": {
       "value": "entity.generic.death"
@@ -100,7 +100,7 @@
     "particleAmount": 4,
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"516\" y=\"187\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
@@ -109,17 +109,13 @@
       "value": ""
     },
     "rangedItemType": "Default item",
-    "spawnThisMob": true,
-    "doesDespawnWhenIdle": true,
+    "spawnThisMob": false,
+    "doesDespawnWhenIdle": false,
     "spawningProbability": 20,
-    "mobSpawningType": "ambient",
-    "minNumberOfMobsPerGroup": 1,
-    "maxNumberOfMobsPerGroup": 2,
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:PurpleDesert"
-      }
-    ],
+    "mobSpawningType": "monster",
+    "minNumberOfMobsPerGroup": 4,
+    "maxNumberOfMobsPerGroup": 4,
+    "restrictionBiomes": [],
     "spawnInDungeons": false
   }
 }

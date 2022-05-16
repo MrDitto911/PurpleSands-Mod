@@ -7,6 +7,14 @@
         "3": "innerframetexture"
       },
       "name": "default"
+    },
+    "basic": {
+      "map": {
+        "0": "gemblock",
+        "2": "outerframetextureiron",
+        "3": "innerframetexture"
+      },
+      "name": "basic"
     }
   }
 }

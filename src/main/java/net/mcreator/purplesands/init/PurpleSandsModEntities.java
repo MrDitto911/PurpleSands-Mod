@@ -16,6 +16,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.purplesands.entity.ScorpionHuskEntity;
 import net.mcreator.purplesands.entity.SandmanEntity;
 import net.mcreator.purplesands.entity.SandfleaEntity;
 import net.mcreator.purplesands.entity.MysteryOrbEntity;
@@ -25,12 +26,28 @@ import net.mcreator.purplesands.entity.GemGolemEntity;
 import net.mcreator.purplesands.entity.FlyingSkullEntity;
 import net.mcreator.purplesands.entity.DesertBeetleEntity;
 import net.mcreator.purplesands.entity.DeathadderEntity;
+import net.mcreator.purplesands.entity.BasicOrbEntity;
 import net.mcreator.purplesands.entity.AwakenedOrbEntity;
 import net.mcreator.purplesands.PurpleSandsMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class PurpleSandsModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITIES, PurpleSandsMod.MODID);
+	public static final RegistryObject<EntityType<GemStaffEntity>> GEM_STAFF = register("projectile_gem_staff",
+			EntityType.Builder.<GemStaffEntity>of(GemStaffEntity::new, MobCategory.MISC).setCustomClientFactory(GemStaffEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<MysteryOrbEntity>> MYSTERY_ORB = register("projectile_mystery_orb",
+			EntityType.Builder.<MysteryOrbEntity>of(MysteryOrbEntity::new, MobCategory.MISC).setCustomClientFactory(MysteryOrbEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<AwakenedOrbEntity>> AWAKENED_ORB = register("projectile_awakened_orb",
+			EntityType.Builder.<AwakenedOrbEntity>of(AwakenedOrbEntity::new, MobCategory.MISC).setCustomClientFactory(AwakenedOrbEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<BasicOrbEntity>> BASIC_ORB = register("projectile_basic_orb",
+			EntityType.Builder.<BasicOrbEntity>of(BasicOrbEntity::new, MobCategory.MISC).setCustomClientFactory(BasicOrbEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<ScorpionHuskEntity>> SCORPION_HUSK = register("scorpion_husk",
+			EntityType.Builder.<ScorpionHuskEntity>of(ScorpionHuskEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(ScorpionHuskEntity::new).fireImmune().sized(2f, 2f));
 	public static final RegistryObject<EntityType<SandfleaEntity>> SANDFLEA = register("sandflea",
 			EntityType.Builder.<SandfleaEntity>of(SandfleaEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(SandfleaEntity::new)
@@ -44,15 +61,6 @@ public class PurpleSandsModEntities {
 	public static final RegistryObject<EntityType<GemGolemEntity>> GEM_GOLEM = register("gem_golem",
 			EntityType.Builder.<GemGolemEntity>of(GemGolemEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(GemGolemEntity::new).fireImmune().sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<GemStaffEntity>> GEM_STAFF = register("projectile_gem_staff",
-			EntityType.Builder.<GemStaffEntity>of(GemStaffEntity::new, MobCategory.MISC).setCustomClientFactory(GemStaffEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<MysteryOrbEntity>> MYSTERY_ORB = register("projectile_mystery_orb",
-			EntityType.Builder.<MysteryOrbEntity>of(MysteryOrbEntity::new, MobCategory.MISC).setCustomClientFactory(MysteryOrbEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<AwakenedOrbEntity>> AWAKENED_ORB = register("projectile_awakened_orb",
-			EntityType.Builder.<AwakenedOrbEntity>of(AwakenedOrbEntity::new, MobCategory.MISC).setCustomClientFactory(AwakenedOrbEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<SandmanEntity>> SANDMAN = register("sandman",
 			EntityType.Builder.<SandmanEntity>of(SandmanEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(SandmanEntity::new).fireImmune().sized(0.6f, 1.8f));
@@ -77,6 +85,7 @@ public class PurpleSandsModEntities {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
+			ScorpionHuskEntity.init();
 			SandfleaEntity.init();
 			DeathadderEntity.init();
 			GemGolemEntity.init();
@@ -89,6 +98,7 @@ public class PurpleSandsModEntities {
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
+		event.put(SCORPION_HUSK.get(), ScorpionHuskEntity.createAttributes().build());
 		event.put(SANDFLEA.get(), SandfleaEntity.createAttributes().build());
 		event.put(DEATHADDER.get(), DeathadderEntity.createAttributes().build());
 		event.put(GEM_GOLEM.get(), GemGolemEntity.createAttributes().build());
