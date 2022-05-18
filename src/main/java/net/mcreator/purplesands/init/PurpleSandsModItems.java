@@ -16,6 +16,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.purplesands.item.TheBaneofArthropodsItem;
+import net.mcreator.purplesands.item.ScorpionDaggerItem;
 import net.mcreator.purplesands.item.SandBallItem;
 import net.mcreator.purplesands.item.RawSandfleaItem;
 import net.mcreator.purplesands.item.PurpleSwordItem;
@@ -142,6 +143,7 @@ public class PurpleSandsModItems {
 			() -> new ForgeSpawnEggItem(PurpleSandsModEntities.LITTLE_BEETLE, -16777216, -9303809,
 					new Item.Properties().tab(PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB)));
 	public static final RegistryObject<Item> PETRIFIED_LEAVES = block(PurpleSandsModBlocks.PETRIFIED_LEAVES, CreativeModeTab.TAB_DECORATIONS);
+	public static final RegistryObject<Item> SCORPION_DAGGER = REGISTRY.register("scorpion_dagger", () -> new ScorpionDaggerItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

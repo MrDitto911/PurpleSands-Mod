@@ -1499,7 +1499,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "the_baneof_arthropods",
-      "path": "~/Weapons"
+      "path": "~/Weapons/Melee"
     },
     {
       "name": "TheBaneofArthropodsLivingEntityIsHitWithTool",
@@ -1516,7 +1516,7 @@
           }
         ]
       },
-      "path": "~/Weapons"
+      "path": "~/Weapons/Melee"
     },
     {
       "name": "TheBaneofArthrpodsRecipe",
@@ -1703,6 +1703,32 @@
         ]
       },
       "path": "~/Blocks/GUIBlocks/BossSummon"
+    },
+    {
+      "name": "ScorpionDagger",
+      "type": "tool",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scorpion_dagger",
+      "path": "~/Weapons/Melee"
+    },
+    {
+      "name": "ScorpionDaggerLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scorpion_dagger_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Weapons/Melee"
     }
   ],
   "variable_elements": [],
@@ -1790,6 +1816,7 @@
       "entity.purple_sands.scorpion_husk": "Scorpion Husk",
       "item.purple_sands.cooked_sandflea": "Cooked Sandflea",
       "advancements.sand_ball_advancement.descr": "It\u0027ll stay in your stomach all day",
+      "item.purple_sands.scorpion_dagger": "Scorpion Dagger",
       "item.purple_sands.beetle_shell": "Beetle Shell",
       "biome.purple_sands.purple_desert": "Purple Desert",
       "block.purple_sands.petrified_stairs": "Petrified Stairs",
@@ -1889,6 +1916,10 @@
           },
           {
             "name": "Orbs",
+            "children": []
+          },
+          {
+            "name": "Melee",
             "children": []
           }
         ]

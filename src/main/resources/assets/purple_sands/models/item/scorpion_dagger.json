@@ -1,0 +1,7 @@
+{
+  "parent": "purple_sands:custom/scorpiondagger",
+  "textures": {
+    "0": "purple_sands:blocks/scorpiondaggertexture",
+    "particle": "purple_sands:items/purple_hoe"
+  }
+}
