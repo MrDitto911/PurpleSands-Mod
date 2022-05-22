@@ -13,6 +13,7 @@ import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
@@ -28,11 +29,11 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.Difficulty;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 
+import net.mcreator.purplesands.procedures.InDesertDemProcedure;
 import net.mcreator.purplesands.procedures.DesertBeetleEntityDiesProcedure;
 import net.mcreator.purplesands.init.PurpleSandsModItems;
 import net.mcreator.purplesands.init.PurpleSandsModEntities;
@@ -41,7 +42,7 @@ import net.mcreator.purplesands.init.PurpleSandsModEntities;
 public class DesertBeetleEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(PurpleSandsModEntities.DESERT_BEETLE.get(), 20, 4, 4));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(PurpleSandsModEntities.DESERT_BEETLE.get(), 20, 1, 3));
 	}
 
 	public DesertBeetleEntity(PlayMessages.SpawnEntity packet, Level world) {
@@ -71,7 +72,7 @@ public class DesertBeetleEntity extends Monster {
 		this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
 		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 0.8));
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
-		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, DeathadderEntity.class, false, false));
+		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Player.class, false, false));
 	}
 
 	@Override
@@ -115,8 +116,12 @@ public class DesertBeetleEntity extends Monster {
 
 	public static void init() {
 		SpawnPlacements.register(PurpleSandsModEntities.DESERT_BEETLE.get(), SpawnPlacements.Type.ON_GROUND,
-				Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
-						&& Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
+				Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> {
+					int x = pos.getX();
+					int y = pos.getY();
+					int z = pos.getZ();
+					return InDesertDemProcedure.execute(world);
+				});
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

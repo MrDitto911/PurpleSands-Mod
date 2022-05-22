@@ -123,26 +123,13 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [
-      "CUSTOM:InfiniteDesert"
-    ],
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:PurpleDesert"
-      }
-    ],
-    "blocksToReplace": [
-      {
-        "value": "CUSTOM:PurpleSand"
-      }
-    ],
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
+    "blocksToReplace": [],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 32,
     "frequencyOnChunk": 1,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 150,
-    "generateCondition": {
-      "name": "PurpleSandPitAdditionalGenerationCondition"
-    }
+    "maxGenerateHeight": 150
   }
 }

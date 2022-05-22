@@ -46,7 +46,7 @@ public class PurpleOreFeature extends OreFeature {
 		CONFIGURED_FEATURE = FeatureUtils.register("purple_sands:purple_ore", FEATURE,
 				new OreConfiguration(PurpleOreFeatureRuleTest.INSTANCE, PurpleSandsModBlocks.PURPLE_ORE.get().defaultBlockState(), 4));
 		PLACED_FEATURE = PlacementUtils.register("purple_sands:purple_ore", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(12), InSquarePlacement.spread(),
+				List.of(CountPlacement.of(8), InSquarePlacement.spread(),
 						HeightRangePlacement.uniform(VerticalAnchor.absolute(5), VerticalAnchor.absolute(52)), BiomeFilter.biome()));
 		return FEATURE;
 	}
@@ -55,7 +55,8 @@ public class PurpleOreFeature extends OreFeature {
 		return PLACED_FEATURE;
 	}
 
-	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("purple_sands:purple_desert"));
+	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("purple_sands:purple_desert"),
+			new ResourceLocation("desert"));
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
 
 	public PurpleOreFeature() {

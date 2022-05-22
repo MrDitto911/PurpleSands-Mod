@@ -19,11 +19,13 @@ import net.minecraft.core.Holder;
 
 import net.mcreator.purplesands.world.features.plants.RoxaFeature;
 import net.mcreator.purplesands.world.features.plants.AridShroomFeature;
-import net.mcreator.purplesands.world.features.ores.PurpleSandPitFeature;
+import net.mcreator.purplesands.world.features.ores.PurpleSlateOreFeature;
 import net.mcreator.purplesands.world.features.ores.PurpleOreFeature;
 import net.mcreator.purplesands.world.features.ores.PetrifiedLogFeature;
 import net.mcreator.purplesands.world.features.SandstoneWellTreasureFeature;
 import net.mcreator.purplesands.world.features.SandstoneWellTrappedFeature;
+import net.mcreator.purplesands.world.features.SandpitFeature;
+import net.mcreator.purplesands.world.features.SandmanTempleFeature;
 import net.mcreator.purplesands.PurpleSandsMod;
 
 import java.util.function.Supplier;
@@ -43,15 +45,19 @@ public class PurpleSandsModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, RoxaFeature.GENERATE_BIOMES, RoxaFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> ARID_SHROOM = register("arid_shroom", AridShroomFeature::feature, new FeatureRegistration(
 			GenerationStep.Decoration.VEGETAL_DECORATION, AridShroomFeature.GENERATE_BIOMES, AridShroomFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> PURPLE_SAND_PIT = register("purple_sand_pit", PurpleSandPitFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, PurpleSandPitFeature.GENERATE_BIOMES,
-					PurpleSandPitFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> SANDSTONE_WELL_TREASURE = register("sandstone_well_treasure",
 			SandstoneWellTreasureFeature::feature, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
 					SandstoneWellTreasureFeature.GENERATE_BIOMES, SandstoneWellTreasureFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> SANDSTONE_WELL_TRAPPED = register("sandstone_well_trapped", SandstoneWellTrappedFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, SandstoneWellTrappedFeature.GENERATE_BIOMES,
 					SandstoneWellTrappedFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> SANDMAN_TEMPLE = register("sandman_temple", SandmanTempleFeature::feature, new FeatureRegistration(
+			GenerationStep.Decoration.SURFACE_STRUCTURES, SandmanTempleFeature.GENERATE_BIOMES, SandmanTempleFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> SANDPIT = register("sandpit", SandpitFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, SandpitFeature.GENERATE_BIOMES, SandpitFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> PURPLE_SLATE_ORE = register("purple_slate_ore", PurpleSlateOreFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, PurpleSlateOreFeature.GENERATE_BIOMES,
+					PurpleSlateOreFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

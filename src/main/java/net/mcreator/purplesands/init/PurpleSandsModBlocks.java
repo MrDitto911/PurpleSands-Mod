@@ -15,8 +15,11 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.purplesands.block.SmoothPurpleSandstoneBlock;
+import net.mcreator.purplesands.block.SandstoneGemLampBlock;
 import net.mcreator.purplesands.block.SandRefinerBlock;
 import net.mcreator.purplesands.block.RoxaBlock;
+import net.mcreator.purplesands.block.PurpleSlateOreBlock;
+import net.mcreator.purplesands.block.PurpleSlateBlock;
 import net.mcreator.purplesands.block.PurpleSandstoneWallBlock;
 import net.mcreator.purplesands.block.PurpleSandstoneStairsBlock;
 import net.mcreator.purplesands.block.PurpleSandstoneSlabBlock;
@@ -94,6 +97,9 @@ public class PurpleSandsModBlocks {
 			() -> new CarvedPurpleSandstoneBlock());
 	public static final RegistryObject<Block> PURPLE_SAND_PIT = REGISTRY.register("purple_sand_pit", () -> new PurpleSandPitBlock());
 	public static final RegistryObject<Block> PETRIFIED_LEAVES = REGISTRY.register("petrified_leaves", () -> new PetrifiedLeavesBlock());
+	public static final RegistryObject<Block> SANDSTONE_GEM_LAMP = REGISTRY.register("sandstone_gem_lamp", () -> new SandstoneGemLampBlock());
+	public static final RegistryObject<Block> PURPLE_SLATE = REGISTRY.register("purple_slate", () -> new PurpleSlateBlock());
+	public static final RegistryObject<Block> PURPLE_SLATE_ORE = REGISTRY.register("purple_slate_ore", () -> new PurpleSlateOreBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -113,6 +119,7 @@ public class PurpleSandsModBlocks {
 			PortalFrameTrapDoorBlock.registerRenderLayer();
 			PetrifiedTrapDoorBlock.registerRenderLayer();
 			AridShroomBlock.registerRenderLayer();
+			SandstoneGemLampBlock.registerRenderLayer();
 		}
 	}
 }

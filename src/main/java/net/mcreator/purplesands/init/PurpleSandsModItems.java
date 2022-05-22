@@ -144,6 +144,13 @@ public class PurpleSandsModItems {
 					new Item.Properties().tab(PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB)));
 	public static final RegistryObject<Item> PETRIFIED_LEAVES = block(PurpleSandsModBlocks.PETRIFIED_LEAVES, CreativeModeTab.TAB_DECORATIONS);
 	public static final RegistryObject<Item> SCORPION_DAGGER = REGISTRY.register("scorpion_dagger", () -> new ScorpionDaggerItem());
+	public static final RegistryObject<Item> MOVING_CLOUD = REGISTRY.register("moving_cloud_spawn_egg",
+			() -> new ForgeSpawnEggItem(PurpleSandsModEntities.MOVING_CLOUD, -3368449, -3342337,
+					new Item.Properties().tab(PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB)));
+	public static final RegistryObject<Item> SANDSTONE_GEM_LAMP = block(PurpleSandsModBlocks.SANDSTONE_GEM_LAMP,
+			PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
+	public static final RegistryObject<Item> PURPLE_SLATE = block(PurpleSandsModBlocks.PURPLE_SLATE, PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
+	public static final RegistryObject<Item> PURPLE_SLATE_ORE = block(PurpleSandsModBlocks.PURPLE_SLATE_ORE, PurpleSandsModTabs.TAB_PURPLE_SANDS_TAB);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

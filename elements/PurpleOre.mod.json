@@ -11,7 +11,7 @@
     "renderType": 11,
     "customModelName": "Single texture",
     "rotationMode": 0,
-    "emissiveRendering": true,
+    "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
@@ -127,6 +127,15 @@
     "restrictionBiomes": [
       {
         "value": "CUSTOM:PurpleDesert"
+      },
+      {
+        "value": "desert"
+      },
+      {
+        "value": "desert_hills"
+      },
+      {
+        "value": "mutated_desert"
       }
     ],
     "blocksToReplace": [
@@ -135,7 +144,7 @@
       }
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 12,
+    "frequencyPerChunks": 8,
     "frequencyOnChunk": 4,
     "minGenerateHeight": 5,
     "maxGenerateHeight": 52

@@ -34,7 +34,7 @@ public class InfiniteDesertDimension {
 		@SubscribeEvent
 		public static void registerFillerBlocks(FMLCommonSetupEvent event) {
 			Set<Block> replaceableBlocks = new HashSet<>();
-			replaceableBlocks.add(PurpleSandsModBlocks.PURPLE_SANDSTONE.get());
+			replaceableBlocks.add(PurpleSandsModBlocks.PURPLE_SLATE.get());
 			replaceableBlocks.add(PurpleSandsModBlocks.PURPLE_SAND.get());
 			replaceableBlocks.add(PurpleSandsModBlocks.PURPLE_SANDSTONE.get());
 			event.enqueueWork(() -> {

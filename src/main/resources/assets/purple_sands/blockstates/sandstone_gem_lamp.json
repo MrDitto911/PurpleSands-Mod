@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "purple_sands:block/sandstone_gem_lamp"
+    },
+    "facing=east": {
+      "model": "purple_sands:block/sandstone_gem_lamp",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "purple_sands:block/sandstone_gem_lamp",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "purple_sands:block/sandstone_gem_lamp",
+      "y": 270
+    }
+  }
+}

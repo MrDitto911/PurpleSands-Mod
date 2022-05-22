@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "gemblock",
+        "1": "glowglass",
+        "2": "purplesandstonetop",
+        "3": "purplesandstone",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}

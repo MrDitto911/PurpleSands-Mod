@@ -43,17 +43,11 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.purplesands.procedures.InDesertDemProcedure;
 import net.mcreator.purplesands.init.PurpleSandsModEntities;
 
-import java.util.Set;
-
 @Mod.EventBusSubscriber
 public class FlyingSkullEntity extends Monster {
-	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("purple_sands:purple_desert"));
-
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		if (SPAWN_BIOMES.contains(event.getName()))
-			event.getSpawns().getSpawner(MobCategory.MONSTER)
-					.add(new MobSpawnSettings.SpawnerData(PurpleSandsModEntities.FLYING_SKULL.get(), 17, 2, 4));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(PurpleSandsModEntities.FLYING_SKULL.get(), 17, 2, 4));
 	}
 
 	public FlyingSkullEntity(PlayMessages.SpawnEntity packet, Level world) {

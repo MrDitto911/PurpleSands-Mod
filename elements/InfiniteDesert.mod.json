@@ -9,7 +9,7 @@
     ],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "CUSTOM:PurpleSandstone"
+      "value": "CUSTOM:PurpleSlate"
     },
     "fluidBlock": {
       "value": "Blocks.AIR"

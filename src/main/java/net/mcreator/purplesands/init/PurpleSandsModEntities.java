@@ -20,6 +20,7 @@ import net.mcreator.purplesands.entity.ScorpionHuskEntity;
 import net.mcreator.purplesands.entity.SandmanEntity;
 import net.mcreator.purplesands.entity.SandfleaEntity;
 import net.mcreator.purplesands.entity.MysteryOrbEntity;
+import net.mcreator.purplesands.entity.MovingCloudEntity;
 import net.mcreator.purplesands.entity.LittleBeetleEntity;
 import net.mcreator.purplesands.entity.GemStaffEntity;
 import net.mcreator.purplesands.entity.GemGolemEntity;
@@ -77,6 +78,9 @@ public class PurpleSandsModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LittleBeetleEntity::new)
 
 					.sized(0.4f, 0.3f));
+	public static final RegistryObject<EntityType<MovingCloudEntity>> MOVING_CLOUD = register("moving_cloud",
+			EntityType.Builder.<MovingCloudEntity>of(MovingCloudEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MovingCloudEntity::new).fireImmune().sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -93,6 +97,7 @@ public class PurpleSandsModEntities {
 			FlyingSkullEntity.init();
 			DesertBeetleEntity.init();
 			LittleBeetleEntity.init();
+			MovingCloudEntity.init();
 		});
 	}
 
@@ -106,5 +111,6 @@ public class PurpleSandsModEntities {
 		event.put(FLYING_SKULL.get(), FlyingSkullEntity.createAttributes().build());
 		event.put(DESERT_BEETLE.get(), DesertBeetleEntity.createAttributes().build());
 		event.put(LITTLE_BEETLE.get(), LittleBeetleEntity.createAttributes().build());
+		event.put(MOVING_CLOUD.get(), MovingCloudEntity.createAttributes().build());
 	}
 }

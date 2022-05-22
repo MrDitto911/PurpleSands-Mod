@@ -10,6 +10,7 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.purplesands.client.model.Modelscorpionhusk;
+import net.mcreator.purplesands.client.model.Modelmovingcloud;
 import net.mcreator.purplesands.client.model.Modelbeetlearmor;
 import net.mcreator.purplesands.client.model.Modelbeetle;
 import net.mcreator.purplesands.client.model.ModelSandman;
@@ -30,6 +31,7 @@ public class PurpleSandsModModels {
 		event.registerLayerDefinition(Modelscorpionhusk.LAYER_LOCATION, Modelscorpionhusk::createBodyLayer);
 		event.registerLayerDefinition(ModelSandman.LAYER_LOCATION, ModelSandman::createBodyLayer);
 		event.registerLayerDefinition(ModelSandFlea.LAYER_LOCATION, ModelSandFlea::createBodyLayer);
+		event.registerLayerDefinition(Modelmovingcloud.LAYER_LOCATION, Modelmovingcloud::createBodyLayer);
 		event.registerLayerDefinition(ModelGemGolem.LAYER_LOCATION, ModelGemGolem::createBodyLayer);
 		event.registerLayerDefinition(Modelbeetle.LAYER_LOCATION, Modelbeetle::createBodyLayer);
 	}

@@ -32,7 +32,8 @@
       "sortid": 65,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "purple_desert"
+      "registry_name": "purple_desert",
+      "path": "~/Biomes"
     },
     {
       "name": "Deathadder",
@@ -1344,7 +1345,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "glow_glass",
-      "path": "~/Blocks"
+      "path": "~/Blocks/Lights"
     },
     {
       "name": "PortalFrameDoor",
@@ -1615,36 +1616,6 @@
       "path": "~/Weapons/Orbs"
     },
     {
-      "name": "PurpleSandPitAdditionalGenerationCondition",
-      "type": "procedure",
-      "sortid": 147,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "purple_sand_pit_additional_generation_condition",
-      "metadata": {
-        "return_type": "logic",
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Blocks/GUIBlocks/BossSummon"
-    },
-    {
       "name": "PurpleSandPit",
       "type": "block",
       "sortid": 54,
@@ -1680,10 +1651,6 @@
       "registry_name": "scorpionhusksummon",
       "metadata": {
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "x",
             "type": "number"
@@ -1729,6 +1696,107 @@
         ]
       },
       "path": "~/Weapons/Melee"
+    },
+    {
+      "name": "MovingCloud",
+      "type": "livingentity",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moving_cloud",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "MovingCloudOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moving_cloud_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "SandstoneGemLamp",
+      "type": "block",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sandstone_gem_lamp",
+      "path": "~/Blocks/Lights"
+    },
+    {
+      "name": "SandmanTemple",
+      "type": "structure",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sandman_temple",
+      "path": "~/Structures"
+    },
+    {
+      "name": "Sandpit",
+      "type": "structure",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sandpit",
+      "path": "~/Structures"
+    },
+    {
+      "name": "PurpleSlate",
+      "type": "block",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_slate",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "PurpleSlateOre",
+      "type": "block",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_slate_ore",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "GlowGlassRecipe",
+      "type": "recipe",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glow_glass_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "SandstoneGemLampRecipe",
+      "type": "recipe",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sandstone_gem_lamp_recipe",
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -1740,6 +1808,7 @@
       "advancements.sandflea_meat_advancement.title": "Sand grown Meat",
       "advancements.purple_apple_advancement.title": "Purple Apples",
       "item.purple_sands.awakened_orb": "Awakened Orb",
+      "block.purple_sands.sandstone_gem_lamp": "Sandstone Gem Lamp",
       "item.purple_sands.beetle_armor_helmet": "Beetle Helmet",
       "block.purple_sands.roxa": "Roxa",
       "block.purple_sands.petrified_fence_gate": "Petrified Fence Gate",
@@ -1751,19 +1820,20 @@
       "item.purple_sands.little_beetle_spawn_egg": "Little Beetle Spawn Egg",
       "block.purple_sands.purple_sandstone_wall": "Purple Sandstone Wall",
       "block.purple_sands.purple_sand": "Purple Sand",
-      "item.purple_sands.desert_beetle_spawn_egg": "Desert Beetle Spawn Egg",
       "itemGroup.tabpurple_sands_tab": "Purple Sands Tab",
+      "item.purple_sands.desert_beetle_spawn_egg": "Desert Beetle Spawn Egg",
       "advancements.cookie_creeper_advancement.title": "Cookie Creeper Advancement",
       "block.purple_sands.purple_sandstone_button": "Purple Sandstone Button",
       "item.purple_sands.purple_armor_boots": "Purple Boots",
+      "block.purple_sands.purple_slate_ore": "Purple Slate Ore",
       "block.purple_sands.purple_sand_pit": "Purple Sand Pit",
       "block.purple_sands.petrified_button": "Petrified Button",
       "block.purple_sands.petrified_pressure_plate": "Petrified Pressure Plate",
       "item.purple_sands.beetle_armor_leggings": "Beetle Leggings",
       "block.purple_sands.purple_sandstone_pressure_plate": "Purple Sandstone Pressure Plate",
       "item.purple_sands.basic_orb": "Basic Orb",
-      "entity.purple_sands.little_beetle": "Little Beetle",
       "block.purple_sands.portal_frame_door": "Portal Frame Door",
+      "entity.purple_sands.little_beetle": "Little Beetle",
       "entity.purple_sands.sandman": "Sandman",
       "block.purple_sands.glow_glass": "Glow Glass",
       "block.purple_sands.purple_sandstone_slab": "Purple Sandstone Slab",
@@ -1792,6 +1862,7 @@
       "block.purple_sands.portal_frame_trap_door": "Portal Frame Trap Door",
       "item.purple_sands.the_baneof_arthropods": "The Baneof Arthropods",
       "block.purple_sands.petrified_door": "Petrified Door",
+      "block.purple_sands.purple_slate": "Purple Slate",
       "item.purple_sands.purple_axe": "Purple Axe",
       "item.purple_sands.purple_apple": "Purple Apple",
       "block.purple_sands.sand_refiner": "Sand Refiner",
@@ -1803,6 +1874,7 @@
       "block.purple_sands.carved_purple_sandstone": "Carved Purple Sandstone",
       "advancements.pride_bread_advancement.descr": "Eat and have pride!",
       "block.purple_sands.purple_ore": "Purple Ore",
+      "item.purple_sands.moving_cloud_spawn_egg": "Moving Cloud Spawn Egg",
       "item.purple_sands.raw_sandflea": "Raw Sandflea",
       "advancements.cc_advancement.title": "CC?",
       "item.purple_sands.purple_pickaxe": "Purple Pickaxe",
@@ -1818,6 +1890,7 @@
       "advancements.sand_ball_advancement.descr": "It\u0027ll stay in your stomach all day",
       "item.purple_sands.scorpion_dagger": "Scorpion Dagger",
       "item.purple_sands.beetle_shell": "Beetle Shell",
+      "entity.purple_sands.moving_cloud": "Moving Cloud",
       "biome.purple_sands.purple_desert": "Purple Desert",
       "block.purple_sands.petrified_stairs": "Petrified Stairs",
       "block.purple_sands.purple_sandstone_stairs": "Purple Sandstone Stairs",
@@ -1870,6 +1943,10 @@
           },
           {
             "name": "Plants",
+            "children": []
+          },
+          {
+            "name": "Lights",
             "children": []
           }
         ]
@@ -1930,6 +2007,10 @@
       },
       {
         "name": "Tags",
+        "children": []
+      },
+      {
+        "name": "Biomes",
         "children": []
       }
     ]

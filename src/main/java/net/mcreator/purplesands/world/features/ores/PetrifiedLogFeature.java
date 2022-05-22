@@ -47,7 +47,7 @@ public class PetrifiedLogFeature extends OreFeature {
 				new OreConfiguration(PetrifiedLogFeatureRuleTest.INSTANCE, PurpleSandsModBlocks.PETRIFIED_LOG.get().defaultBlockState(), 8));
 		PLACED_FEATURE = PlacementUtils.register("purple_sands:petrified_log", CONFIGURED_FEATURE,
 				List.of(CountPlacement.of(10), InSquarePlacement.spread(),
-						HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(64)), BiomeFilter.biome()));
+						HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(43)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 
@@ -55,11 +55,9 @@ public class PetrifiedLogFeature extends OreFeature {
 		return PLACED_FEATURE;
 	}
 
-	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("deep_cold_ocean"), new ResourceLocation("frozen_ocean"),
-			new ResourceLocation("warm_ocean"), new ResourceLocation("lukewarm_ocean"), new ResourceLocation("ocean"),
-			new ResourceLocation("deep_lukewarm_ocean"), new ResourceLocation("cold_ocean"), new ResourceLocation("deep_ocean"),
-			new ResourceLocation("deep_frozen_ocean"));
-	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
+	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
+	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD,
+			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("purple_sands:infinite_desert")));
 
 	public PetrifiedLogFeature() {
 		super(OreConfiguration.CODEC);
@@ -87,7 +85,7 @@ public class PetrifiedLogFeature extends OreFeature {
 
 		public boolean test(BlockState blockAt, Random random) {
 			if (base_blocks == null) {
-				base_blocks = List.of(Blocks.STONE);
+				base_blocks = List.of(Blocks.STONE, PurpleSandsModBlocks.PURPLE_SLATE.get(), PurpleSandsModBlocks.PURPLE_SANDSTONE.get());
 			}
 			return base_blocks.contains(blockAt.getBlock());
 		}

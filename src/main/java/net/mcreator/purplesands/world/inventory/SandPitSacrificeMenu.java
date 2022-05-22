@@ -18,10 +18,9 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.purplesands.network.SandPitSacrificeSlotMessage;
+import net.mcreator.purplesands.procedures.ScorpionhusksummonProcedure;
 import net.mcreator.purplesands.init.PurpleSandsModMenus;
 import net.mcreator.purplesands.init.PurpleSandsModItems;
-import net.mcreator.purplesands.PurpleSandsMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -79,12 +78,6 @@ public class SandPitSacrificeMenu extends AbstractContainerMenu implements Suppl
 			}
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 79, 26) {
-			@Override
-			public void setChanged() {
-				super.setChanged();
-				slotChanged(0, 0, 0);
-			}
-
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return (PurpleSandsModItems.RAW_SANDFLEA.get() == stack.getItem());
@@ -218,6 +211,8 @@ public class SandPitSacrificeMenu extends AbstractContainerMenu implements Suppl
 	@Override
 	public void removed(Player playerIn) {
 		super.removed(playerIn);
+
+		ScorpionhusksummonProcedure.execute(world, x, y, z);
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {
@@ -232,13 +227,6 @@ public class SandPitSacrificeMenu extends AbstractContainerMenu implements Suppl
 					playerIn.getInventory().placeItemBackInInventory(internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
 				}
 			}
-		}
-	}
-
-	private void slotChanged(int slotid, int ctype, int meta) {
-		if (this.world != null && this.world.isClientSide()) {
-			PurpleSandsMod.PACKET_HANDLER.sendToServer(new SandPitSacrificeSlotMessage(slotid, x, y, z, ctype, meta));
-			SandPitSacrificeSlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 		}
 	}
 

@@ -19,9 +19,6 @@
           "id": 0,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": false,
-          "onSlotChanged": {
-            "name": "Scorpionhusksummon"
-          },
           "name": "Slot #0",
           "x": 204,
           "y": 62
@@ -41,6 +38,9 @@
         }
       }
     ],
+    "onClosed": {
+      "name": "Scorpionhusksummon"
+    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,

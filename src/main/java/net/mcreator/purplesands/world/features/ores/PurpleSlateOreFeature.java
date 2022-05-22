@@ -29,25 +29,24 @@ import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 
-import net.mcreator.purplesands.procedures.PurpleSandPitAdditionalGenerationConditionProcedure;
 import net.mcreator.purplesands.init.PurpleSandsModBlocks;
 
 import java.util.Set;
 import java.util.Random;
 import java.util.List;
 
-public class PurpleSandPitFeature extends OreFeature {
-	public static PurpleSandPitFeature FEATURE = null;
+public class PurpleSlateOreFeature extends OreFeature {
+	public static PurpleSlateOreFeature FEATURE = null;
 	public static Holder<ConfiguredFeature<OreConfiguration, ?>> CONFIGURED_FEATURE = null;
 	public static Holder<PlacedFeature> PLACED_FEATURE = null;
 
 	public static Feature<?> feature() {
-		FEATURE = new PurpleSandPitFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("purple_sands:purple_sand_pit", FEATURE,
-				new OreConfiguration(PurpleSandPitFeatureRuleTest.INSTANCE, PurpleSandsModBlocks.PURPLE_SAND_PIT.get().defaultBlockState(), 1));
-		PLACED_FEATURE = PlacementUtils.register("purple_sands:purple_sand_pit", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(32), InSquarePlacement.spread(),
-						HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(150)), BiomeFilter.biome()));
+		FEATURE = new PurpleSlateOreFeature();
+		CONFIGURED_FEATURE = FeatureUtils.register("purple_sands:purple_slate_ore", FEATURE,
+				new OreConfiguration(PurpleSlateOreFeatureRuleTest.INSTANCE, PurpleSandsModBlocks.PURPLE_SLATE_ORE.get().defaultBlockState(), 4));
+		PLACED_FEATURE = PlacementUtils.register("purple_sands:purple_slate_ore", CONFIGURED_FEATURE,
+				List.of(CountPlacement.of(12), InSquarePlacement.spread(),
+						HeightRangePlacement.uniform(VerticalAnchor.absolute(5), VerticalAnchor.absolute(52)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 
@@ -55,11 +54,11 @@ public class PurpleSandPitFeature extends OreFeature {
 		return PLACED_FEATURE;
 	}
 
-	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("purple_sands:purple_desert"));
+	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
 	private final Set<ResourceKey<Level>> generate_dimensions = Set
 			.of(ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("purple_sands:infinite_desert")));
 
-	public PurpleSandPitFeature() {
+	public PurpleSlateOreFeature() {
 		super(OreConfiguration.CODEC);
 	}
 
@@ -67,30 +66,26 @@ public class PurpleSandPitFeature extends OreFeature {
 		WorldGenLevel world = context.level();
 		if (!generate_dimensions.contains(world.getLevel().dimension()))
 			return false;
-		int x = context.origin().getX();
-		int y = context.origin().getY();
-		int z = context.origin().getZ();
-		if (!PurpleSandPitAdditionalGenerationConditionProcedure.execute(world, x, y, z))
-			return false;
 		return super.place(context);
 	}
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-	private static class PurpleSandPitFeatureRuleTest extends RuleTest {
-		static final PurpleSandPitFeatureRuleTest INSTANCE = new PurpleSandPitFeatureRuleTest();
-		private static final com.mojang.serialization.Codec<PurpleSandPitFeatureRuleTest> CODEC = com.mojang.serialization.Codec.unit(() -> INSTANCE);
-		private static final RuleTestType<PurpleSandPitFeatureRuleTest> CUSTOM_MATCH = () -> CODEC;
+	private static class PurpleSlateOreFeatureRuleTest extends RuleTest {
+		static final PurpleSlateOreFeatureRuleTest INSTANCE = new PurpleSlateOreFeatureRuleTest();
+		private static final com.mojang.serialization.Codec<PurpleSlateOreFeatureRuleTest> CODEC = com.mojang.serialization.Codec
+				.unit(() -> INSTANCE);
+		private static final RuleTestType<PurpleSlateOreFeatureRuleTest> CUSTOM_MATCH = () -> CODEC;
 
 		@SubscribeEvent
 		public static void init(FMLCommonSetupEvent event) {
-			Registry.register(Registry.RULE_TEST, new ResourceLocation("purple_sands:purple_sand_pit_match"), CUSTOM_MATCH);
+			Registry.register(Registry.RULE_TEST, new ResourceLocation("purple_sands:purple_slate_ore_match"), CUSTOM_MATCH);
 		}
 
 		private List<Block> base_blocks = null;
 
 		public boolean test(BlockState blockAt, Random random) {
 			if (base_blocks == null) {
-				base_blocks = List.of(PurpleSandsModBlocks.PURPLE_SAND.get());
+				base_blocks = List.of(PurpleSandsModBlocks.PURPLE_SLATE.get());
 			}
 			return base_blocks.contains(blockAt.getBlock());
 		}

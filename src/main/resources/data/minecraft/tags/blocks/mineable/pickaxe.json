@@ -10,6 +10,9 @@
     "purple_sands:purple_sandstone_stairs",
     "purple_sands:purple_sandstone_pressure_plate",
     "purple_sands:portal_frame_door",
-    "purple_sands:smooth_purple_sandstone"
+    "purple_sands:smooth_purple_sandstone",
+    "purple_sands:sandstone_gem_lamp",
+    "purple_sands:purple_slate",
+    "purple_sands:purple_slate_ore"
   ]
 }

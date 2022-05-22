@@ -15,6 +15,7 @@ import net.mcreator.purplesands.client.renderer.ScorpionHuskRenderer;
 import net.mcreator.purplesands.client.renderer.SandmanRenderer;
 import net.mcreator.purplesands.client.renderer.SandfleaRenderer;
 import net.mcreator.purplesands.client.renderer.MysteryOrbRenderer;
+import net.mcreator.purplesands.client.renderer.MovingCloudRenderer;
 import net.mcreator.purplesands.client.renderer.LittleBeetleRenderer;
 import net.mcreator.purplesands.client.renderer.GemGolemRenderer;
 import net.mcreator.purplesands.client.renderer.FlyingSkullRenderer;
@@ -39,5 +40,6 @@ public class PurpleSandsModEntityRenderers {
 		event.registerEntityRenderer(PurpleSandsModEntities.FLYING_SKULL.get(), FlyingSkullRenderer::new);
 		event.registerEntityRenderer(PurpleSandsModEntities.DESERT_BEETLE.get(), DesertBeetleRenderer::new);
 		event.registerEntityRenderer(PurpleSandsModEntities.LITTLE_BEETLE.get(), LittleBeetleRenderer::new);
+		event.registerEntityRenderer(PurpleSandsModEntities.MOVING_CLOUD.get(), MovingCloudRenderer::new);
 	}
 }
